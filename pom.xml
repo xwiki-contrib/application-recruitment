@@ -31,7 +31,7 @@
     </parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>application-recruitment</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2.0</version>
     <name>Recruitment application</name>
     <packaging>xar</packaging>
     <description>Recruitment application</description>
@@ -39,7 +39,8 @@
         <connection>scm:git:git://github.com:xwiki-contrib/application-recruitment.git</connection>
         <developerConnection>scm:git:git@github.com:xwiki-contrib/application-recruitment.git</developerConnection>
         <url>https://github.com/xwiki-contrib/application-recruitment</url>
-    </scm>
+      <tag>application-recruitment-2.0</tag>
+  </scm>
     <developers>
         <developer>
             <id>chalx</id>
