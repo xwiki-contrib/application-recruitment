@@ -36,7 +36,7 @@
     <packaging>xar</packaging>
     <description>Recruitment application</description>
     <scm>
-        <connection>scm:git:git://github.com/xwiki-contrib/application-recruitment.git</connection>
+        <connection>scm:git:git://github.com:xwiki-contrib/application-recruitment.git</connection>
         <developerConnection>scm:git:git@github.com:xwiki-contrib/application-recruitment.git</developerConnection>
         <url>https://github.com/xwiki-contrib/application-recruitment</url>
     </scm>
