@@ -75,17 +75,34 @@
                 <version>${commons.version}</version>
             </extension>
         </extensions>
-        <plugins>
-            <!-- The XAR packaging uses the XAR plugin and thus we need to define what version to use -->
-            <plugin>
-                <groupId>org.xwiki.commons</groupId>
-                <artifactId>xwiki-commons-tool-xar-plugin</artifactId>
-                <version>${commons.version}</version>
-                <configuration>
-                    <skip>true</skip>
-                    <includeDependencies>true</includeDependencies>
-                </configuration>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-deploy-plugin</artifactId>
+                     <!-- Lock down plugin version for build reproducibility -->
+                     <version>2.7</version>
+                     <!-- We're deploying using the SCP protocol so we need the SSH Wagon for Maven 3 to work -->
+                     <dependencies>
+                       <dependency>
+                         <groupId>org.apache.maven.wagon</groupId>
+                         <artifactId>wagon-ssh</artifactId>
+                         <version>2.0</version>
+                       </dependency>
+                     </dependencies>
+                </plugin>
+                <!-- The XAR packaging uses the XAR plugin and thus we need to define what version to use -->
+                <plugin>
+                    <groupId>org.xwiki.commons</groupId>
+                    <artifactId>xwiki-commons-tool-xar-plugin</artifactId>
+                    <version>${commons.version}</version>
+                    <configuration>
+                        <skip>true</skip>
+                        <includeDependencies>true</includeDependencies>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
