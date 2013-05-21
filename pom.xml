@@ -59,6 +59,13 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+      <repository>
+        <id>xwiki-staging</id>
+        <name>XWiki Staging Repository</name>
+        <url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2</url>
+      </repository>
+    </distributionManagement>
     <build>
         <!-- Needed to add support for the XAR packaging -->
         <extensions>
