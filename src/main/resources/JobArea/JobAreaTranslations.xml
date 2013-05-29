@@ -1,63 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xwikidoc>
-<web>JobArea</web>
-<name>JobAreaTranslations</name>
-<language></language>
-<defaultLanguage></defaultLanguage>
-<translation>0</translation>
-<parent>JobAreaClass</parent>
-<creator>XWiki.Admin</creator>
-<author>XWiki.Admin</author>
-<customClass></customClass>
-<contentAuthor>XWiki.Admin</contentAuthor>
-<creationDate>1367917342000</creationDate>
-<date>1368435134000</date>
-<contentUpdateDate>1368435134000</contentUpdateDate>
-<version>8.1</version>
-<title></title>
-<template></template>
-<defaultTemplate></defaultTemplate>
-<validationScript></validationScript>
-<comment>Update translations</comment>
-<minorEdit>false</minorEdit>
-<syntaxId>xwiki/2.1</syntaxId>
-<hidden>true</hidden>
-<object>
-<class>
-<name>XWiki.TranslationDocumentClass</name>
-<customClass></customClass>
-<customMapping></customMapping>
-<defaultViewSheet></defaultViewSheet>
-<defaultEditSheet></defaultEditSheet>
-<defaultWeb></defaultWeb>
-<nameField></nameField>
-<validationScript></validationScript>
-<scope>
-<cache>0</cache>
-<disabled>0</disabled>
-<displayType>select</displayType>
-<multiSelect>0</multiSelect>
-<name>scope</name>
-<number>1</number>
-<prettyName>Scope</prettyName>
-<relationalStorage>0</relationalStorage>
-<separator> </separator>
-<separators> ,|</separators>
-<size>1</size>
-<unmodifiable>0</unmodifiable>
-<values>GLOBAL|WIKI|USER|ON_DEMAND</values>
-<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-</scope>
-</class>
-<name>JobArea.JobAreaTranslations</name>
-<number>0</number>
-<className>XWiki.TranslationDocumentClass</className>
-<guid>1f8f43c2-a30b-4f72-8537-14ffb8be3917</guid>
-<property>
-<scope>ON_DEMAND</scope>
-</property>
-</object>
-<content># Class fields
+  <web>JobArea</web>
+  <name>JobAreaTranslations</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>JobAreaClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1367917342000</creationDate>
+  <date>1368435134000</date>
+  <contentUpdateDate>1368435134000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <template/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>JobArea.JobAreaTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>1f8f43c2-a30b-4f72-8537-14ffb8be3917</guid>
+    <property>
+      <scope>ON_DEMAND</scope>
+    </property>
+  </object>
+  <content># Class fields
 JobArea.JobAreaClass_position=Job Posting
 JobArea.JobAreaClass_introduction=Introduction
 JobArea.JobAreaClass_companyDescription=Description of the company
