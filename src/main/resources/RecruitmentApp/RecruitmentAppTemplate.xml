@@ -1,490 +1,3425 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xwikidoc>
-  <web>RecruitmentApp</web>
-  <name>RecruitmentAppTemplate</name>
-  <language/>
-  <defaultLanguage/>
-  <translation>0</translation>
-  <parent>RecruitmentAppClass</parent>
-  <creator>xwiki:XWiki.Admin</creator>
-  <author>xwiki:XWiki.Admin</author>
-  <customClass/>
-  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1367311698000</creationDate>
-  <date>1368524688000</date>
-  <contentUpdateDate>1368524688000</contentUpdateDate>
-  <version>1.1</version>
-  <title/>
-  <template/>
-  <defaultTemplate/>
-  <validationScript/>
-  <comment/>
-  <minorEdit>false</minorEdit>
-  <syntaxId>xwiki/2.1</syntaxId>
-  <hidden>true</hidden>
-  <object>
-    <class>
-      <name>RecruitmentApp.RecruitmentAppClass</name>
-      <customClass/>
-      <customMapping/>
-      <defaultViewSheet/>
-      <defaultEditSheet/>
-      <defaultWeb/>
-      <nameField/>
-      <validationScript/>
-      <applyDate>
-        <customDisplay/>
-        <dateFormat>dd/MM/yyyy</dateFormat>
-        <disabled>0</disabled>
-        <emptyIsToday>0</emptyIsToday>
-        <name>applyDate</name>
-        <number>11</number>
-        <picker>1</picker>
-        <prettyName>Apply date</prettyName>
-        <size>20</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.DateClass</classType>
-      </applyDate>
-      <assignee>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>input</displayType>
-        <multiSelect>0</multiSelect>
-        <name>assignee</name>
-        <number>1</number>
-        <picker>1</picker>
-        <prettyName>Assignee</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators/>
-        <size>20</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <usesList>0</usesList>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.UsersClass</classType>
-      </assignee>
-      <coverLetter>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>coverLetter</name>
-        <number>24</number>
-        <picker>0</picker>
-        <prettyName>Cover Letter</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </coverLetter>
-      <current_company>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>current_company</name>
-        <number>10</number>
-        <picker>0</picker>
-        <prettyName>Current company</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </current_company>
-      <current_position>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>current_position</name>
-        <number>9</number>
-        <picker>0</picker>
-        <prettyName>Current position</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </current_position>
-      <cv>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>cv</name>
-        <number>23</number>
-        <picker>0</picker>
-        <prettyName>CV</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </cv>
-      <details>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>details</name>
-        <number>14</number>
-        <picker>0</picker>
-        <prettyName>Other Details</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </details>
-      <email>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>email</name>
-        <number>4</number>
-        <picker>0</picker>
-        <prettyName>Email</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </email>
-      <endDate>
-        <customDisplay/>
-        <dateFormat>dd/MM/yyyy</dateFormat>
-        <disabled>0</disabled>
-        <emptyIsToday>0</emptyIsToday>
-        <name>endDate</name>
-        <number>13</number>
-        <picker>1</picker>
-        <prettyName>Contract end date</prettyName>
-        <size>20</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.DateClass</classType>
-      </endDate>
-      <experience>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>experience</name>
-        <number>19</number>
-        <picker>0</picker>
-        <prettyName>Experience</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>0=Less than 1 year|1=1-3 years|2=3-5 years|3=More than 5 years</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </experience>
-      <facebook>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>facebook</name>
-        <number>21</number>
-        <picker>0</picker>
-        <prettyName>Facebook</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </facebook>
-      <first_name>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>first_name</name>
-        <number>2</number>
-        <picker>0</picker>
-        <prettyName>First name</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </first_name>
-      <hiringDate>
-        <customDisplay/>
-        <dateFormat>dd/MM/yyyy</dateFormat>
-        <disabled>0</disabled>
-        <emptyIsToday>0</emptyIsToday>
-        <name>hiringDate</name>
-        <number>12</number>
-        <picker>1</picker>
-        <prettyName>Hiring date</prettyName>
-        <size>20</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.DateClass</classType>
-      </hiringDate>
-      <jobPosting>
-        <cache>0</cache>
-        <classname>JobArea.JobAreaClass</classname>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <idField>position</idField>
-        <multiSelect>0</multiSelect>
-        <name>jobPosting</name>
-        <number>24</number>
-        <picker>0</picker>
-        <prettyName>Job Posting</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators/>
-        <size>1</size>
-        <sort>none</sort>
-        <sql/>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <valueField>position</valueField>
-        <classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
-      </jobPosting>
-      <last_name>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>last_name</name>
-        <number>3</number>
-        <picker>0</picker>
-        <prettyName>Last name</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </last_name>
-      <linkedin>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>linkedin</name>
-        <number>20</number>
-        <picker>0</picker>
-        <prettyName>Linkedin</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </linkedin>
-      <next_step>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>next_step</name>
-        <number>17</number>
-        <picker>0</picker>
-        <prettyName>Next step</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>0=HR First Meeting|1=Technical Test|2=Meeting With Future Team Member|3=Meeting With CODIR Member|4=Notification Of Decision</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </next_step>
-      <office>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>office</name>
-        <number>7</number>
-        <picker>0</picker>
-        <prettyName>Office</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>1=Paris|2=Iasi</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </office>
-      <phone>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>phone</name>
-        <number>6</number>
-        <picker>0</picker>
-        <prettyName>Phone Number</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </phone>
-      <skype>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>skype</name>
-        <number>5</number>
-        <picker>0</picker>
-        <prettyName>Skype</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </skype>
-      <sourceChannel>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>sourceChannel</name>
-        <number>22</number>
-        <picker>0</picker>
-        <prettyName>Source Channel</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </sourceChannel>
-      <sourceType>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>sourceType</name>
-        <number>15</number>
-        <picker>0</picker>
-        <prettyName>Source</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>0=Direct Application|1=Referral|2=Search</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </sourceType>
-      <sourcingDetails>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>sourcingDetails</name>
-        <number>16</number>
-        <picker>0</picker>
-        <prettyName>Sourcing details</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </sourcingDetails>
-      <status>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>status</name>
-        <number>8</number>
-        <picker>0</picker>
-        <prettyName>Status</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>1=None|2=Active|3=Accepted|4=Dormat|5=Lost|6=Refused|7=Other</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </status>
-    </class>
-    <name>RecruitmentApp.RecruitmentAppTemplate</name>
-    <number>0</number>
-    <className>RecruitmentApp.RecruitmentAppClass</className>
-    <guid>e9fd72e0-be15-4049-964b-6da53abe950a</guid>
-    <property>
-      <applyDate/>
-    </property>
-    <property>
-      <assignee/>
-    </property>
-    <property>
-      <current_company/>
-    </property>
-    <property>
-      <current_position/>
-    </property>
-    <property>
-      <details/>
-    </property>
-    <property>
-      <email/>
-    </property>
-    <property>
-      <endDate/>
-    </property>
-    <property>
-      <experience>0</experience>
-    </property>
-    <property>
-      <facebook/>
-    </property>
-    <property>
-      <first_name/>
-    </property>
-    <property>
-      <hiringDate/>
-    </property>
-    <property>
-      <jobPosting/>
-    </property>
-    <property>
-      <last_name/>
-    </property>
-    <property>
-      <linkedin/>
-    </property>
-    <property>
-      <next_step>0</next_step>
-    </property>
-    <property>
-      <office>1</office>
-    </property>
-    <property>
-      <phone/>
-    </property>
-    <property>
-      <skype/>
-    </property>
-    <property>
-      <sourceChannel/>
-    </property>
-    <property>
-      <sourceType>0</sourceType>
-    </property>
-    <property>
-      <sourcingDetails/>
-    </property>
-    <property>
-      <status>1</status>
-    </property>
-  </object>
-  <content/>
-</xwikidoc>
+<web>RecruitmentApp</web>
+<name>RecruitmentAppTemplate</name>
+<language></language>
+<defaultLanguage></defaultLanguage>
+<translation>0</translation>
+<parent>RecruitmentAppClass</parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1367311698000</creationDate>
+<date>1368524688000</date>
+<contentUpdateDate>1368524688000</contentUpdateDate>
+<version>15.3</version>
+<title></title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment>Deleted object</comment>
+<minorEdit>true</minorEdit>
+<syntaxId>xwiki/2.1</syntaxId>
+<hidden>true</hidden>
+<object>
+<class>
+<name>RecruitmentApp.RecruitmentAppClass</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<applyDate>
+<customDisplay></customDisplay>
+<dateFormat>dd/MM/yyyy</dateFormat>
+<disabled>0</disabled>
+<emptyIsToday>0</emptyIsToday>
+<name>applyDate</name>
+<number>11</number>
+<picker>1</picker>
+<prettyName>Apply date</prettyName>
+<size>20</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.DateClass</classType>
+</applyDate>
+<assignee>
+<cache>0</cache>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>input</displayType>
+<multiSelect>0</multiSelect>
+<name>assignee</name>
+<number>1</number>
+<picker>1</picker>
+<prettyName>Assignee</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators></separators>
+<size>20</size>
+<sort>none</sort>
+<unmodifiable>0</unmodifiable>
+<usesList>0</usesList>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.UsersClass</classType>
+</assignee>
+<coverLetter>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>coverLetter</name>
+<number>24</number>
+<picker>0</picker>
+<prettyName>Cover Letter</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</coverLetter>
+<current_company>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>current_company</name>
+<number>10</number>
+<picker>0</picker>
+<prettyName>Current company</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</current_company>
+<current_position>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>current_position</name>
+<number>9</number>
+<picker>0</picker>
+<prettyName>Current position</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</current_position>
+<cv>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>cv</name>
+<number>23</number>
+<picker>0</picker>
+<prettyName>CV</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</cv>
+<details>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>details</name>
+<number>14</number>
+<picker>0</picker>
+<prettyName>Other Details</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</details>
+<email>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>email</name>
+<number>4</number>
+<picker>0</picker>
+<prettyName>Email</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</email>
+<endDate>
+<customDisplay></customDisplay>
+<dateFormat>dd/MM/yyyy</dateFormat>
+<disabled>0</disabled>
+<emptyIsToday>0</emptyIsToday>
+<name>endDate</name>
+<number>13</number>
+<picker>1</picker>
+<prettyName>Contract end date</prettyName>
+<size>20</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.DateClass</classType>
+</endDate>
+<experience>
+<cache>0</cache>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>experience</name>
+<number>19</number>
+<picker>0</picker>
+<prettyName>Experience</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<sort>none</sort>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<values>0=Less than 1 year|1=1-3 years|2=3-5 years|3=More than 5 years</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</experience>
+<facebook>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>facebook</name>
+<number>21</number>
+<picker>0</picker>
+<prettyName>Facebook</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</facebook>
+<first_name>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>first_name</name>
+<number>2</number>
+<picker>0</picker>
+<prettyName>First name</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</first_name>
+<hiringDate>
+<customDisplay></customDisplay>
+<dateFormat>dd/MM/yyyy</dateFormat>
+<disabled>0</disabled>
+<emptyIsToday>0</emptyIsToday>
+<name>hiringDate</name>
+<number>12</number>
+<picker>1</picker>
+<prettyName>Hiring date</prettyName>
+<size>20</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.DateClass</classType>
+</hiringDate>
+<jobPosting>
+<cache>0</cache>
+<classname>JobArea.JobAreaClass</classname>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>input</displayType>
+<idField>position</idField>
+<multiSelect>0</multiSelect>
+<name>jobPosting</name>
+<number>24</number>
+<picker>1</picker>
+<prettyName>Job Posting</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators></separators>
+<size>25</size>
+<sort>none</sort>
+<sql></sql>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<valueField>position</valueField>
+<classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
+</jobPosting>
+<last_name>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>last_name</name>
+<number>3</number>
+<picker>0</picker>
+<prettyName>Last name</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</last_name>
+<linkedin>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>linkedin</name>
+<number>20</number>
+<picker>0</picker>
+<prettyName>Linkedin</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</linkedin>
+<next_step>
+<cache>0</cache>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>next_step</name>
+<number>17</number>
+<picker>0</picker>
+<prettyName>Next step</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<sort>none</sort>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<values>0=HR First Meeting|1=Technical Test|2=Meeting With Future Team Member|3=Meeting With CODIR Member|4=Notification Of Decision</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</next_step>
+<office>
+<cache>0</cache>
+<classname>RecruitmentApp.OfficeClass</classname>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<idField>office</idField>
+<multiSelect>0</multiSelect>
+<name>office</name>
+<number>23</number>
+<picker>0</picker>
+<prettyName>Office</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators></separators>
+<size>1</size>
+<sort>none</sort>
+<sql></sql>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<valueField>office</valueField>
+<classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
+</office>
+<phone>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>phone</name>
+<number>6</number>
+<picker>0</picker>
+<prettyName>Phone Number</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</phone>
+<skype>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>skype</name>
+<number>5</number>
+<picker>0</picker>
+<prettyName>Skype</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</skype>
+<sourceChannel>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>sourceChannel</name>
+<number>22</number>
+<picker>0</picker>
+<prettyName>Source Channel</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</sourceChannel>
+<sourceType>
+<cache>0</cache>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>sourceType</name>
+<number>15</number>
+<picker>0</picker>
+<prettyName>Source</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<sort>none</sort>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<values>0=Direct Application|1=Referral|2=Search</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</sourceType>
+<sourcingDetails>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>sourcingDetails</name>
+<number>16</number>
+<picker>0</picker>
+<prettyName>Sourcing details</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</sourcingDetails>
+<status>
+<cache>0</cache>
+<classname>RecruitmentApp.StatusClass</classname>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<idField>status</idField>
+<multiSelect>0</multiSelect>
+<name>status</name>
+<number>24</number>
+<picker>0</picker>
+<prettyName>Status</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators></separators>
+<size>1</size>
+<sort>none</sort>
+<sql></sql>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<valueField>status</valueField>
+<classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
+</status>
+</class>
+<name>RecruitmentApp.RecruitmentAppTemplate</name>
+<number>0</number>
+<className>RecruitmentApp.RecruitmentAppClass</className>
+<guid>e9fd72e0-be15-4049-964b-6da53abe950a</guid>
+<property>
+<applyDate></applyDate>
+</property>
+<property>
+<assignee></assignee>
+</property>
+<property>
+<current_company></current_company>
+</property>
+<property>
+<current_position></current_position>
+</property>
+<property>
+<details></details>
+</property>
+<property>
+<email></email>
+</property>
+<property>
+<endDate></endDate>
+</property>
+<property>
+<experience>0</experience>
+</property>
+<property>
+<facebook></facebook>
+</property>
+<property>
+<first_name></first_name>
+</property>
+<property>
+<hiringDate></hiringDate>
+</property>
+<property>
+<jobPosting></jobPosting>
+</property>
+<property>
+<last_name></last_name>
+</property>
+<property>
+<linkedin></linkedin>
+</property>
+<property>
+<next_step>0</next_step>
+</property>
+<property>
+<office>1</office>
+</property>
+<property>
+<phone></phone>
+</property>
+<property>
+<skype></skype>
+</property>
+<property>
+<sourceChannel></sourceChannel>
+</property>
+<property>
+<sourceType>0</sourceType>
+</property>
+<property>
+<sourcingDetails></sourcingDetails>
+</property>
+<property>
+<status>1</status>
+</property>
+</object>
+<content></content>
+<versions>head	15.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+15.3
+date	2013.05.14.12.44.48;	author XWiki_2EAdmin;	state full;
+branches;
+next	15.2;
+
+15.2
+date	2013.05.14.12.44.12;	author XWiki_2EAdmin;	state full;
+branches;
+next	15.1;
+
+15.1
+date	2013.05.14.12.44.02;	author XWiki_2EAdmin;	state diff;
+branches;
+next	14.5;
+
+14.5
+date	2013.05.14.11.10.19;	author XWiki_2EAdmin;	state diff;
+branches;
+next	14.4;
+
+14.4
+date	2013.05.14.11.10.18;	author XWiki_2EAdmin;	state diff;
+branches;
+next	14.3;
+
+14.3
+date	2013.05.13.12.43.39;	author XWiki_2EAdmin;	state diff;
+branches;
+next	14.2;
+
+14.2
+date	2013.05.13.12.28.42;	author XWiki_2EAdmin;	state full;
+branches;
+next	14.1;
+
+14.1
+date	2013.05.09.13.28.00;	author XWiki_2EAdmin;	state diff;
+branches;
+next	13.3;
+
+13.3
+date	2013.05.09.13.27.38;	author XWiki_2EAdmin;	state diff;
+branches;
+next	13.2;
+
+13.2
+date	2013.05.09.13.27.38;	author XWiki_2EAdmin;	state diff;
+branches;
+next	13.1;
+
+13.1
+date	2013.05.07.11.22.47;	author XWiki_2EAdmin;	state diff;
+branches;
+next	12.1;
+
+12.1
+date	2013.05.03.13.19.43;	author XWiki_2EAdmin;	state full;
+branches;
+next	11.2;
+
+11.2
+date	2013.05.03.13.19.42;	author XWiki_2EAdmin;	state diff;
+branches;
+next	11.1;
+
+11.1
+date	2013.05.03.13.12.17;	author XWiki_2EAdmin;	state diff;
+branches;
+next	10.1;
+
+10.1
+date	2013.05.03.13.12.14;	author XWiki_2EAdmin;	state diff;
+branches;
+next	9.1;
+
+9.1
+date	2013.05.03.13.11.09;	author XWiki_2EAdmin;	state diff;
+branches;
+next	8.1;
+
+8.1
+date	2013.05.03.13.10.56;	author XWiki_2EAdmin;	state full;
+branches;
+next	7.2;
+
+7.2
+date	2013.05.03.13.10.55;	author XWiki_2EAdmin;	state diff;
+branches;
+next	7.1;
+
+7.1
+date	2013.05.02.14.46.46;	author XWiki_2EAdmin;	state diff;
+branches;
+next	6.1;
+
+6.1
+date	2013.05.02.14.46.44;	author XWiki_2EAdmin;	state diff;
+branches;
+next	5.1;
+
+5.1
+date	2013.04.30.12.27.27;	author XWiki_2EAdmin;	state diff;
+branches;
+next	4.1;
+
+4.1
+date	2013.04.30.12.09.14;	author XWiki_2EAdmin;	state full;
+branches;
+next	3.2;
+
+3.2
+date	2013.04.30.12.04.11;	author XWiki_2EAdmin;	state diff;
+branches;
+next	3.1;
+
+3.1
+date	2013.04.30.12.03.51;	author XWiki_2EAdmin;	state diff;
+branches;
+next	2.1;
+
+2.1
+date	2013.04.30.11.49.37;	author XWiki_2EAdmin;	state diff;
+branches;
+next	1.1;
+
+1.1
+date	2013.04.30.11.48.19;	author XWiki_2EAdmin;	state diff;
+branches;
+next	;
+
+
+desc
+@@
+
+
+15.3
+log
+@Deleted object
+@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;RecruitmentApp&lt;/web&gt;
+&lt;name&gt;RecruitmentAppTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;RecruitmentAppClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367311698000&lt;/creationDate&gt;
+&lt;date&gt;1368524688000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368524688000&lt;/contentUpdateDate&gt;
+&lt;version&gt;15.3&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;Deleted object&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;applyDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;applyDate&lt;/name&gt;
+&lt;number&gt;11&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Apply date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/applyDate&gt;
+&lt;assignee&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;input&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;assignee&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Assignee&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt;&lt;/separators&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;usesList&gt;0&lt;/usesList&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
+&lt;/assignee&gt;
+&lt;current_company&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;current_company&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Current company&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/current_company&gt;
+&lt;current_position&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;current_position&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Current position&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/current_position&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;14&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Other Details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;email&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;email&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Email&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/email&gt;
+&lt;endDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;endDate&lt;/name&gt;
+&lt;number&gt;13&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Contract end date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/endDate&gt;
+&lt;experience&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;experience&lt;/name&gt;
+&lt;number&gt;19&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Experience&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=Less than 1 year|1=1-3 years|2=3-5 years|3=More than 5 years&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/experience&gt;
+&lt;facebook&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;facebook&lt;/name&gt;
+&lt;number&gt;21&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Facebook&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/facebook&gt;
+&lt;first_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;first_name&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;First name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/first_name&gt;
+&lt;hiringDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;hiringDate&lt;/name&gt;
+&lt;number&gt;12&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Hiring date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/hiringDate&gt;
+&lt;jobPosting&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;jobPosting&lt;/name&gt;
+&lt;number&gt;18&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Job posting&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/jobPosting&gt;
+&lt;last_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;last_name&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Last name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/last_name&gt;
+&lt;linkedin&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;linkedin&lt;/name&gt;
+&lt;number&gt;20&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Linkedin&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/linkedin&gt;
+&lt;next_step&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;next_step&lt;/name&gt;
+&lt;number&gt;17&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Next step&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=HR First Meeting|1=Technical Test|2=Meeting With Future Team Member|3=Meeting With CODIR Member|4=Notification Of Decision&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/next_step&gt;
+&lt;office&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;office&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Office&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Paris|2=Iasi&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/office&gt;
+&lt;phone&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;phone&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Phone Number&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/phone&gt;
+&lt;skype&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/skype&gt;
+&lt;sourceChannel&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;sourceChannel&lt;/name&gt;
+&lt;number&gt;22&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Source Channel&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/sourceChannel&gt;
+&lt;sourceType&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;sourceType&lt;/name&gt;
+&lt;number&gt;15&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Source&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=Direct Application|1=Referral|2=Search&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/sourceType&gt;
+&lt;sourcingDetails&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;sourcingDetails&lt;/name&gt;
+&lt;number&gt;16&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Sourcing details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/sourcingDetails&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=None|2=Active|3=Accepted|4=Dormat|5=Lost|6=Refused|7=Other&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.RecruitmentAppClass&lt;/className&gt;
+&lt;guid&gt;e9fd72e0-be15-4049-964b-6da53abe950a&lt;/guid&gt;
+&lt;property&gt;
+&lt;applyDate&gt;&lt;/applyDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;assignee&gt;&lt;/assignee&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;current_company&gt;&lt;/current_company&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;current_position&gt;&lt;/current_position&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;email&gt;&lt;/email&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;endDate&gt;&lt;/endDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;experience&gt;0&lt;/experience&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;facebook&gt;&lt;/facebook&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;first_name&gt;&lt;/first_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;hiringDate&gt;&lt;/hiringDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;jobPosting&gt;&lt;/jobPosting&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;last_name&gt;&lt;/last_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;linkedin&gt;&lt;/linkedin&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;next_step&gt;0&lt;/next_step&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;office&gt;1&lt;/office&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;phone&gt;&lt;/phone&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;skype&gt;&lt;/skype&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourceChannel&gt;&lt;/sourceChannel&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourceType&gt;0&lt;/sourceType&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourcingDetails&gt;&lt;/sourcingDetails&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;1&lt;/status&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+15.2
+log
+@@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;RecruitmentApp&lt;/web&gt;
+&lt;name&gt;RecruitmentAppTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;RecruitmentAppClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367311698000&lt;/creationDate&gt;
+&lt;date&gt;1368524652000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368524642000&lt;/contentUpdateDate&gt;
+&lt;version&gt;15.2&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;applyDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;applyDate&lt;/name&gt;
+&lt;number&gt;11&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Apply date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/applyDate&gt;
+&lt;assignee&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;input&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;assignee&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Assignee&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt;&lt;/separators&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;usesList&gt;0&lt;/usesList&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
+&lt;/assignee&gt;
+&lt;current_company&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;current_company&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Current company&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/current_company&gt;
+&lt;current_position&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;current_position&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Current position&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/current_position&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;14&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Other Details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;email&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;email&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Email&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/email&gt;
+&lt;endDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;endDate&lt;/name&gt;
+&lt;number&gt;13&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Contract end date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/endDate&gt;
+&lt;experience&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;experience&lt;/name&gt;
+&lt;number&gt;19&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Experience&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=Less than 1 year|1=1-3 years|2=3-5 years|3=More than 5 years&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/experience&gt;
+&lt;facebook&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;facebook&lt;/name&gt;
+&lt;number&gt;21&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Facebook&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/facebook&gt;
+&lt;first_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;first_name&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;First name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/first_name&gt;
+&lt;hiringDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;hiringDate&lt;/name&gt;
+&lt;number&gt;12&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Hiring date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/hiringDate&gt;
+&lt;jobPosting&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;jobPosting&lt;/name&gt;
+&lt;number&gt;18&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Job posting&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/jobPosting&gt;
+&lt;last_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;last_name&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Last name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/last_name&gt;
+&lt;linkedin&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;linkedin&lt;/name&gt;
+&lt;number&gt;20&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Linkedin&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/linkedin&gt;
+&lt;next_step&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;next_step&lt;/name&gt;
+&lt;number&gt;17&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Next step&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=HR First Meeting|1=Technical Test|2=Meeting With Future Team Member|3=Meeting With CODIR Member|4=Notification Of Decision&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/next_step&gt;
+&lt;office&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;office&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Office&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Paris|2=Iasi&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/office&gt;
+&lt;phone&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;phone&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Phone Number&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/phone&gt;
+&lt;skype&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/skype&gt;
+&lt;sourceChannel&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;sourceChannel&lt;/name&gt;
+&lt;number&gt;22&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Source Channel&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/sourceChannel&gt;
+&lt;sourceType&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;sourceType&lt;/name&gt;
+&lt;number&gt;15&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Source&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=Direct Application|1=Referral|2=Search&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/sourceType&gt;
+&lt;sourcingDetails&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;sourcingDetails&lt;/name&gt;
+&lt;number&gt;16&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Sourcing details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/sourcingDetails&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=None|2=Active|3=Accepted|4=Dormat|5=Lost|6=Refused|7=Other&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.RecruitmentAppClass&lt;/className&gt;
+&lt;guid&gt;e9fd72e0-be15-4049-964b-6da53abe950a&lt;/guid&gt;
+&lt;property&gt;
+&lt;applyDate&gt;&lt;/applyDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;assignee&gt;&lt;/assignee&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;current_company&gt;&lt;/current_company&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;current_position&gt;&lt;/current_position&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;email&gt;&lt;/email&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;endDate&gt;&lt;/endDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;experience&gt;0&lt;/experience&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;facebook&gt;&lt;/facebook&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;first_name&gt;&lt;/first_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;hiringDate&gt;&lt;/hiringDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;jobPosting&gt;&lt;/jobPosting&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;last_name&gt;&lt;/last_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;linkedin&gt;&lt;/linkedin&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;next_step&gt;0&lt;/next_step&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;office&gt;1&lt;/office&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;phone&gt;&lt;/phone&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;skype&gt;&lt;/skype&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourceChannel&gt;&lt;/sourceChannel&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourceType&gt;0&lt;/sourceType&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourcingDetails&gt;&lt;/sourcingDetails&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;1&lt;/status&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;XWiki.JavaScriptExtension&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;cache&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;cache&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;prettyName&gt;Caching policy&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;values&gt;long|short|default|forbid&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/cache&gt;
+&lt;code&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;code&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;prettyName&gt;Code&lt;/prettyName&gt;
+&lt;rows&gt;20&lt;/rows&gt;
+&lt;size&gt;50&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/code&gt;
+&lt;name&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;name&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;prettyName&gt;Name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/name&gt;
+&lt;parse&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayFormType&gt;select&lt;/displayFormType&gt;
+&lt;displayType&gt;yesno&lt;/displayType&gt;
+&lt;name&gt;parse&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;prettyName&gt;Parse content&lt;/prettyName&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
+&lt;/parse&gt;
+&lt;use&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;use&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;prettyName&gt;Use this extension&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;values&gt;currentPage=Always on this page|onDemand=On demand|always=Always on this wiki&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/use&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;XWiki.JavaScriptExtension&lt;/className&gt;
+&lt;guid&gt;8b07a535-ca27-41d5-98ef-bac15217a495&lt;/guid&gt;
+&lt;property&gt;
+&lt;cache&gt;default&lt;/cache&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;code&gt;document.observe("xwiki:dom:loaded", function(){
+$$('.edit_section').each(function(item){ item.remove(); })
+});&lt;/code&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;name&gt;remove edit section&lt;/name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;parse&gt;&lt;/parse&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;use&gt;currentPage&lt;/use&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+15.1
+log
+@@
+text
+@d14 1
+a14 1
+&lt;date&gt;1368524642000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;15.1&lt;/version&gt;
+d22 1
+a22 1
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+d388 3
+d406 6
+d424 6
+d439 3
+d527 17
+@
+
+
+14.5
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1368519019000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368438219000&lt;/contentUpdateDate&gt;
+&lt;version&gt;14.5&lt;/version&gt;
+d22 1
+a22 1
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+d104 1
+a104 1
+&lt;prettyName&gt;Details&lt;/prettyName&gt;
+d340 1
+a340 1
+&lt;values&gt;0=Direct Application|1=Referral|2=Seach&lt;/values&gt;
+a393 3
+&lt;department&gt;1&lt;/department&gt;
+&lt;/property&gt;
+&lt;property&gt;
+a414 3
+&lt;next_steps&gt;&lt;/next_steps&gt;
+&lt;/property&gt;
+&lt;property&gt;
+a423 3
+&lt;sourceChannelName&gt;&lt;/sourceChannelName&gt;
+&lt;/property&gt;
+&lt;property&gt;
+d433 77
+@
+
+
+14.4
+log
+@@
+text
+@d14 1
+a14 1
+&lt;date&gt;1368519018000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;14.4&lt;/version&gt;
+@
+
+
+14.3
+log
+@Updated class property name
+@
+text
+@d14 1
+a14 1
+&lt;date&gt;1368438219000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;14.3&lt;/version&gt;
+d21 1
+a21 1
+&lt;comment&gt;Updated class property name&lt;/comment&gt;
+d140 34
+d228 13
+d309 13
+@
+
+
+14.2
+log
+@Updated class property name
+@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;RecruitmentApp&lt;/web&gt;
+&lt;name&gt;RecruitmentAppTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;RecruitmentAppClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367311698000&lt;/creationDate&gt;
+&lt;date&gt;1368437322000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368437322000&lt;/contentUpdateDate&gt;
+&lt;version&gt;14.2&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;Updated class property name&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;applyDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;applyDate&lt;/name&gt;
+&lt;number&gt;11&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Apply date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/applyDate&gt;
+&lt;current_company&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;current_company&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Current company&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/current_company&gt;
+&lt;current_position&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;current_position&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Current position&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/current_position&gt;
+&lt;department&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;department&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Department&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Technology|2=SysAdmin|3=Manager&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/department&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;14&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;email&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;email&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Email&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/email&gt;
+&lt;endDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;endDate&lt;/name&gt;
+&lt;number&gt;13&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Contract end date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/endDate&gt;
+&lt;first_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;first_name&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;First name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/first_name&gt;
+&lt;hiringDate&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;dateFormat&gt;dd/MM/yyyy&lt;/dateFormat&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;emptyIsToday&gt;0&lt;/emptyIsToday&gt;
+&lt;name&gt;hiringDate&lt;/name&gt;
+&lt;number&gt;12&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;Hiring date&lt;/prettyName&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.DateClass&lt;/classType&gt;
+&lt;/hiringDate&gt;
+&lt;jobPosting&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;jobPosting&lt;/name&gt;
+&lt;number&gt;19&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Job posting&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/jobPosting&gt;
+&lt;last_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;last_name&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Last name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/last_name&gt;
+&lt;next_steps&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;next_steps&lt;/name&gt;
+&lt;number&gt;15&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Next steps&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/next_steps&gt;
+&lt;office&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;office&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Office&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Paris|2=Iasi&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/office&gt;
+&lt;phone&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;phone&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Phone&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/phone&gt;
+&lt;skype&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/skype&gt;
+&lt;sourceChannelName&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;sourceChannelName&lt;/name&gt;
+&lt;number&gt;17&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Source channel name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/sourceChannelName&gt;
+&lt;sourceType&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;sourceType&lt;/name&gt;
+&lt;number&gt;16&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Source type&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=Active search|1=Referal|2=Direct application|3=Events&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/sourceType&gt;
+&lt;sourcingDetails&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;sourcingDetails&lt;/name&gt;
+&lt;number&gt;18&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Sourcing details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/sourcingDetails&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=None|2=Accepted|3=Sourced|4=Hired&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.RecruitmentAppClass&lt;/className&gt;
+&lt;guid&gt;e9fd72e0-be15-4049-964b-6da53abe950a&lt;/guid&gt;
+&lt;property&gt;
+&lt;applyDate&gt;&lt;/applyDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;current_company&gt;&lt;/current_company&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;current_position&gt;&lt;/current_position&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;department&gt;1&lt;/department&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;email&gt;&lt;/email&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;endDate&gt;&lt;/endDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;first_name&gt;&lt;/first_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;hiringDate&gt;&lt;/hiringDate&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;jobPosting&gt;&lt;/jobPosting&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;last_name&gt;&lt;/last_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;next_steps&gt;&lt;/next_steps&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;office&gt;1&lt;/office&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;phone&gt;&lt;/phone&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;skype&gt;&lt;/skype&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourceChannelName&gt;&lt;/sourceChannelName&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourceType&gt;0&lt;/sourceType&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;sourcingDetails&gt;&lt;/sourcingDetails&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;1&lt;/status&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+14.1
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1368095280000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367914967000&lt;/contentUpdateDate&gt;
+&lt;version&gt;14.1&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+d168 1
+a168 1
+&lt;jobPosition&gt;
+d171 1
+a171 1
+&lt;name&gt;jobPosition&lt;/name&gt;
+d174 1
+a174 1
+&lt;prettyName&gt;Job position&lt;/prettyName&gt;
+d180 1
+a180 1
+&lt;/jobPosition&gt;
+d359 1
+a359 1
+&lt;jobPosition&gt;&lt;/jobPosition&gt;
+@
+
+
+13.3
+log
+@@
+text
+@d14 1
+a14 1
+&lt;date&gt;1368095258000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;13.3&lt;/version&gt;
+d22 1
+a22 1
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+d332 3
+d338 3
+d350 3
+d356 6
+d374 1
+a374 1
+&lt;rating&gt;&lt;/rating&gt;
+d377 1
+a377 1
+&lt;skype&gt;&lt;/skype&gt;
+d380 6
+@
+
+
+13.2
+log
+@@
+text
+@d16 1
+a16 1
+&lt;version&gt;13.2&lt;/version&gt;
+@
+
+
+13.1
+log
+@Update default values
+@
+text
+@d14 1
+a14 1
+&lt;date&gt;1367914967000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;13.1&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;Update default values&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+d35 15
+d54 1
+a54 1
+&lt;number&gt;11&lt;/number&gt;
+d67 1
+a67 1
+&lt;number&gt;10&lt;/number&gt;
+d94 1
+a94 1
+&lt;values&gt;1=Technology|2=SysAdmin&lt;/values&gt;
+d102 1
+a102 1
+&lt;number&gt;12&lt;/number&gt;
+d125 15
+d153 28
+d199 1
+a199 1
+&lt;number&gt;13&lt;/number&gt;
+d243 1
+a243 1
+&lt;rating&gt;
+d246 4
+a249 4
+&lt;name&gt;rating&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;numberType&gt;integer&lt;/numberType&gt;
+&lt;prettyName&gt;Rating&lt;/prettyName&gt;
+d254 3
+a256 3
+&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
+&lt;/rating&gt;
+&lt;skype&gt;
+d259 2
+a260 2
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+d262 1
+a262 1
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+d268 37
+a304 1
+&lt;/skype&gt;
+d323 1
+a323 1
+&lt;values&gt;1=None|2=Accepted&lt;/values&gt;
+@
+
+
+12.1
+log
+@@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;RecruitmentApp&lt;/web&gt;
+&lt;name&gt;RecruitmentAppTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;RecruitmentAppClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367311698000&lt;/creationDate&gt;
+&lt;date&gt;1367576383000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367576382000&lt;/contentUpdateDate&gt;
+&lt;version&gt;12.1&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;department&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;department&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Department&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Technology|2=SysAdmin&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/department&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;email&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;email&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Email&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/email&gt;
+&lt;first_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;first_name&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;First name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/first_name&gt;
+&lt;last_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;last_name&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Last name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/last_name&gt;
+&lt;next_steps&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;next_steps&lt;/name&gt;
+&lt;number&gt;11&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Next steps&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/next_steps&gt;
+&lt;office&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;office&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Office&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Paris|2=Iasi&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/office&gt;
+&lt;phone&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;phone&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Phone&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/phone&gt;
+&lt;rating&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;rating&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;numberType&gt;integer&lt;/numberType&gt;
+&lt;prettyName&gt;Rating&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
+&lt;/rating&gt;
+&lt;skype&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/skype&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=None|2=Accepted&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.RecruitmentAppClass&lt;/className&gt;
+&lt;guid&gt;e9fd72e0-be15-4049-964b-6da53abe950a&lt;/guid&gt;
+&lt;property&gt;
+&lt;department&gt;1&lt;/department&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;email&gt;&lt;/email&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;first_name&gt;&lt;/first_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;last_name&gt;&lt;/last_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;next_steps&gt;&lt;/next_steps&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;office&gt;1&lt;/office&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;phone&gt;&lt;/phone&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;rating&gt;&lt;/rating&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;skype&gt;&lt;/skype&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;1&lt;/status&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+11.2
+log
+@Deleted object
+@
+text
+@d14 1
+a14 1
+&lt;date&gt;1367576382000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;11.2&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;Deleted object&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+@
+
+
+11.1
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367575937000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367575934000&lt;/contentUpdateDate&gt;
+&lt;version&gt;11.1&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+a26 91
+&lt;name&gt;RecruitmentApp.EvaluationClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;---&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;evaluator&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;input&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;evaluator&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;evaluator&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt;&lt;/separators&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;usesList&gt;0&lt;/usesList&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
+&lt;/evaluator&gt;
+&lt;hire&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;defaultValue&gt;&lt;/defaultValue&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayFormType&gt;select&lt;/displayFormType&gt;
+&lt;displayType&gt;&lt;/displayType&gt;
+&lt;name&gt;hire&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;prettyName&gt;hire&lt;/prettyName&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
+&lt;/hire&gt;
+&lt;mark&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;mark&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;numberType&gt;long&lt;/numberType&gt;
+&lt;prettyName&gt;mark&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
+&lt;/mark&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.EvaluationClass&lt;/className&gt;
+&lt;guid&gt;dae933c0-bf08-4053-b20b-506d3175a8c5&lt;/guid&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;evaluator&gt;&lt;/evaluator&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;hire&gt;&lt;/hire&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;mark&gt;&lt;/mark&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;object&gt;
+&lt;class&gt;
+@
+
+
+10.1
+log
+@@
+text
+@d14 1
+a14 1
+&lt;date&gt;1367575934000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;10.1&lt;/version&gt;
+d103 12
+@
+
+
+9.1
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367575869000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367575855000&lt;/contentUpdateDate&gt;
+&lt;version&gt;9.1&lt;/version&gt;
+d27 79
+@
+
+
+8.1
+log
+@@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;RecruitmentApp&lt;/web&gt;
+&lt;name&gt;RecruitmentAppTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;RecruitmentAppClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367311698000&lt;/creationDate&gt;
+&lt;date&gt;1367575856000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367575855000&lt;/contentUpdateDate&gt;
+&lt;version&gt;8.1&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;department&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;department&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Department&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Technology|2=SysAdmin&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/department&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;email&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;email&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Email&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/email&gt;
+&lt;first_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;first_name&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;First name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/first_name&gt;
+&lt;last_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;last_name&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Last name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/last_name&gt;
+&lt;next_steps&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;next_steps&lt;/name&gt;
+&lt;number&gt;11&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Next steps&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/next_steps&gt;
+&lt;office&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;office&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Office&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Paris|2=Iasi&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/office&gt;
+&lt;phone&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;phone&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Phone&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/phone&gt;
+&lt;rating&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;rating&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;numberType&gt;integer&lt;/numberType&gt;
+&lt;prettyName&gt;Rating&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
+&lt;/rating&gt;
+&lt;skype&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/skype&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=None|2=Accepted&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.RecruitmentAppClass&lt;/className&gt;
+&lt;guid&gt;e9fd72e0-be15-4049-964b-6da53abe950a&lt;/guid&gt;
+&lt;property&gt;
+&lt;department&gt;1&lt;/department&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;email&gt;&lt;/email&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;first_name&gt;&lt;/first_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;last_name&gt;&lt;/last_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;next_steps&gt;&lt;/next_steps&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;office&gt;1&lt;/office&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;phone&gt;&lt;/phone&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;rating&gt;&lt;/rating&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;skype&gt;&lt;/skype&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;1&lt;/status&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+7.2
+log
+@Deleted object
+@
+text
+@d14 1
+a14 1
+&lt;date&gt;1367575855000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;7.2&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;Deleted object&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+@
+
+
+7.1
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367495206000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367495204000&lt;/contentUpdateDate&gt;
+&lt;version&gt;7.1&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+a26 91
+&lt;name&gt;RecruitmentApp.EvaluationClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;---&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;evaluator&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;input&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;evaluator&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;1&lt;/picker&gt;
+&lt;prettyName&gt;evaluator&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt;&lt;/separators&gt;
+&lt;size&gt;20&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;usesList&gt;0&lt;/usesList&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
+&lt;/evaluator&gt;
+&lt;hire&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;defaultValue&gt;&lt;/defaultValue&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayFormType&gt;select&lt;/displayFormType&gt;
+&lt;displayType&gt;&lt;/displayType&gt;
+&lt;name&gt;hire&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;prettyName&gt;hire&lt;/prettyName&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
+&lt;/hire&gt;
+&lt;mark&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;mark&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;numberType&gt;long&lt;/numberType&gt;
+&lt;prettyName&gt;mark&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
+&lt;/mark&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.EvaluationClass&lt;/className&gt;
+&lt;guid&gt;c8d25cd9-6f8f-4cd1-a34c-732ce1bc95c2&lt;/guid&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;evaluator&gt;&lt;/evaluator&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;hire&gt;&lt;/hire&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;mark&gt;&lt;/mark&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;object&gt;
+&lt;class&gt;
+@
+
+
+6.1
+log
+@@
+text
+@d14 1
+a14 1
+&lt;date&gt;1367495204000&lt;/date&gt;
+d16 1
+a16 1
+&lt;version&gt;6.1&lt;/version&gt;
+d103 12
+@
+
+
+5.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367314047000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367314047000&lt;/contentUpdateDate&gt;
+&lt;version&gt;5.1&lt;/version&gt;
+d21 1
+a21 1
+&lt;comment&gt;Update default values&lt;/comment&gt;
+d27 79
+@
+
+
+4.1
+log
+@Update default values
+@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;RecruitmentApp&lt;/web&gt;
+&lt;name&gt;RecruitmentAppTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;RecruitmentAppClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367311698000&lt;/creationDate&gt;
+&lt;date&gt;1367312954000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367312954000&lt;/contentUpdateDate&gt;
+&lt;version&gt;4.1&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;Update default values&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;department&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;department&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Department&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Technology|2=SysAdmin&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/department&gt;
+&lt;details&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;details&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/details&gt;
+&lt;email&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;email&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Email&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/email&gt;
+&lt;first_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;first_name&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;First name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/first_name&gt;
+&lt;last_name&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;last_name&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Last name&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/last_name&gt;
+&lt;next_steps&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;next_steps&lt;/name&gt;
+&lt;number&gt;11&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Next steps&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/next_steps&gt;
+&lt;office&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;office&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Office&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=Paris|2=Iasi&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/office&gt;
+&lt;phone&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;phone&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Phone&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/phone&gt;
+&lt;rating&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;rating&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;numberType&gt;integer&lt;/numberType&gt;
+&lt;prettyName&gt;Rating&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
+&lt;/rating&gt;
+&lt;skype&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;skype&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Skype&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/skype&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;1=None|2=Accepted&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;/class&gt;
+&lt;name&gt;RecruitmentApp.RecruitmentAppTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;RecruitmentApp.RecruitmentAppClass&lt;/className&gt;
+&lt;guid&gt;e9fd72e0-be15-4049-964b-6da53abe950a&lt;/guid&gt;
+&lt;property&gt;
+&lt;department&gt;1&lt;/department&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;details&gt;&lt;/details&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;email&gt;&lt;/email&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;first_name&gt;&lt;/first_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;last_name&gt;&lt;/last_name&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;next_steps&gt;&lt;/next_steps&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;office&gt;1&lt;/office&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;phone&gt;&lt;/phone&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;rating&gt;&lt;/rating&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;skype&gt;&lt;/skype&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;1&lt;/status&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+3.2
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367312651000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367312651000&lt;/contentUpdateDate&gt;
+&lt;version&gt;3.2&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+d90 1
+a90 1
+&lt;prettyName&gt;First Name&lt;/prettyName&gt;
+@
+
+
+3.1
+log
+@@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367312631000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367312631000&lt;/contentUpdateDate&gt;
+&lt;version&gt;3.1&lt;/version&gt;
+d22 1
+a22 1
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+d245 1
+a245 1
+&lt;content&gt;asdasdasdasdasd&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+2.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367311777000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367311777000&lt;/contentUpdateDate&gt;
+&lt;version&gt;2.1&lt;/version&gt;
+d21 1
+a21 1
+&lt;comment&gt;Update default values&lt;/comment&gt;
+d245 1
+a245 1
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+1.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367311699000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367311699000&lt;/contentUpdateDate&gt;
+&lt;version&gt;1.1&lt;/version&gt;
+d44 1
+a44 1
+&lt;prettyName&gt;department&lt;/prettyName&gt;
+d63 1
+a63 1
+&lt;prettyName&gt;details&lt;/prettyName&gt;
+d77 1
+a77 1
+&lt;prettyName&gt;email&lt;/prettyName&gt;
+d90 1
+a90 1
+&lt;prettyName&gt;first Name&lt;/prettyName&gt;
+d117 1
+a117 1
+&lt;prettyName&gt;next steps&lt;/prettyName&gt;
+d134 1
+a134 1
+&lt;prettyName&gt;office&lt;/prettyName&gt;
+d165 1
+a165 1
+&lt;prettyName&gt;rating&lt;/prettyName&gt;
+d178 1
+a178 1
+&lt;prettyName&gt;skype&lt;/prettyName&gt;
+d194 1
+a194 1
+&lt;prettyName&gt;status&lt;/prettyName&gt;
+@
+</versions></xwikidoc>

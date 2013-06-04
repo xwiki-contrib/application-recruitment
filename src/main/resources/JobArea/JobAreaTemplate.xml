@@ -1,233 +1,940 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <xwikidoc>
-  <web>JobArea</web>
-  <name>JobAreaTemplate</name>
-  <language/>
-  <defaultLanguage/>
-  <translation>0</translation>
-  <parent>JobAreaClass</parent>
-  <creator>xwiki:XWiki.Admin</creator>
-  <author>xwiki:XWiki.Admin</author>
-  <customClass/>
-  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1367917341000</creationDate>
-  <date>1368435134000</date>
-  <contentUpdateDate>1368435134000</contentUpdateDate>
-  <version>1.1</version>
-  <title/>
-  <template/>
-  <defaultTemplate/>
-  <validationScript/>
-  <comment/>
-  <minorEdit>false</minorEdit>
-  <syntaxId>xwiki/2.1</syntaxId>
-  <hidden>true</hidden>
-  <object>
-    <class>
-      <name>JobArea.JobAreaClass</name>
-      <customClass/>
-      <customMapping/>
-      <defaultViewSheet/>
-      <defaultEditSheet/>
-      <defaultWeb/>
-      <nameField/>
-      <validationScript/>
-      <benefits>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>benefits</name>
-        <number>7</number>
-        <picker>0</picker>
-        <prettyName>Benefits</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </benefits>
-      <companyDescription>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>companyDescription</name>
-        <number>3</number>
-        <picker>0</picker>
-        <prettyName>Description of the company</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </companyDescription>
-      <introduction>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>introduction</name>
-        <number>2</number>
-        <picker>0</picker>
-        <prettyName>Introduction</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </introduction>
-      <otherDetails>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>otherDetails</name>
-        <number>8</number>
-        <picker>0</picker>
-        <prettyName>Other details</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </otherDetails>
-      <otherSkills>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>otherSkills</name>
-        <number>6</number>
-        <picker>0</picker>
-        <prettyName>Other expected skills</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </otherSkills>
-      <position>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <name>position</name>
-        <number>1</number>
-        <picker>0</picker>
-        <prettyName>Job Posting</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </position>
-      <requiredCompetences>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>requiredCompetences</name>
-        <number>5</number>
-        <picker>0</picker>
-        <prettyName>Required competences</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </requiredCompetences>
-      <responsibilities>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <editor>Wysiwyg</editor>
-        <name>responsibilities</name>
-        <number>4</number>
-        <picker>0</picker>
-        <prettyName>Responsibilities</prettyName>
-        <rows>5</rows>
-        <size>40</size>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </responsibilities>
-      <status>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>status</name>
-        <number>9</number>
-        <picker>0</picker>
-        <prettyName>Status</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>0=None|1=Inactive|2=Active|3=Prospect</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </status>
-      <validation>
-        <cache>0</cache>
-        <customDisplay/>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>validation</name>
-        <number>10</number>
-        <picker>0</picker>
-        <prettyName>Validation</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator/>
-        <separators> ,|</separators>
-        <size>1</size>
-        <sort>none</sort>
-        <unmodifiable>0</unmodifiable>
-        <validationMessage/>
-        <validationRegExp/>
-        <values>0=Draft|1=First Review|2=Final Review|3=Approved</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </validation>
-    </class>
-    <name>JobArea.JobAreaTemplate</name>
-    <number>0</number>
-    <className>JobArea.JobAreaClass</className>
-    <guid>288ce614-1b8a-4f19-83e4-abc5cb394038</guid>
-    <property>
-      <benefits>\\</benefits>
-    </property>
-    <property>
-      <companyDescription/>
-    </property>
-    <property>
-      <introduction/>
-    </property>
-    <property>
-      <otherDetails>\\</otherDetails>
-    </property>
-    <property>
-      <otherSkills>\\</otherSkills>
-    </property>
-    <property>
-      <position/>
-    </property>
-    <property>
-      <requiredCompetences>\\</requiredCompetences>
-    </property>
-    <property>
-      <responsibilities>\\</responsibilities>
-    </property>
-    <property>
-      <status>0</status>
-    </property>
-    <property>
-      <validation>0</validation>
-    </property>
-  </object>
-  <content/>
-</xwikidoc>
+<web>JobArea</web>
+<name>JobAreaTemplate</name>
+<language></language>
+<defaultLanguage></defaultLanguage>
+<translation>0</translation>
+<parent>JobAreaClass</parent>
+<creator>XWiki.Admin</creator>
+<author>XWiki.Admin</author>
+<customClass></customClass>
+<contentAuthor>XWiki.Admin</contentAuthor>
+<creationDate>1367917341000</creationDate>
+<date>1368435134000</date>
+<contentUpdateDate>1368435134000</contentUpdateDate>
+<version>6.1</version>
+<title></title>
+<template></template>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment>Update default values</comment>
+<minorEdit>false</minorEdit>
+<syntaxId>xwiki/2.1</syntaxId>
+<hidden>true</hidden>
+<object>
+<class>
+<name>JobArea.JobAreaClass</name>
+<customClass></customClass>
+<customMapping></customMapping>
+<defaultViewSheet></defaultViewSheet>
+<defaultEditSheet></defaultEditSheet>
+<defaultWeb></defaultWeb>
+<nameField></nameField>
+<validationScript></validationScript>
+<benefits>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>benefits</name>
+<number>7</number>
+<picker>0</picker>
+<prettyName>Benefits</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</benefits>
+<companyDescription>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>companyDescription</name>
+<number>3</number>
+<picker>0</picker>
+<prettyName>Description of the company</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</companyDescription>
+<introduction>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>introduction</name>
+<number>2</number>
+<picker>0</picker>
+<prettyName>Introduction</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</introduction>
+<otherDetails>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>otherDetails</name>
+<number>8</number>
+<picker>0</picker>
+<prettyName>Other details</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</otherDetails>
+<otherSkills>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>otherSkills</name>
+<number>6</number>
+<picker>0</picker>
+<prettyName>Other expected skills</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</otherSkills>
+<position>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<name>position</name>
+<number>1</number>
+<picker>0</picker>
+<prettyName>Job Posting</prettyName>
+<size>30</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+</position>
+<requiredCompetences>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>requiredCompetences</name>
+<number>5</number>
+<picker>0</picker>
+<prettyName>Required competences</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</requiredCompetences>
+<responsibilities>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<editor>Wysiwyg</editor>
+<name>responsibilities</name>
+<number>4</number>
+<picker>0</picker>
+<prettyName>Responsibilities</prettyName>
+<rows>5</rows>
+<size>40</size>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+</responsibilities>
+<status>
+<cache>0</cache>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>status</name>
+<number>9</number>
+<picker>0</picker>
+<prettyName>Status</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator> </separator>
+<separators> ,|</separators>
+<size>1</size>
+<sort>none</sort>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<values>0=None|1=Inactive|2=Active|3=Prospect</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</status>
+<validation>
+<cache>0</cache>
+<customDisplay></customDisplay>
+<disabled>0</disabled>
+<displayType>select</displayType>
+<multiSelect>0</multiSelect>
+<name>validation</name>
+<number>10</number>
+<picker>0</picker>
+<prettyName>Validation</prettyName>
+<relationalStorage>0</relationalStorage>
+<separator></separator>
+<separators> ,|</separators>
+<size>1</size>
+<sort>none</sort>
+<unmodifiable>0</unmodifiable>
+<validationMessage></validationMessage>
+<validationRegExp></validationRegExp>
+<values>0=Draft|1=First Review|2=Final Review|3=Approved</values>
+<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+</validation>
+</class>
+<name>JobArea.JobAreaTemplate</name>
+<number>0</number>
+<className>JobArea.JobAreaClass</className>
+<guid>288ce614-1b8a-4f19-83e4-abc5cb394038</guid>
+<property>
+<benefits>\\</benefits>
+</property>
+<property>
+<companyDescription></companyDescription>
+</property>
+<property>
+<introduction></introduction>
+</property>
+<property>
+<otherDetails>\\</otherDetails>
+</property>
+<property>
+<otherSkills>\\</otherSkills>
+</property>
+<property>
+<position></position>
+</property>
+<property>
+<requiredCompetences>\\</requiredCompetences>
+</property>
+<property>
+<responsibilities>\\</responsibilities>
+</property>
+<property>
+<status>0</status>
+</property>
+<property>
+<validation>0</validation>
+</property>
+</object>
+<content></content>
+<versions>head	6.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+6.1
+date	2013.05.13.11.52.14;	author XWiki_2EAdmin;	state full;
+branches;
+next	5.1;
+
+5.1
+date	2013.05.13.11.49.45;	author XWiki_2EAdmin;	state diff;
+branches;
+next	4.1;
+
+4.1
+date	2013.05.13.10.34.21;	author XWiki_2EAdmin;	state diff;
+branches;
+next	3.1;
+
+3.1
+date	2013.05.13.10.30.27;	author XWiki_2EAdmin;	state diff;
+branches;
+next	2.3;
+
+2.3
+date	2013.05.13.10.28.20;	author XWiki_2EAdmin;	state full;
+branches;
+next	2.2;
+
+2.2
+date	2013.05.13.10.22.47;	author XWiki_2EAdmin;	state diff;
+branches;
+next	2.1;
+
+2.1
+date	2013.05.07.12.02.51;	author XWiki_2EAdmin;	state diff;
+branches;
+next	1.2;
+
+1.2
+date	2013.05.07.12.02.49;	author XWiki_2EAdmin;	state diff;
+branches;
+next	1.1;
+
+1.1
+date	2013.05.07.12.02.21;	author XWiki_2EAdmin;	state diff;
+branches;
+next	;
+
+
+desc
+@@
+
+
+6.1
+log
+@Update default values
+@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;JobArea&lt;/web&gt;
+&lt;name&gt;JobAreaTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;JobAreaClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367917341000&lt;/creationDate&gt;
+&lt;date&gt;1368435134000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368435134000&lt;/contentUpdateDate&gt;
+&lt;version&gt;6.1&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;Update default values&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;JobArea.JobAreaClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;benefits&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;benefits&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Benefits&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/benefits&gt;
+&lt;companyDescription&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;companyDescription&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Description of the company&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/companyDescription&gt;
+&lt;introduction&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;introduction&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Introduction&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/introduction&gt;
+&lt;otherDetails&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;otherDetails&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Other details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/otherDetails&gt;
+&lt;otherSkills&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;otherSkills&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Other expected skills&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/otherSkills&gt;
+&lt;position&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;position&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Job Posting&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/position&gt;
+&lt;requiredCompetences&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;requiredCompetences&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Required competences&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/requiredCompetences&gt;
+&lt;responsibilities&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;responsibilities&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Responsibilities&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/responsibilities&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=None|1=Inactive|2=Active|3=Prospect&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;validation&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;validation&lt;/name&gt;
+&lt;number&gt;10&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Validation&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt;&lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=Draft|1=First Review|2=Final Review|3=Approved&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/validation&gt;
+&lt;/class&gt;
+&lt;name&gt;JobArea.JobAreaTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;JobArea.JobAreaClass&lt;/className&gt;
+&lt;guid&gt;288ce614-1b8a-4f19-83e4-abc5cb394038&lt;/guid&gt;
+&lt;property&gt;
+&lt;benefits&gt;\\&lt;/benefits&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;companyDescription&gt;&lt;/companyDescription&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;introduction&gt;&lt;/introduction&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;otherDetails&gt;\\&lt;/otherDetails&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;otherSkills&gt;\\&lt;/otherSkills&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;position&gt;&lt;/position&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;requiredCompetences&gt;\\&lt;/requiredCompetences&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;responsibilities&gt;\\&lt;/responsibilities&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;status&gt;0&lt;/status&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;validation&gt;0&lt;/validation&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+5.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1368434985000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368434985000&lt;/contentUpdateDate&gt;
+&lt;version&gt;5.1&lt;/version&gt;
+d40 1
+a40 1
+&lt;number&gt;6&lt;/number&gt;
+d55 1
+a55 1
+&lt;number&gt;2&lt;/number&gt;
+d70 1
+a70 1
+&lt;number&gt;10&lt;/number&gt;
+d85 1
+a85 1
+&lt;number&gt;7&lt;/number&gt;
+d100 1
+a100 1
+&lt;number&gt;5&lt;/number&gt;
+d128 1
+a128 1
+&lt;number&gt;4&lt;/number&gt;
+d143 1
+a143 1
+&lt;number&gt;3&lt;/number&gt;
+d160 1
+a160 1
+&lt;number&gt;8&lt;/number&gt;
+d181 1
+a181 1
+&lt;number&gt;9&lt;/number&gt;
+d201 1
+a201 1
+&lt;benefits&gt;&lt;/benefits&gt;
+d210 1
+a210 1
+&lt;otherDetails&gt;&lt;/otherDetails&gt;
+d213 1
+a213 1
+&lt;otherSkills&gt;&lt;/otherSkills&gt;
+d219 1
+a219 1
+&lt;requiredCompetences&gt;&lt;/requiredCompetences&gt;
+d222 1
+a222 1
+&lt;responsibilities&gt;&lt;/responsibilities&gt;
+@
+
+
+4.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1368430461000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368430461000&lt;/contentUpdateDate&gt;
+&lt;version&gt;4.1&lt;/version&gt;
+d65 15
+d185 1
+a185 1
+&lt;separator&gt;0=Draft|1=First Review&lt;/separator&gt;
+d207 3
+@
+
+
+3.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1368430227000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368430227000&lt;/contentUpdateDate&gt;
+&lt;version&gt;3.1&lt;/version&gt;
+d170 1
+a170 1
+&lt;separator&gt; 0=Draft|1=First Review|2=Final Review|3=Approved&lt;/separator&gt;
+d177 1
+a177 1
+&lt;values&gt;&lt;/values&gt;
+d210 1
+a210 1
+&lt;validation&gt;&lt;/validation&gt;
+@
+
+
+2.3
+log
+@Updated class property name
+@
+text
+@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xwikidoc&gt;
+&lt;web&gt;JobArea&lt;/web&gt;
+&lt;name&gt;JobAreaTemplate&lt;/name&gt;
+&lt;language&gt;&lt;/language&gt;
+&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
+&lt;translation&gt;0&lt;/translation&gt;
+&lt;parent&gt;JobAreaClass&lt;/parent&gt;
+&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
+&lt;author&gt;XWiki.Admin&lt;/author&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
+&lt;creationDate&gt;1367917341000&lt;/creationDate&gt;
+&lt;date&gt;1368430100000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368430100000&lt;/contentUpdateDate&gt;
+&lt;version&gt;2.3&lt;/version&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;template&gt;&lt;/template&gt;
+&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;comment&gt;Updated class property name&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
+&lt;hidden&gt;true&lt;/hidden&gt;
+&lt;object&gt;
+&lt;class&gt;
+&lt;name&gt;JobArea.JobAreaClass&lt;/name&gt;
+&lt;customClass&gt;&lt;/customClass&gt;
+&lt;customMapping&gt;&lt;/customMapping&gt;
+&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
+&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
+&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
+&lt;nameField&gt;&lt;/nameField&gt;
+&lt;validationScript&gt;&lt;/validationScript&gt;
+&lt;benefits&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;benefits&lt;/name&gt;
+&lt;number&gt;6&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Benefits&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/benefits&gt;
+&lt;companyDescription&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;companyDescription&lt;/name&gt;
+&lt;number&gt;2&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Description of the company&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/companyDescription&gt;
+&lt;otherDetails&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;otherDetails&lt;/name&gt;
+&lt;number&gt;7&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Other details&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/otherDetails&gt;
+&lt;otherSkills&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;otherSkills&lt;/name&gt;
+&lt;number&gt;5&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Other expected skills&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/otherSkills&gt;
+&lt;position&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;name&gt;position&lt;/name&gt;
+&lt;number&gt;1&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Job Posting&lt;/prettyName&gt;
+&lt;size&gt;30&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
+&lt;/position&gt;
+&lt;requiredCompetences&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;requiredCompetences&lt;/name&gt;
+&lt;number&gt;4&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Required competences&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/requiredCompetences&gt;
+&lt;responsibilities&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;editor&gt;Wysiwyg&lt;/editor&gt;
+&lt;name&gt;responsibilities&lt;/name&gt;
+&lt;number&gt;3&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Responsibilities&lt;/prettyName&gt;
+&lt;rows&gt;5&lt;/rows&gt;
+&lt;size&gt;40&lt;/size&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
+&lt;/responsibilities&gt;
+&lt;status&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;status&lt;/name&gt;
+&lt;number&gt;8&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Status&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; &lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;0=None|1=Inactive|2=Active|3=Prospect&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/status&gt;
+&lt;validation&gt;
+&lt;cache&gt;0&lt;/cache&gt;
+&lt;customDisplay&gt;&lt;/customDisplay&gt;
+&lt;disabled&gt;0&lt;/disabled&gt;
+&lt;displayType&gt;select&lt;/displayType&gt;
+&lt;multiSelect&gt;0&lt;/multiSelect&gt;
+&lt;name&gt;validation&lt;/name&gt;
+&lt;number&gt;9&lt;/number&gt;
+&lt;picker&gt;0&lt;/picker&gt;
+&lt;prettyName&gt;Validation&lt;/prettyName&gt;
+&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
+&lt;separator&gt; 0=Draft|1=First Review|2=Final Review|3=Approved&lt;/separator&gt;
+&lt;separators&gt; ,|&lt;/separators&gt;
+&lt;size&gt;1&lt;/size&gt;
+&lt;sort&gt;none&lt;/sort&gt;
+&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
+&lt;validationMessage&gt;&lt;/validationMessage&gt;
+&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
+&lt;values&gt;&lt;/values&gt;
+&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
+&lt;/validation&gt;
+&lt;/class&gt;
+&lt;name&gt;JobArea.JobAreaTemplate&lt;/name&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;className&gt;JobArea.JobAreaClass&lt;/className&gt;
+&lt;guid&gt;288ce614-1b8a-4f19-83e4-abc5cb394038&lt;/guid&gt;
+&lt;property&gt;
+&lt;companyDescription&gt;&lt;/companyDescription&gt;
+&lt;/property&gt;
+&lt;property&gt;
+&lt;position&gt;&lt;/position&gt;
+&lt;/property&gt;
+&lt;/object&gt;
+&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
+@
+
+
+2.2
+log
+@Updated class property name
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1368429767000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1368429767000&lt;/contentUpdateDate&gt;
+&lt;version&gt;2.2&lt;/version&gt;
+d40 1
+a40 1
+&lt;number&gt;7&lt;/number&gt;
+d65 15
+d85 1
+a85 1
+&lt;number&gt;6&lt;/number&gt;
+d113 1
+a113 1
+&lt;number&gt;5&lt;/number&gt;
+d128 1
+a128 1
+&lt;number&gt;4&lt;/number&gt;
+d145 1
+a145 1
+&lt;number&gt;3&lt;/number&gt;
+d147 1
+a147 1
+&lt;prettyName&gt;status&lt;/prettyName&gt;
+d156 1
+a156 1
+&lt;values&gt;0=Inactive|1=Active&lt;/values&gt;
+d159 21
+@
+
+
+2.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367917371000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367917371000&lt;/contentUpdateDate&gt;
+&lt;version&gt;2.1&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;Update default values&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+d35 1
+a35 1
+&lt;description&gt;
+d39 16
+a54 1
+&lt;name&gt;description&lt;/name&gt;
+d57 1
+a57 1
+&lt;prettyName&gt;Description&lt;/prettyName&gt;
+d64 16
+a79 1
+&lt;/description&gt;
+d86 1
+a86 1
+&lt;prettyName&gt;Position&lt;/prettyName&gt;
+d93 51
+d150 1
+a150 1
+&lt;description&gt;&lt;/description&gt;
+@
+
+
+1.2
+log
+@Updated class property name
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367917369000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367917369000&lt;/contentUpdateDate&gt;
+&lt;version&gt;1.2&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;Updated class property name&lt;/comment&gt;
+&lt;minorEdit&gt;true&lt;/minorEdit&gt;
+d69 3
+@
+
+
+1.1
+log
+@Update default values
+@
+text
+@d14 3
+a16 3
+&lt;date&gt;1367917341000&lt;/date&gt;
+&lt;contentUpdateDate&gt;1367917341000&lt;/contentUpdateDate&gt;
+&lt;version&gt;1.1&lt;/version&gt;
+d21 2
+a22 2
+&lt;comment&gt;Update default values&lt;/comment&gt;
+&lt;minorEdit&gt;false&lt;/minorEdit&gt;
+d35 1
+a35 1
+&lt;shortText1&gt;
+d38 16
+a53 1
+&lt;name&gt;shortText1&lt;/name&gt;
+d62 1
+a62 1
+&lt;/shortText1&gt;
+d69 1
+a69 1
+&lt;shortText1&gt;&lt;/shortText1&gt;
+@
+</versions></xwikidoc>
