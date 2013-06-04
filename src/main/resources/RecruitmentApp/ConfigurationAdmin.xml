@@ -1,1297 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xwikidoc>
-<web>RecruitmentApp</web>
-<name>ConfigurationAdmin</name>
-<language></language>
-<defaultLanguage>en</defaultLanguage>
-<translation>0</translation>
-<parent></parent>
-<creator>XWiki.Admin</creator>
-<author>XWiki.Admin</author>
-<customClass></customClass>
-<contentAuthor>XWiki.Admin</contentAuthor>
-<creationDate>1369819117000</creationDate>
-<date>1369819386000</date>
-<contentUpdateDate>1369819311000</contentUpdateDate>
-<version>3.5</version>
-<title></title>
-<template></template>
-<defaultTemplate></defaultTemplate>
-<validationScript></validationScript>
-<comment></comment>
-<minorEdit>true</minorEdit>
-<syntaxId>xwiki/2.1</syntaxId>
-<hidden>false</hidden>
-<object>
-<class>
-<name>XWiki.ConfigurableClass</name>
-<customClass></customClass>
-<customMapping></customMapping>
-<defaultViewSheet></defaultViewSheet>
-<defaultEditSheet></defaultEditSheet>
-<defaultWeb></defaultWeb>
-<nameField></nameField>
-<validationScript></validationScript>
-<codeToExecute>
-<disabled>0</disabled>
-<editor>---</editor>
-<name>codeToExecute</name>
-<number>7</number>
-<picker>0</picker>
-<prettyName>codeToExecute</prettyName>
-<rows>5</rows>
-<size>40</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-</codeToExecute>
-<configurationClass>
-<disabled>0</disabled>
-<name>configurationClass</name>
-<number>3</number>
-<picker>0</picker>
-<prettyName>configurationClass</prettyName>
-<size>30</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-</configurationClass>
-<configureGlobally>
-<defaultValue></defaultValue>
-<disabled>0</disabled>
-<displayFormType>checkbox</displayFormType>
-<displayType></displayType>
-<name>configureGlobally</name>
-<number>4</number>
-<prettyName>configureGlobally</prettyName>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
-</configureGlobally>
-<displayInSection>
-<disabled>0</disabled>
-<name>displayInSection</name>
-<number>1</number>
-<picker>0</picker>
-<prettyName>displayInSection</prettyName>
-<size>30</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-</displayInSection>
-<heading>
-<disabled>0</disabled>
-<name>heading</name>
-<number>2</number>
-<picker>0</picker>
-<prettyName>heading</prettyName>
-<size>30</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-</heading>
-<iconAttachment>
-<disabled>0</disabled>
-<name>iconAttachment</name>
-<number>8</number>
-<picker>0</picker>
-<prettyName>iconAttachment</prettyName>
-<size>30</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-</iconAttachment>
-<linkPrefix>
-<disabled>0</disabled>
-<name>linkPrefix</name>
-<number>5</number>
-<picker>0</picker>
-<prettyName>linkPrefix</prettyName>
-<size>30</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-</linkPrefix>
-<propertiesToShow>
-<cache>0</cache>
-<disabled>0</disabled>
-<displayType>input</displayType>
-<multiSelect>1</multiSelect>
-<name>propertiesToShow</name>
-<number>6</number>
-<picker>0</picker>
-<prettyName>propertiesToShow</prettyName>
-<relationalStorage>1</relationalStorage>
-<separator> </separator>
-<separators> ,|</separators>
-<size>20</size>
-<sort>none</sort>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<values></values>
-<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-</propertiesToShow>
-</class>
-<name>RecruitmentApp.ConfigurationAdmin</name>
-<number>0</number>
-<className>XWiki.ConfigurableClass</className>
-<guid>836c6ff6-a44f-45f4-a9ca-bd15f1bee382</guid>
-<property>
-<codeToExecute>{{include reference="RecruitmentApp.Configuration"/}}</codeToExecute>
-</property>
-<property>
-<configurationClass></configurationClass>
-</property>
-<property>
-<configureGlobally>1</configureGlobally>
-</property>
-<property>
-<displayInSection>Recruitment Application</displayInSection>
-</property>
-<property>
-<heading>Recruitment Application Configuration</heading>
-</property>
-<property>
-<iconAttachment></iconAttachment>
-</property>
-<property>
-<linkPrefix></linkPrefix>
-</property>
-<property>
-<propertiesToShow/>
-</property>
-</object>
-<content></content>
-<versions>head	3.5;
-access;
-symbols;
-locks; strict;
-comment	@# @;
-
-
-3.5
-date	2013.05.29.12.23.06;	author XWiki_2EAdmin;	state full;
-branches;
-next	3.4;
-
-3.4
-date	2013.05.29.12.22.23;	author XWiki_2EAdmin;	state full;
-branches;
-next	3.3;
-
-3.3
-date	2013.05.29.12.22.03;	author XWiki_2EAdmin;	state diff;
-branches;
-next	3.2;
-
-3.2
-date	2013.05.29.12.21.55;	author XWiki_2EAdmin;	state diff;
-branches;
-next	3.1;
-
-3.1
-date	2013.05.29.12.21.51;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.7;
-
-2.7
-date	2013.05.29.12.21.38;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.6;
-
-2.6
-date	2013.05.29.12.21.37;	author XWiki_2EAdmin;	state full;
-branches;
-next	2.5;
-
-2.5
-date	2013.05.29.12.20.12;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.4;
-
-2.4
-date	2013.05.29.12.19.56;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.3;
-
-2.3
-date	2013.05.29.12.19.55;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.2;
-
-2.2
-date	2013.05.29.12.19.43;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.1;
-
-2.1
-date	2013.05.29.12.19.42;	author XWiki_2EAdmin;	state full;
-branches;
-next	1.4;
-
-1.4
-date	2013.05.29.12.19.32;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.3;
-
-1.3
-date	2013.05.29.12.19.15;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.2;
-
-1.2
-date	2013.05.29.12.18.47;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.1;
-
-1.1
-date	2013.05.29.12.18.42;	author XWiki_2EAdmin;	state diff;
-branches;
-next	;
-
-
-desc
-@@
-
-
-3.5
-log
-@@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;ConfigurationAdmin&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;en&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1369819117000&lt;/creationDate&gt;
-&lt;date&gt;1369819386000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819311000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.5&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;XWiki.ConfigurableClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;codeToExecute&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;---&lt;/editor&gt;
-&lt;name&gt;codeToExecute&lt;/name&gt;
-&lt;number&gt;7&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;codeToExecute&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/codeToExecute&gt;
-&lt;configurationClass&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;configurationClass&lt;/name&gt;
-&lt;number&gt;3&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;configurationClass&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/configurationClass&gt;
-&lt;configureGlobally&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayFormType&gt;checkbox&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-&lt;name&gt;configureGlobally&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;prettyName&gt;configureGlobally&lt;/prettyName&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-&lt;/configureGlobally&gt;
-&lt;displayInSection&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;displayInSection&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;displayInSection&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/displayInSection&gt;
-&lt;heading&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;heading&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;heading&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/heading&gt;
-&lt;iconAttachment&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;iconAttachment&lt;/name&gt;
-&lt;number&gt;8&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;iconAttachment&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/iconAttachment&gt;
-&lt;linkPrefix&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;linkPrefix&lt;/name&gt;
-&lt;number&gt;5&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;linkPrefix&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/linkPrefix&gt;
-&lt;propertiesToShow&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;1&lt;/multiSelect&gt;
-&lt;name&gt;propertiesToShow&lt;/name&gt;
-&lt;number&gt;6&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;propertiesToShow&lt;/prettyName&gt;
-&lt;relationalStorage&gt;1&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/propertiesToShow&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationAdmin&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;XWiki.ConfigurableClass&lt;/className&gt;
-&lt;guid&gt;836c6ff6-a44f-45f4-a9ca-bd15f1bee382&lt;/guid&gt;
-&lt;property&gt;
-&lt;codeToExecute&gt;{{include reference="RecruitmentApp.Configuration"/}}&lt;/codeToExecute&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configurationClass&gt;&lt;/configurationClass&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configureGlobally&gt;1&lt;/configureGlobally&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;displayInSection&gt;Recruitment Application&lt;/displayInSection&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;heading&gt;Recruitment Application Configuration&lt;/heading&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;iconAttachment&gt;&lt;/iconAttachment&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;linkPrefix&gt;&lt;/linkPrefix&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;propertiesToShow/&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-3.4
-log
-@@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;ConfigurationAdmin&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;en&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1369819117000&lt;/creationDate&gt;
-&lt;date&gt;1369819343000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819311000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.4&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;XWiki.ConfigurableClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;codeToExecute&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;---&lt;/editor&gt;
-&lt;name&gt;codeToExecute&lt;/name&gt;
-&lt;number&gt;7&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;codeToExecute&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/codeToExecute&gt;
-&lt;configurationClass&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;configurationClass&lt;/name&gt;
-&lt;number&gt;3&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;configurationClass&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/configurationClass&gt;
-&lt;configureGlobally&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayFormType&gt;checkbox&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-&lt;name&gt;configureGlobally&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;prettyName&gt;configureGlobally&lt;/prettyName&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-&lt;/configureGlobally&gt;
-&lt;displayInSection&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;displayInSection&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;displayInSection&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/displayInSection&gt;
-&lt;heading&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;heading&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;heading&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/heading&gt;
-&lt;iconAttachment&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;iconAttachment&lt;/name&gt;
-&lt;number&gt;8&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;iconAttachment&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/iconAttachment&gt;
-&lt;linkPrefix&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;linkPrefix&lt;/name&gt;
-&lt;number&gt;5&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;linkPrefix&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/linkPrefix&gt;
-&lt;propertiesToShow&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;1&lt;/multiSelect&gt;
-&lt;name&gt;propertiesToShow&lt;/name&gt;
-&lt;number&gt;6&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;propertiesToShow&lt;/prettyName&gt;
-&lt;relationalStorage&gt;1&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/propertiesToShow&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationAdmin&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;XWiki.ConfigurableClass&lt;/className&gt;
-&lt;guid&gt;836c6ff6-a44f-45f4-a9ca-bd15f1bee382&lt;/guid&gt;
-&lt;property&gt;
-&lt;codeToExecute&gt;{{include reference="RecruitmentApp.Configuration"/}}&lt;/codeToExecute&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configurationClass&gt;&lt;/configurationClass&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configureGlobally&gt;1&lt;/configureGlobally&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;displayInSection&gt;Recruitment Application&lt;/displayInSection&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;heading&gt;Recruitment Application Configuration&lt;/heading&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;iconAttachment&gt;&lt;/iconAttachment&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;linkPrefix&gt;&lt;/linkPrefix&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;propertiesToShow/&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-3.3
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819323000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;3.3&lt;/version&gt;
-d148 1
-a148 1
-&lt;codeToExecute&gt;ana are mere&lt;/codeToExecute&gt;
-@
-
-
-3.2
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819315000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;3.2&lt;/version&gt;
-d148 1
-a148 1
-&lt;codeToExecute&gt;&lt;/codeToExecute&gt;
-@
-
-
-3.1
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819311000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;3.1&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;false&lt;/minorEdit&gt;
-d147 24
-@
-
-
-2.7
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369819298000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819297000&lt;/contentUpdateDate&gt;
-&lt;version&gt;2.7&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-d25 123
-@
-
-
-2.6
-log
-@Deleted object
-@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;ConfigurationAdmin&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;en&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1369819117000&lt;/creationDate&gt;
-&lt;date&gt;1369819297000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819297000&lt;/contentUpdateDate&gt;
-&lt;version&gt;2.6&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;Deleted object&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-2.5
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369819212000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819195000&lt;/contentUpdateDate&gt;
-&lt;version&gt;2.5&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;&lt;/comment&gt;
-a24 147
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;XWiki.ConfigurableClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;codeToExecute&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;---&lt;/editor&gt;
-&lt;name&gt;codeToExecute&lt;/name&gt;
-&lt;number&gt;7&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;codeToExecute&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/codeToExecute&gt;
-&lt;configurationClass&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;configurationClass&lt;/name&gt;
-&lt;number&gt;3&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;configurationClass&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/configurationClass&gt;
-&lt;configureGlobally&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayFormType&gt;checkbox&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-&lt;name&gt;configureGlobally&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;prettyName&gt;configureGlobally&lt;/prettyName&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-&lt;/configureGlobally&gt;
-&lt;displayInSection&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;displayInSection&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;displayInSection&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/displayInSection&gt;
-&lt;heading&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;heading&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;heading&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/heading&gt;
-&lt;iconAttachment&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;iconAttachment&lt;/name&gt;
-&lt;number&gt;8&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;iconAttachment&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/iconAttachment&gt;
-&lt;linkPrefix&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;linkPrefix&lt;/name&gt;
-&lt;number&gt;5&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;linkPrefix&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/linkPrefix&gt;
-&lt;propertiesToShow&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;1&lt;/multiSelect&gt;
-&lt;name&gt;propertiesToShow&lt;/name&gt;
-&lt;number&gt;6&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;propertiesToShow&lt;/prettyName&gt;
-&lt;relationalStorage&gt;1&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/propertiesToShow&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationAdmin&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;XWiki.ConfigurableClass&lt;/className&gt;
-&lt;guid&gt;e5af0f37-506f-4923-81fd-ec64c6568c64&lt;/guid&gt;
-&lt;property&gt;
-&lt;codeToExecute&gt;{{include reference='RecruitmetApp.Configuration'/}}&lt;/codeToExecute&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configurationClass&gt;&lt;/configurationClass&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configureGlobally&gt;1&lt;/configureGlobally&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;displayInSection&gt;Recruitment Application&lt;/displayInSection&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;heading&gt;Recruitment Application Configuration&lt;/heading&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;iconAttachment&gt;&lt;/iconAttachment&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;linkPrefix&gt;&lt;/linkPrefix&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;propertiesToShow/&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-@
-
-
-2.4
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819196000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;2.4&lt;/version&gt;
-d151 1
-a151 1
-&lt;configurationClass&gt;RecruitmentApp.ConfigurationClass&lt;/configurationClass&gt;
-@
-
-
-2.3
-log
-@Deleted object
-@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819195000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;2.3&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;Deleted object&lt;/comment&gt;
-@
-
-
-2.2
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369819183000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819182000&lt;/contentUpdateDate&gt;
-&lt;version&gt;2.2&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;&lt;/comment&gt;
-a26 64
-&lt;name&gt;RecruitmentApp.ConfigurationClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;office&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;office&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;office&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;0=Iasi|1=Paris&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/office&gt;
-&lt;status&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;status&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;status&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/status&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationAdmin&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;RecruitmentApp.ConfigurationClass&lt;/className&gt;
-&lt;guid&gt;5e6abce8-44a2-4a23-8dcc-958d50d80705&lt;/guid&gt;
-&lt;property&gt;
-&lt;office&gt;0&lt;/office&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;status&gt;&lt;/status&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-&lt;object&gt;
-&lt;class&gt;
-@
-
-
-2.1
-log
-@@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;ConfigurationAdmin&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;en&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1369819117000&lt;/creationDate&gt;
-&lt;date&gt;1369819182000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819182000&lt;/contentUpdateDate&gt;
-&lt;version&gt;2.1&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;&lt;/comment&gt;
-&lt;minorEdit&gt;false&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;office&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;office&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;office&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;0=Iasi|1=Paris&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/office&gt;
-&lt;status&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;status&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;status&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/status&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationAdmin&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;RecruitmentApp.ConfigurationClass&lt;/className&gt;
-&lt;guid&gt;5e6abce8-44a2-4a23-8dcc-958d50d80705&lt;/guid&gt;
-&lt;/object&gt;
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;XWiki.ConfigurableClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;codeToExecute&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;---&lt;/editor&gt;
-&lt;name&gt;codeToExecute&lt;/name&gt;
-&lt;number&gt;7&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;codeToExecute&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/codeToExecute&gt;
-&lt;configurationClass&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;configurationClass&lt;/name&gt;
-&lt;number&gt;3&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;configurationClass&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/configurationClass&gt;
-&lt;configureGlobally&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayFormType&gt;checkbox&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-&lt;name&gt;configureGlobally&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;prettyName&gt;configureGlobally&lt;/prettyName&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-&lt;/configureGlobally&gt;
-&lt;displayInSection&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;displayInSection&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;displayInSection&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/displayInSection&gt;
-&lt;heading&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;heading&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;heading&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/heading&gt;
-&lt;iconAttachment&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;iconAttachment&lt;/name&gt;
-&lt;number&gt;8&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;iconAttachment&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/iconAttachment&gt;
-&lt;linkPrefix&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;linkPrefix&lt;/name&gt;
-&lt;number&gt;5&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;linkPrefix&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StringClass&lt;/classType&gt;
-&lt;/linkPrefix&gt;
-&lt;propertiesToShow&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;1&lt;/multiSelect&gt;
-&lt;name&gt;propertiesToShow&lt;/name&gt;
-&lt;number&gt;6&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;propertiesToShow&lt;/prettyName&gt;
-&lt;relationalStorage&gt;1&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/propertiesToShow&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.ConfigurationAdmin&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;XWiki.ConfigurableClass&lt;/className&gt;
-&lt;guid&gt;e5af0f37-506f-4923-81fd-ec64c6568c64&lt;/guid&gt;
-&lt;property&gt;
-&lt;codeToExecute&gt;{{include reference='RecruitmetApp.Configuration'/}}&lt;/codeToExecute&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configurationClass&gt;RecruitmentApp.ConfigurationClass&lt;/configurationClass&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;configureGlobally&gt;1&lt;/configureGlobally&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;displayInSection&gt;Recruitment Application&lt;/displayInSection&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;heading&gt;Recruitment Application Configuration&lt;/heading&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;iconAttachment&gt;&lt;/iconAttachment&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;linkPrefix&gt;&lt;/linkPrefix&gt;
-&lt;/property&gt;
-&lt;property&gt;
-&lt;propertiesToShow/&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-1.4
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369819172000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369819122000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.4&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-d27 58
-@
-
-
-1.3
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819155000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;1.3&lt;/version&gt;
-d148 1
-a148 1
-&lt;codeToExecute&gt;{{include 'RecruitmetApp.Configuration'/}}&lt;/codeToExecute&gt;
-@
-
-
-1.2
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819127000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;1.2&lt;/version&gt;
-d148 1
-a148 1
-&lt;codeToExecute&gt;&lt;/codeToExecute&gt;
-@
-
-
-1.1
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369819122000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;1.1&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;false&lt;/minorEdit&gt;
-d147 24
-@
-</versions></xwikidoc>
+  <web>RecruitmentApp</web>
+  <name>ConfigurationAdmin</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent/>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1369819117000</creationDate>
+  <date>1369819386000</date>
+  <contentUpdateDate>1369819311000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <template/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.ConfigurableClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <codeToExecute>
+        <disabled>0</disabled>
+        <editor>---</editor>
+        <name>codeToExecute</name>
+        <number>7</number>
+        <picker>0</picker>
+        <prettyName>codeToExecute</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </codeToExecute>
+      <configurationClass>
+        <disabled>0</disabled>
+        <name>configurationClass</name>
+        <number>3</number>
+        <picker>0</picker>
+        <prettyName>configurationClass</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </configurationClass>
+      <configureGlobally>
+        <defaultValue/>
+        <disabled>0</disabled>
+        <displayFormType>checkbox</displayFormType>
+        <displayType/>
+        <name>configureGlobally</name>
+        <number>4</number>
+        <prettyName>configureGlobally</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </configureGlobally>
+      <displayInSection>
+        <disabled>0</disabled>
+        <name>displayInSection</name>
+        <number>1</number>
+        <picker>0</picker>
+        <prettyName>displayInSection</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </displayInSection>
+      <heading>
+        <disabled>0</disabled>
+        <name>heading</name>
+        <number>2</number>
+        <picker>0</picker>
+        <prettyName>heading</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </heading>
+      <iconAttachment>
+        <disabled>0</disabled>
+        <name>iconAttachment</name>
+        <number>8</number>
+        <picker>0</picker>
+        <prettyName>iconAttachment</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </iconAttachment>
+      <linkPrefix>
+        <disabled>0</disabled>
+        <name>linkPrefix</name>
+        <number>5</number>
+        <picker>0</picker>
+        <prettyName>linkPrefix</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </linkPrefix>
+      <propertiesToShow>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>input</displayType>
+        <multiSelect>1</multiSelect>
+        <name>propertiesToShow</name>
+        <number>6</number>
+        <picker>0</picker>
+        <prettyName>propertiesToShow</prettyName>
+        <relationalStorage>1</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>20</size>
+        <sort>none</sort>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <values/>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </propertiesToShow>
+    </class>
+    <name>RecruitmentApp.ConfigurationAdmin</name>
+    <number>0</number>
+    <className>XWiki.ConfigurableClass</className>
+    <guid>836c6ff6-a44f-45f4-a9ca-bd15f1bee382</guid>
+    <property>
+      <codeToExecute>{{include reference="RecruitmentApp.Configuration"/}}</codeToExecute>
+    </property>
+    <property>
+      <configurationClass/>
+    </property>
+    <property>
+      <configureGlobally>1</configureGlobally>
+    </property>
+    <property>
+      <displayInSection>Recruitment Application</displayInSection>
+    </property>
+    <property>
+      <heading>Recruitment Application Configuration</heading>
+    </property>
+    <property>
+      <iconAttachment/>
+    </property>
+    <property>
+      <linkPrefix/>
+    </property>
+    <property>
+      <propertiesToShow/>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>

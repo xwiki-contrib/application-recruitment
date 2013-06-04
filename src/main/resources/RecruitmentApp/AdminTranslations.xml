@@ -1,406 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xwikidoc>
-<web>RecruitmentApp</web>
-<name>AdminTranslations</name>
-<language></language>
-<defaultLanguage>en</defaultLanguage>
-<translation>0</translation>
-<parent></parent>
-<creator>XWiki.Admin</creator>
-<author>XWiki.Admin</author>
-<customClass></customClass>
-<contentAuthor>XWiki.Admin</contentAuthor>
-<creationDate>1369914765000</creationDate>
-<date>1369915458000</date>
-<contentUpdateDate>1369915458000</contentUpdateDate>
-<version>4.3</version>
-<title>AdminTranslations</title>
-<template></template>
-<defaultTemplate></defaultTemplate>
-<validationScript></validationScript>
-<comment></comment>
-<minorEdit>true</minorEdit>
-<syntaxId>xwiki/2.1</syntaxId>
-<hidden>false</hidden>
-<object>
-<class>
-<name>XWiki.TranslationDocumentClass</name>
-<customClass></customClass>
-<customMapping></customMapping>
-<defaultViewSheet></defaultViewSheet>
-<defaultEditSheet></defaultEditSheet>
-<defaultWeb></defaultWeb>
-<nameField></nameField>
-<validationScript></validationScript>
-<scope>
-<cache>0</cache>
-<disabled>0</disabled>
-<displayType>select</displayType>
-<multiSelect>0</multiSelect>
-<name>scope</name>
-<number>1</number>
-<prettyName>Scope</prettyName>
-<relationalStorage>0</relationalStorage>
-<separator> </separator>
-<separators> ,|</separators>
-<size>1</size>
-<unmodifiable>0</unmodifiable>
-<values>GLOBAL|WIKI|USER|ON_DEMAND</values>
-<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-</scope>
-</class>
-<name>RecruitmentApp.AdminTranslations</name>
-<number>0</number>
-<className>XWiki.TranslationDocumentClass</className>
-<guid>5c0d5297-ba62-405a-9e63-e07b3ce1633f</guid>
-<property>
-<scope>ON_DEMAND</scope>
-</property>
-</object>
-<content>recruitmentapp.office.livetable.office=Office
+  <web>RecruitmentApp</web>
+  <name>AdminTranslations</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent/>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1369914765000</creationDate>
+  <date>1369915458000</date>
+  <contentUpdateDate>1369915458000</contentUpdateDate>
+  <version>1.1</version>
+  <title>AdminTranslations</title>
+  <template/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>RecruitmentApp.AdminTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>5c0d5297-ba62-405a-9e63-e07b3ce1633f</guid>
+    <property>
+      <scope>ON_DEMAND</scope>
+    </property>
+  </object>
+  <content>recruitmentapp.office.livetable.office=Office
 recruitmentapp.office.livetable._actions=Actions
 
 recruitmentapp.status.livetable.status=Status
 recruitmentapp.status.livetable._actions=Actions</content>
-<versions>head	4.3;
-access;
-symbols;
-locks; strict;
-comment	@# @;
-
-
-4.3
-date	2013.05.30.15.04.18;	author XWiki_2EAdmin;	state full;
-branches;
-next	4.2;
-
-4.2
-date	2013.05.30.15.03.59;	author XWiki_2EAdmin;	state diff;
-branches;
-next	4.1;
-
-4.1
-date	2013.05.30.14.58.39;	author XWiki_2EAdmin;	state diff;
-branches;
-next	3.5;
-
-3.5
-date	2013.05.30.14.58.24;	author XWiki_2EAdmin;	state diff;
-branches;
-next	3.4;
-
-3.4
-date	2013.05.30.14.56.10;	author XWiki_2EAdmin;	state diff;
-branches;
-next	3.3;
-
-3.3
-date	2013.05.30.14.55.46;	author XWiki_2EAdmin;	state full;
-branches;
-next	3.2;
-
-3.2
-date	2013.05.30.14.53.33;	author XWiki_2EAdmin;	state diff;
-branches;
-next	3.1;
-
-3.1
-date	2013.05.30.14.53.01;	author XWiki_2EAdmin;	state diff;
-branches;
-next	2.1;
-
-2.1
-date	2013.05.30.14.52.58;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.1;
-
-1.1
-date	2013.05.30.14.52.48;	author XWiki_2EAdmin;	state diff;
-branches;
-next	;
-
-
-desc
-@@
-
-
-4.3
-log
-@@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;AdminTranslations&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;en&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1369914765000&lt;/creationDate&gt;
-&lt;date&gt;1369915458000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369915458000&lt;/contentUpdateDate&gt;
-&lt;version&gt;4.3&lt;/version&gt;
-&lt;title&gt;AdminTranslations&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;XWiki.TranslationDocumentClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;scope&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;scope&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;prettyName&gt;Scope&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;values&gt;GLOBAL|WIKI|USER|ON_DEMAND&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/scope&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.AdminTranslations&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;XWiki.TranslationDocumentClass&lt;/className&gt;
-&lt;guid&gt;5c0d5297-ba62-405a-9e63-e07b3ce1633f&lt;/guid&gt;
-&lt;property&gt;
-&lt;scope&gt;ON_DEMAND&lt;/scope&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-&lt;content&gt;recruitmentapp.office.livetable.office=Office
-recruitmentapp.office.livetable._actions=Actions
-
-recruitmentapp.status.livetable.status=Status
-recruitmentapp.status.livetable._actions=Actions&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-4.2
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369915439000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369915119000&lt;/contentUpdateDate&gt;
-&lt;version&gt;4.2&lt;/version&gt;
-d61 4
-a64 1
-recruitmentapp.office.livetable._actions=Actions&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-4.1
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369915119000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;4.1&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;false&lt;/minorEdit&gt;
-@
-
-
-3.5
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369915104000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369915104000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.5&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-d60 2
-a61 2
-&lt;content&gt;recruitmentapp.livetable.office=Office
-recruitmentapp.livetable._actions=Actions&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-3.4
-log
-@@
-text
-@d4 1
-a4 1
-&lt;name&gt;AdminTranslation&lt;/name&gt;
-d14 4
-a17 4
-&lt;date&gt;1369914970000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369914970000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.4&lt;/version&gt;
-&lt;title&gt;AdminTranslation&lt;/title&gt;
-d52 1
-a52 1
-&lt;name&gt;RecruitmentApp.AdminTranslation&lt;/name&gt;
-d55 1
-a55 1
-&lt;guid&gt;aa429302-dacf-4cc4-81e0-cd310f787af9&lt;/guid&gt;
-@
-
-
-3.3
-log
-@@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;AdminTranslation&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;en&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1369914765000&lt;/creationDate&gt;
-&lt;date&gt;1369914946000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369914946000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.3&lt;/version&gt;
-&lt;title&gt;AdminTranslation&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;object&gt;
-&lt;class&gt;
-&lt;name&gt;XWiki.TranslationDocumentClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;scope&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;scope&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;prettyName&gt;Scope&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;values&gt;GLOBAL|WIKI|USER|ON_DEMAND&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/scope&gt;
-&lt;/class&gt;
-&lt;name&gt;RecruitmentApp.AdminTranslation&lt;/name&gt;
-&lt;number&gt;0&lt;/number&gt;
-&lt;className&gt;XWiki.TranslationDocumentClass&lt;/className&gt;
-&lt;guid&gt;aa429302-dacf-4cc4-81e0-cd310f787af9&lt;/guid&gt;
-&lt;property&gt;
-&lt;scope&gt;ON_DEMAND&lt;/scope&gt;
-&lt;/property&gt;
-&lt;/object&gt;
-&lt;content&gt;RecruitmentApp.OfficeClass_office=Office
-RecruitmentApp.OfficeClass_actions=Actions&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-3.2
-log
-@@
-text
-@d4 1
-a4 1
-&lt;name&gt;OfficeTranslation&lt;/name&gt;
-d14 4
-a17 4
-&lt;date&gt;1369914813000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369914813000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.2&lt;/version&gt;
-&lt;title&gt;OfficeTranslation&lt;/title&gt;
-d52 1
-a52 1
-&lt;name&gt;RecruitmentApp.OfficeTranslation&lt;/name&gt;
-d55 1
-a55 1
-&lt;guid&gt;a65d2400-475a-434d-bbd3-dc88d8ec4037&lt;/guid&gt;
-@
-
-
-3.1
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369914781000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369914778000&lt;/contentUpdateDate&gt;
-&lt;version&gt;3.1&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;false&lt;/minorEdit&gt;
-d60 2
-a61 1
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-2.1
-log
-@@
-text
-@d14 1
-a14 1
-&lt;date&gt;1369914778000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;2.1&lt;/version&gt;
-d56 3
-@
-
-
-1.1
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1369914768000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1369914768000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.1&lt;/version&gt;
-d22 1
-a22 1
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-d25 32
-@
-</versions></xwikidoc>
+</xwikidoc>

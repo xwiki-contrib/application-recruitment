@@ -1,743 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xwikidoc>
-<web>RecruitmentApp</web>
-<name>EvaluationClass</name>
-<language></language>
-<defaultLanguage></defaultLanguage>
-<translation>0</translation>
-<parent></parent>
-<creator>XWiki.Admin</creator>
-<author>XWiki.Admin</author>
-<customClass></customClass>
-<contentAuthor>XWiki.Admin</contentAuthor>
-<creationDate>1367314911000</creationDate>
-<date>1368610293000</date>
-<contentUpdateDate>1368610293000</contentUpdateDate>
-<version>1.14</version>
-<title></title>
-<template></template>
-<defaultTemplate></defaultTemplate>
-<validationScript></validationScript>
-<comment>Updated class property</comment>
-<minorEdit>true</minorEdit>
-<syntaxId>xwiki/2.1</syntaxId>
-<hidden>false</hidden>
-<class>
-<name>RecruitmentApp.EvaluationClass</name>
-<customClass></customClass>
-<customMapping></customMapping>
-<defaultViewSheet></defaultViewSheet>
-<defaultEditSheet></defaultEditSheet>
-<defaultWeb></defaultWeb>
-<nameField></nameField>
-<validationScript></validationScript>
-<details>
-<customDisplay></customDisplay>
-<disabled>0</disabled>
-<editor>PureText</editor>
-<name>details</name>
-<number>4</number>
-<picker>0</picker>
-<prettyName>details</prettyName>
-<rows>5</rows>
-<size>40</size>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-</details>
-<evaluator>
-<cache>0</cache>
-<customDisplay></customDisplay>
-<disabled>0</disabled>
-<displayType>input</displayType>
-<multiSelect>0</multiSelect>
-<name>evaluator</name>
-<number>1</number>
-<picker>1</picker>
-<prettyName>evaluator</prettyName>
-<relationalStorage>0</relationalStorage>
-<separator> </separator>
-<separators></separators>
-<size>20</size>
-<sort>none</sort>
-<unmodifiable>0</unmodifiable>
-<usesList>0</usesList>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<classType>com.xpn.xwiki.objects.classes.UsersClass</classType>
-</evaluator>
-<hire>
-<cache>0</cache>
-<customDisplay></customDisplay>
-<disabled>0</disabled>
-<displayType>select</displayType>
-<multiSelect>0</multiSelect>
-<name>hire</name>
-<number>4</number>
-<picker>0</picker>
-<prettyName>hire</prettyName>
-<relationalStorage>0</relationalStorage>
-<separator> </separator>
-<separators> ,|</separators>
-<size>1</size>
-<sort>none</sort>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<values>0=--|1=Yes|2=No</values>
-<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-</hire>
-<mark>
-<cache>0</cache>
-<customDisplay></customDisplay>
-<disabled>0</disabled>
-<displayType>select</displayType>
-<multiSelect>0</multiSelect>
-<name>mark</name>
-<number>4</number>
-<picker>0</picker>
-<prettyName>Mark</prettyName>
-<relationalStorage>0</relationalStorage>
-<separator> </separator>
-<separators> ,|</separators>
-<size>1</size>
-<sort>none</sort>
-<unmodifiable>0</unmodifiable>
-<validationMessage></validationMessage>
-<validationRegExp></validationRegExp>
-<values>1|2|3|4|5|6|7|8|9|10</values>
-<classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-</mark>
-</class>
-<content></content>
-<versions>head	1.14;
-access;
-symbols;
-locks; strict;
-comment	@# @;
-
-
-1.14
-date	2013.05.15.12.31.33;	author XWiki_2EAdmin;	state full;
-branches;
-next	1.13;
-
-1.13
-date	2013.05.15.12.31.20;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.12;
-
-1.12
-date	2013.05.15.12.30.49;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.11;
-
-1.11
-date	2013.05.14.16.04.03;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.10;
-
-1.10
-date	2013.05.14.16.03.42;	author XWiki_2EAdmin;	state full;
-branches;
-next	1.9;
-
-1.9
-date	2013.05.08.11.28.46;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.8;
-
-1.8
-date	2013.05.07.11.16.18;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.7;
-
-1.7
-date	2013.05.07.10.47.42;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.6;
-
-1.6
-date	2013.05.07.10.33.37;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.5;
-
-1.5
-date	2013.04.30.12.42.26;	author XWiki_2EAdmin;	state full;
-branches;
-next	1.4;
-
-1.4
-date	2013.04.30.12.42.25;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.3;
-
-1.3
-date	2013.04.30.12.42.18;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.2;
-
-1.2
-date	2013.04.30.12.42.07;	author XWiki_2EAdmin;	state diff;
-branches;
-next	1.1;
-
-1.1
-date	2013.04.30.12.42.01;	author XWiki_2EAdmin;	state diff;
-branches;
-next	;
-
-
-desc
-@@
-
-
-1.14
-log
-@Updated class property
-@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;EvaluationClass&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1367314911000&lt;/creationDate&gt;
-&lt;date&gt;1368610293000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1368610293000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.14&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;Updated class property&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;class&gt;
-&lt;name&gt;RecruitmentApp.EvaluationClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;details&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;PureText&lt;/editor&gt;
-&lt;name&gt;details&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;details&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/details&gt;
-&lt;evaluator&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;evaluator&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;1&lt;/picker&gt;
-&lt;prettyName&gt;evaluator&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt;&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;usesList&gt;0&lt;/usesList&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
-&lt;/evaluator&gt;
-&lt;hire&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;hire&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;hire&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;0=--|1=Yes|2=No&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/hire&gt;
-&lt;mark&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;mark&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;Mark&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;values&gt;1|2|3|4|5|6|7|8|9|10&lt;/values&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/mark&gt;
-&lt;/class&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-1.13
-log
-@Added class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1368610280000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1368610280000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.13&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;Added class property&lt;/comment&gt;
-d72 1
-d78 1
-d84 1
-d86 3
-@
-
-
-1.12
-log
-@@
-text
-@d14 3
-a16 3
-&lt;date&gt;1368610249000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1368536643000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.12&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;&lt;/comment&gt;
-d71 1
-a71 2
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-d73 2
-a74 2
-&lt;displayFormType&gt;select&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-d76 1
-a76 1
-&lt;number&gt;3&lt;/number&gt;
-d78 4
-d83 1
-a83 3
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-@
-
-
-1.11
-log
-@Updated class property
-@
-text
-@d14 1
-a14 1
-&lt;date&gt;1368536643000&lt;/date&gt;
-d16 1
-a16 1
-&lt;version&gt;1.11&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;Updated class property&lt;/comment&gt;
-@
-
-
-1.10
-log
-@Added class property
-@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;EvaluationClass&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1367314911000&lt;/creationDate&gt;
-&lt;date&gt;1368536622000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1368536622000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.10&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;Added class property&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;class&gt;
-&lt;name&gt;RecruitmentApp.EvaluationClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;details&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;PureText&lt;/editor&gt;
-&lt;name&gt;details&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;details&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/details&gt;
-&lt;evaluator&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;evaluator&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;1&lt;/picker&gt;
-&lt;prettyName&gt;evaluator&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt;&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;usesList&gt;0&lt;/usesList&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
-&lt;/evaluator&gt;
-&lt;hire&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayFormType&gt;select&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-&lt;name&gt;hire&lt;/name&gt;
-&lt;number&gt;3&lt;/number&gt;
-&lt;prettyName&gt;hire&lt;/prettyName&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-&lt;/hire&gt;
-&lt;mark&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;select&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;mark&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;prettyName&gt;mark&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt; ,|&lt;/separators&gt;
-&lt;size&gt;1&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.StaticListClass&lt;/classType&gt;
-&lt;/mark&gt;
-&lt;/class&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-1.9
-log
-@Updated class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1368001726000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1368001726000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.9&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;Updated class property&lt;/comment&gt;
-d85 1
-a85 1
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-d87 2
-d90 1
-a90 2
-&lt;number&gt;2&lt;/number&gt;
-&lt;numberType&gt;long&lt;/numberType&gt;
-d92 4
-a95 1
-&lt;size&gt;30&lt;/size&gt;
-d97 1
-a97 3
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
-@
-
-
-1.8
-log
-@Updated class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367914578000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367914578000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.8&lt;/version&gt;
-d37 1
-a37 1
-&lt;editor&gt;Wysiwyg&lt;/editor&gt;
-@
-
-
-1.7
-log
-@Updated class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367912862000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367912862000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.7&lt;/version&gt;
-@
-
-
-1.6
-log
-@Updated class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367912017000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367912017000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.6&lt;/version&gt;
-@
-
-
-1.5
-log
-@Updated class property
-@
-text
-@&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xwikidoc&gt;
-&lt;web&gt;RecruitmentApp&lt;/web&gt;
-&lt;name&gt;EvaluationClass&lt;/name&gt;
-&lt;language&gt;&lt;/language&gt;
-&lt;defaultLanguage&gt;&lt;/defaultLanguage&gt;
-&lt;translation&gt;0&lt;/translation&gt;
-&lt;parent&gt;&lt;/parent&gt;
-&lt;creator&gt;XWiki.Admin&lt;/creator&gt;
-&lt;author&gt;XWiki.Admin&lt;/author&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;contentAuthor&gt;XWiki.Admin&lt;/contentAuthor&gt;
-&lt;creationDate&gt;1367314911000&lt;/creationDate&gt;
-&lt;date&gt;1367314946000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367314946000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.5&lt;/version&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;template&gt;&lt;/template&gt;
-&lt;defaultTemplate&gt;&lt;/defaultTemplate&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;comment&gt;Updated class property&lt;/comment&gt;
-&lt;minorEdit&gt;true&lt;/minorEdit&gt;
-&lt;syntaxId&gt;xwiki/2.1&lt;/syntaxId&gt;
-&lt;hidden&gt;false&lt;/hidden&gt;
-&lt;class&gt;
-&lt;name&gt;RecruitmentApp.EvaluationClass&lt;/name&gt;
-&lt;customClass&gt;&lt;/customClass&gt;
-&lt;customMapping&gt;&lt;/customMapping&gt;
-&lt;defaultViewSheet&gt;&lt;/defaultViewSheet&gt;
-&lt;defaultEditSheet&gt;&lt;/defaultEditSheet&gt;
-&lt;defaultWeb&gt;&lt;/defaultWeb&gt;
-&lt;nameField&gt;&lt;/nameField&gt;
-&lt;validationScript&gt;&lt;/validationScript&gt;
-&lt;details&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;editor&gt;---&lt;/editor&gt;
-&lt;name&gt;details&lt;/name&gt;
-&lt;number&gt;4&lt;/number&gt;
-&lt;picker&gt;0&lt;/picker&gt;
-&lt;prettyName&gt;details&lt;/prettyName&gt;
-&lt;rows&gt;5&lt;/rows&gt;
-&lt;size&gt;40&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.TextAreaClass&lt;/classType&gt;
-&lt;/details&gt;
-&lt;evaluator&gt;
-&lt;cache&gt;0&lt;/cache&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayType&gt;input&lt;/displayType&gt;
-&lt;multiSelect&gt;0&lt;/multiSelect&gt;
-&lt;name&gt;evaluator&lt;/name&gt;
-&lt;number&gt;1&lt;/number&gt;
-&lt;picker&gt;1&lt;/picker&gt;
-&lt;prettyName&gt;evaluator&lt;/prettyName&gt;
-&lt;relationalStorage&gt;0&lt;/relationalStorage&gt;
-&lt;separator&gt; &lt;/separator&gt;
-&lt;separators&gt;&lt;/separators&gt;
-&lt;size&gt;20&lt;/size&gt;
-&lt;sort&gt;none&lt;/sort&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;usesList&gt;0&lt;/usesList&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.UsersClass&lt;/classType&gt;
-&lt;/evaluator&gt;
-&lt;hire&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;defaultValue&gt;&lt;/defaultValue&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;displayFormType&gt;select&lt;/displayFormType&gt;
-&lt;displayType&gt;&lt;/displayType&gt;
-&lt;name&gt;hire&lt;/name&gt;
-&lt;number&gt;3&lt;/number&gt;
-&lt;prettyName&gt;hire&lt;/prettyName&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.BooleanClass&lt;/classType&gt;
-&lt;/hire&gt;
-&lt;mark&gt;
-&lt;customDisplay&gt;&lt;/customDisplay&gt;
-&lt;disabled&gt;0&lt;/disabled&gt;
-&lt;name&gt;mark&lt;/name&gt;
-&lt;number&gt;2&lt;/number&gt;
-&lt;numberType&gt;long&lt;/numberType&gt;
-&lt;prettyName&gt;mark&lt;/prettyName&gt;
-&lt;size&gt;30&lt;/size&gt;
-&lt;unmodifiable&gt;0&lt;/unmodifiable&gt;
-&lt;validationMessage&gt;&lt;/validationMessage&gt;
-&lt;validationRegExp&gt;&lt;/validationRegExp&gt;
-&lt;classType&gt;com.xpn.xwiki.objects.classes.NumberClass&lt;/classType&gt;
-&lt;/mark&gt;
-&lt;/class&gt;
-&lt;content&gt;&lt;/content&gt;&lt;/xwikidoc&gt;
-@
-
-
-1.4
-log
-@Added class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367314945000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367314945000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.4&lt;/version&gt;
-d21 1
-a21 1
-&lt;comment&gt;Added class property&lt;/comment&gt;
-d35 1
-d37 1
-d40 1
-d45 2
-d51 1
-d61 1
-d63 1
-d65 3
-d71 2
-d75 1
-d80 2
-d85 1
-d93 2
-@
-
-
-1.3
-log
-@Added class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367314938000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367314938000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.3&lt;/version&gt;
-d34 10
-@
-
-
-1.2
-log
-@Added class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367314927000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367314927000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.2&lt;/version&gt;
-d49 9
-@
-
-
-1.1
-log
-@Added class property
-@
-text
-@d14 3
-a16 3
-&lt;date&gt;1367314921000&lt;/date&gt;
-&lt;contentUpdateDate&gt;1367314921000&lt;/contentUpdateDate&gt;
-&lt;version&gt;1.1&lt;/version&gt;
-d49 10
-@
-</versions></xwikidoc>
+  <web>RecruitmentApp</web>
+  <name>EvaluationClass</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent/>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1367314911000</creationDate>
+  <date>1368610293000</date>
+  <contentUpdateDate>1368610293000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <template/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <class>
+    <name>RecruitmentApp.EvaluationClass</name>
+    <customClass/>
+    <customMapping/>
+    <defaultViewSheet/>
+    <defaultEditSheet/>
+    <defaultWeb/>
+    <nameField/>
+    <validationScript/>
+    <details>
+      <customDisplay/>
+      <disabled>0</disabled>
+      <editor>PureText</editor>
+      <name>details</name>
+      <number>4</number>
+      <picker>0</picker>
+      <prettyName>details</prettyName>
+      <rows>5</rows>
+      <size>40</size>
+      <unmodifiable>0</unmodifiable>
+      <validationMessage/>
+      <validationRegExp/>
+      <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+    </details>
+    <evaluator>
+      <cache>0</cache>
+      <customDisplay/>
+      <disabled>0</disabled>
+      <displayType>input</displayType>
+      <multiSelect>0</multiSelect>
+      <name>evaluator</name>
+      <number>1</number>
+      <picker>1</picker>
+      <prettyName>evaluator</prettyName>
+      <relationalStorage>0</relationalStorage>
+      <separator> </separator>
+      <separators/>
+      <size>20</size>
+      <sort>none</sort>
+      <unmodifiable>0</unmodifiable>
+      <usesList>0</usesList>
+      <validationMessage/>
+      <validationRegExp/>
+      <classType>com.xpn.xwiki.objects.classes.UsersClass</classType>
+    </evaluator>
+    <hire>
+      <cache>0</cache>
+      <customDisplay/>
+      <disabled>0</disabled>
+      <displayType>select</displayType>
+      <multiSelect>0</multiSelect>
+      <name>hire</name>
+      <number>4</number>
+      <picker>0</picker>
+      <prettyName>hire</prettyName>
+      <relationalStorage>0</relationalStorage>
+      <separator> </separator>
+      <separators> ,|</separators>
+      <size>1</size>
+      <sort>none</sort>
+      <unmodifiable>0</unmodifiable>
+      <validationMessage/>
+      <validationRegExp/>
+      <values>0=--|1=Yes|2=No</values>
+      <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+    </hire>
+    <mark>
+      <cache>0</cache>
+      <customDisplay/>
+      <disabled>0</disabled>
+      <displayType>select</displayType>
+      <multiSelect>0</multiSelect>
+      <name>mark</name>
+      <number>4</number>
+      <picker>0</picker>
+      <prettyName>Mark</prettyName>
+      <relationalStorage>0</relationalStorage>
+      <separator> </separator>
+      <separators> ,|</separators>
+      <size>1</size>
+      <sort>none</sort>
+      <unmodifiable>0</unmodifiable>
+      <validationMessage/>
+      <validationRegExp/>
+      <values>1|2|3|4|5|6|7|8|9|10</values>
+      <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+    </mark>
+  </class>
+  <content/>
+</xwikidoc>
