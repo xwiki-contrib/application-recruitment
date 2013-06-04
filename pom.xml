@@ -22,71 +22,67 @@
 *
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.xwiki.commons</groupId>
-        <artifactId>xwiki-commons-pom</artifactId>
-        <version>4.5.3</version>
-    </parent>
-    <groupId>org.xwiki.contrib</groupId>
-    <artifactId>application-recruitment</artifactId>
-    <version>2.1-SNAPSHOT</version>
-    <name>Recruitment Application</name>
-    <packaging>xar</packaging>
-    <description>Recruitment application</description>
-    <scm>
-        <connection>scm:git:git://github.com:xwiki-contrib/application-recruitment.git</connection>
-        <developerConnection>scm:git:git@github.com:xwiki-contrib/application-recruitment.git</developerConnection>
-        <url>https://github.com/xwiki-contrib/application-recruitment</url>
-      <tag>HEAD</tag>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.xwiki.commons</groupId>
+    <artifactId>xwiki-commons-pom</artifactId>
+    <version>4.5.3</version>
+  </parent>
+  <groupId>org.xwiki.contrib</groupId>
+  <artifactId>application-recruitment</artifactId>
+  <version>2.1-SNAPSHOT</version>
+  <name>Recruitment Application</name>
+  <packaging>xar</packaging>
+  <description>Allows tracking candidates and job offers</description>
+  <scm>
+    <connection>scm:git:git://github.com:xwiki-contrib/application-recruitment.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/application-recruitment.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/application-recruitment</url>
   </scm>
-    <developers>
-        <developer>
-            <id>chalx</id>
-            <name>Alexandru Chelariu</name>
-        </developer>
-    </developers>
-    <properties>
-        <!-- Don't run CLIRR here since there's no Java code. -->
-        <xwiki.clirr.skip>true</xwiki.clirr.skip>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.xwiki.contrib</groupId>
-            <artifactId>xwiki-macro-pdfviewer</artifactId>
-            <version>1.1</version>
-            <type>xar</type>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-    <distributionManagement>
-      <repository>
-        <id>xwiki-staging</id>
-        <name>XWiki Staging Repository</name>
-        <url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2</url>
-      </repository>
-    </distributionManagement>
-    <build>
-        <!-- Needed to add support for the XAR packaging -->
-        <extensions>
-            <extension>
-                <groupId>org.xwiki.commons</groupId>
-                <artifactId>xwiki-commons-tool-xar-handlers</artifactId>
-                <version>${commons.version}</version>
-            </extension>
-        </extensions>
-        <plugins>
-            <!-- The XAR packaging uses the XAR plugin and thus we need to define what version to use -->
-            <plugin>
-                <groupId>org.xwiki.commons</groupId>
-                <artifactId>xwiki-commons-tool-xar-plugin</artifactId>
-                <version>${commons.version}</version>
-                <configuration>
-                    <skip>true</skip>
-                    <includeDependencies>true</includeDependencies>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <developers>
+    <developer>
+      <id>chalx</id>
+      <name>Alexandru Chelariu</name>
+    </developer>
+  </developers>
+  <properties>
+    <!-- Don't run CLIRR here since there's no Java code. -->
+    <xwiki.clirr.skip>true</xwiki.clirr.skip>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.xwiki.contrib</groupId>
+      <artifactId>xwiki-macro-pdfviewer</artifactId>
+      <version>1.1</version>
+      <type>xar</type>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <!-- Needed to add support for the XAR packaging -->
+    <extensions>
+      <extension>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-tool-xar-handlers</artifactId>
+        <version>${commons.version}</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <!-- The XAR packaging uses the XAR plugin and thus we need to define what version to use -->
+      <plugin>
+        <groupId>org.xwiki.commons</groupId>
+        <artifactId>xwiki-commons-tool-xar-plugin</artifactId>
+        <version>${commons.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <repository>
+      <id>xwiki-staging</id>
+      <name>XWiki Staging Repository</name>
+      <url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 </project>
