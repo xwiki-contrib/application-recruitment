@@ -59,6 +59,13 @@
       <type>xar</type>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.xwiki.contrib</groupId>
+      <artifactId>xwiki-macro-tabs</artifactId>
+      <version>1.0.2</version>
+      <type>xar</type>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <!-- Needed to add support for the XAR packaging -->
