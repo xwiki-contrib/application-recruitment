@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311699000</creationDate>
-  <date>1370336629000</date>
-  <contentUpdateDate>1370329717000</contentUpdateDate>
+  <date>1370518816000</date>
+  <contentUpdateDate>1370504417000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <template/>
@@ -323,7 +323,7 @@ $xwiki.ssx.use("RecruitmentApp.RecruitmentAppSheet")
     (((
     * **$doc.displayPrettyName('first_name'):** $doc.display('first_name')
     * **$doc.displayPrettyName('last_name'):** $doc.display('last_name')
-    * **$doc.displayPrettyName('jobPosting'):** #if($context.action == "edit")$doc.display('jobPosting') #else #set($joburl = "JobArea."+$doc.display('jobPosting')) [[$doc.display('jobPosting')&gt;&gt;$joburl]] #end\\
+    * **$doc.displayPrettyName('jobPosting'):** #if($context.action == "edit") $doc.display('jobPosting') #else #set($jobPosting = $doc.display('jobPosting')) #if("$!jobPosting" != "") #set($joburl = "JobArea."+$doc.display('jobPosting')) [[$jobPosting&gt;&gt;$joburl]] #end #end\\
     * **$doc.displayPrettyName('applyDate'):** $doc.display('applyDate')
     * **$doc.displayPrettyName('office'):** $doc.display('office')
     
