@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1369319630000</creationDate>
-  <date>1370336901000</date>
-  <contentUpdateDate>1370336901000</contentUpdateDate>
+  <date>1370419327000</date>
+  <contentUpdateDate>1370419327000</contentUpdateDate>
   <version>1.1</version>
   <title>AutoSuggest</title>
   <template/>
@@ -36,6 +36,7 @@ $response.setContentType("text/xml")
 #end
 
 #set($searchResults = $services.query.xwql($query).execute())
+
 &lt;results space="$spacename"&gt;
   #foreach($result in $searchResults)
        #set($resultDoc = $xwiki.getDocument($result))       

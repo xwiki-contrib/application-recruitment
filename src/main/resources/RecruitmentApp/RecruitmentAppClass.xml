@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311351000</creationDate>
-  <date>1369924072000</date>
-  <contentUpdateDate>1369924070000</contentUpdateDate>
+  <date>1370595668000</date>
+  <contentUpdateDate>1370595542000</contentUpdateDate>
   <version>1.1</version>
   <title>RecruitmentApp Class</title>
   <template/>
@@ -38,7 +38,7 @@
       <disabled>0</disabled>
       <emptyIsToday>0</emptyIsToday>
       <name>applyDate</name>
-      <number>11</number>
+      <number>9</number>
       <picker>1</picker>
       <prettyName>Apply date</prettyName>
       <size>20</size>
@@ -72,7 +72,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>coverLetter</name>
-      <number>24</number>
+      <number>21</number>
       <picker>0</picker>
       <prettyName>Cover Letter</prettyName>
       <size>30</size>
@@ -85,7 +85,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>current_company</name>
-      <number>10</number>
+      <number>8</number>
       <picker>0</picker>
       <prettyName>Current company</prettyName>
       <size>30</size>
@@ -98,7 +98,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>current_position</name>
-      <number>9</number>
+      <number>7</number>
       <picker>0</picker>
       <prettyName>Current position</prettyName>
       <size>30</size>
@@ -111,7 +111,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>cv</name>
-      <number>23</number>
+      <number>20</number>
       <picker>0</picker>
       <prettyName>CV</prettyName>
       <size>30</size>
@@ -125,7 +125,7 @@
       <disabled>0</disabled>
       <editor>Wysiwyg</editor>
       <name>details</name>
-      <number>14</number>
+      <number>12</number>
       <picker>0</picker>
       <prettyName>Other Details</prettyName>
       <rows>5</rows>
@@ -154,7 +154,7 @@
       <disabled>0</disabled>
       <emptyIsToday>0</emptyIsToday>
       <name>endDate</name>
-      <number>13</number>
+      <number>11</number>
       <picker>1</picker>
       <prettyName>Contract end date</prettyName>
       <size>20</size>
@@ -170,7 +170,7 @@
       <displayType>select</displayType>
       <multiSelect>0</multiSelect>
       <name>experience</name>
-      <number>19</number>
+      <number>16</number>
       <picker>0</picker>
       <prettyName>Experience</prettyName>
       <relationalStorage>0</relationalStorage>
@@ -188,7 +188,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>facebook</name>
-      <number>21</number>
+      <number>18</number>
       <picker>0</picker>
       <prettyName>Facebook</prettyName>
       <size>30</size>
@@ -216,7 +216,7 @@
       <disabled>0</disabled>
       <emptyIsToday>0</emptyIsToday>
       <name>hiringDate</name>
-      <number>12</number>
+      <number>10</number>
       <picker>1</picker>
       <prettyName>Hiring date</prettyName>
       <size>20</size>
@@ -226,28 +226,17 @@
       <classType>com.xpn.xwiki.objects.classes.DateClass</classType>
     </hiringDate>
     <jobPosting>
-      <cache>0</cache>
-      <classname>JobArea.JobAreaClass</classname>
       <customDisplay/>
       <disabled>0</disabled>
-      <displayType>input</displayType>
-      <idField>position</idField>
-      <multiSelect>0</multiSelect>
       <name>jobPosting</name>
-      <number>24</number>
-      <picker>1</picker>
+      <number>22</number>
+      <picker>0</picker>
       <prettyName>Job Posting</prettyName>
-      <relationalStorage>0</relationalStorage>
-      <separator> </separator>
-      <separators/>
-      <size>25</size>
-      <sort>none</sort>
-      <sql/>
+      <size>30</size>
       <unmodifiable>0</unmodifiable>
       <validationMessage/>
       <validationRegExp/>
-      <valueField>position</valueField>
-      <classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
+      <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
     </jobPosting>
     <last_name>
       <customDisplay/>
@@ -266,7 +255,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>linkedin</name>
-      <number>20</number>
+      <number>17</number>
       <picker>0</picker>
       <prettyName>Linkedin</prettyName>
       <size>30</size>
@@ -282,7 +271,7 @@
       <displayType>select</displayType>
       <multiSelect>0</multiSelect>
       <name>next_step</name>
-      <number>17</number>
+      <number>15</number>
       <picker>0</picker>
       <prettyName>Next step</prettyName>
       <relationalStorage>0</relationalStorage>
@@ -311,8 +300,8 @@
       <relationalStorage>0</relationalStorage>
       <separator> </separator>
       <separators/>
-      <size>1</size>
-      <sort>none</sort>
+      <size/>
+      <sort>value</sort>
       <sql/>
       <unmodifiable>0</unmodifiable>
       <validationMessage/>
@@ -350,7 +339,7 @@
       <customDisplay/>
       <disabled>0</disabled>
       <name>sourceChannel</name>
-      <number>22</number>
+      <number>19</number>
       <picker>0</picker>
       <prettyName>Source Channel</prettyName>
       <size>30</size>
@@ -366,7 +355,7 @@
       <displayType>select</displayType>
       <multiSelect>0</multiSelect>
       <name>sourceType</name>
-      <number>15</number>
+      <number>13</number>
       <picker>0</picker>
       <prettyName>Source</prettyName>
       <relationalStorage>0</relationalStorage>
@@ -385,7 +374,7 @@
       <disabled>0</disabled>
       <editor>Wysiwyg</editor>
       <name>sourcingDetails</name>
-      <number>16</number>
+      <number>14</number>
       <picker>0</picker>
       <prettyName>Sourcing details</prettyName>
       <rows>5</rows>
