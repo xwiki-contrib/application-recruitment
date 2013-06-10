@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311351000</creationDate>
-  <date>1370595668000</date>
-  <contentUpdateDate>1370595542000</contentUpdateDate>
+  <date>1370876220000</date>
+  <contentUpdateDate>1370864367000</contentUpdateDate>
   <version>1.1</version>
   <title>RecruitmentApp Class</title>
   <template/>
@@ -266,24 +266,27 @@
     </linkedin>
     <next_step>
       <cache>0</cache>
+      <classname>RecruitmentApp.NextStepClass</classname>
       <customDisplay/>
       <disabled>0</disabled>
       <displayType>select</displayType>
+      <idField>step</idField>
       <multiSelect>0</multiSelect>
       <name>next_step</name>
-      <number>15</number>
+      <number>24</number>
       <picker>0</picker>
       <prettyName>Next step</prettyName>
       <relationalStorage>0</relationalStorage>
       <separator> </separator>
-      <separators> ,|</separators>
-      <size>1</size>
+      <separators/>
+      <size/>
       <sort>none</sort>
+      <sql/>
       <unmodifiable>0</unmodifiable>
       <validationMessage/>
       <validationRegExp/>
-      <values>0=HR First Meeting|1=Technical Test|2=Meeting With Future Team Member|3=Meeting With CODIR Member|4=Notification Of Decision</values>
-      <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      <valueField>step</valueField>
+      <classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
     </next_step>
     <office>
       <cache>0</cache>
@@ -350,24 +353,27 @@
     </sourceChannel>
     <sourceType>
       <cache>0</cache>
+      <classname>RecruitmentApp.SourceClass</classname>
       <customDisplay/>
       <disabled>0</disabled>
       <displayType>select</displayType>
+      <idField>source</idField>
       <multiSelect>0</multiSelect>
       <name>sourceType</name>
-      <number>13</number>
+      <number>24</number>
       <picker>0</picker>
       <prettyName>Source</prettyName>
       <relationalStorage>0</relationalStorage>
       <separator> </separator>
-      <separators> ,|</separators>
+      <separators/>
       <size>1</size>
       <sort>none</sort>
+      <sql/>
       <unmodifiable>0</unmodifiable>
       <validationMessage/>
       <validationRegExp/>
-      <values>0=Direct Application|1=Referral|2=Search</values>
-      <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      <valueField>source</valueField>
+      <classType>com.xpn.xwiki.objects.classes.DBListClass</classType>
     </sourceType>
     <sourcingDetails>
       <customDisplay/>
@@ -399,7 +405,7 @@
       <relationalStorage>0</relationalStorage>
       <separator> </separator>
       <separators/>
-      <size>1</size>
+      <size/>
       <sort>none</sort>
       <sql/>
       <unmodifiable>0</unmodifiable>

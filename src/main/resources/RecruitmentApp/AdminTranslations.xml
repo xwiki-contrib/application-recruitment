@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1369914765000</creationDate>
-  <date>1370418696000</date>
-  <contentUpdateDate>1369915458000</contentUpdateDate>
+  <date>1370850238000</date>
+  <contentUpdateDate>1370850238000</contentUpdateDate>
   <version>1.1</version>
   <title>AdminTranslations</title>
   <template/>
@@ -62,5 +62,11 @@
 recruitmentapp.office.livetable._actions=Actions
 
 recruitmentapp.status.livetable.status=Status
-recruitmentapp.status.livetable._actions=Actions</content>
+recruitmentapp.status.livetable._actions=Actions
+
+recruitmentapp.source.livetable.source=Source
+recruitmentapp.source.livetable._actions=Actions
+
+recruitmentapp.nextstep.livetable.step=Next Step
+recruitmentapp.nextstep.livetable._actions=Actions</content>
 </xwikidoc>
