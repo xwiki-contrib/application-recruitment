@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311699000</creationDate>
-  <date>1371137559000</date>
-  <contentUpdateDate>1371131735000</contentUpdateDate>
+  <date>1371557509000</date>
+  <contentUpdateDate>1371557475000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <template/>
@@ -23,6 +23,100 @@
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.1</syntaxId>
   <hidden>true</hidden>
+  <object>
+    <class>
+      <name>RecruitmentApp.EvaluationClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <details>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <editor>Wysiwyg</editor>
+        <name>details</name>
+        <number>4</number>
+        <picker>0</picker>
+        <prettyName>details</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </details>
+      <evaluator>
+        <cache>0</cache>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <displayType>input</displayType>
+        <multiSelect>0</multiSelect>
+        <name>evaluator</name>
+        <number>1</number>
+        <picker>1</picker>
+        <prettyName>evaluator</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators/>
+        <size>20</size>
+        <sort>none</sort>
+        <unmodifiable>0</unmodifiable>
+        <usesList>0</usesList>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.UsersClass</classType>
+      </evaluator>
+      <hire>
+        <cache>0</cache>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>hire</name>
+        <number>4</number>
+        <picker>0</picker>
+        <prettyName>hire</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <sort>none</sort>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <values>0=--|1=Yes|2=No</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </hire>
+      <mark>
+        <cache>0</cache>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>mark</name>
+        <number>4</number>
+        <picker>0</picker>
+        <prettyName>Mark</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <sort>none</sort>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <values>1|2|3|4|5|6|7|8|9|10</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </mark>
+    </class>
+    <name>RecruitmentApp.RecruitmentAppSheet</name>
+    <number>0</number>
+    <className>RecruitmentApp.EvaluationClass</className>
+    <guid>d266206e-2909-433a-bedd-f9f9a5302203</guid>
+  </object>
   <object>
     <class>
       <name>XWiki.JavaScriptExtension</name>
@@ -416,71 +510,90 @@ $xwiki.jsfx.use("js/xwiki/wysiwyg/xwe/XWikiWysiwyg.js", true)
     (((
     &lt;br/&gt;&lt;br/&gt;
     #set($evals = $doc.getObjects("RecruitmentApp.EvaluationClass"))
-    #if($evals.size() == 0)
+    #if($evals.size() == 0 || "$!evals.get(0).getProperty('evaluator').value" == '')
        #info("This candidate has not been evaluated yet.")
     #else 
        #foreach($eval in $evals)
           #set($doHire = $eval.getProperty("hire").value)
-          #if($doHire == 0 )
-              #set($class = "")
-              #set($hire = "-")
-          #elseif ( $doHire == 1 )
-              #set($hire = "yes")
-              #set($class = "yes")
-          #elseif ( $doHire == 2 )
-              #set($hire = "no")
-              #set($class = "no")
-          #end
-          &lt;div class="evaluation $class"&gt;
           #set($xWikiEvaluator = $eval.getProperty("evaluator").value)
-          === Evaluation by $xwiki.getUserName($xWikiEvaluator, false) ===
-          #if("$!hire" != "-") 
-            &lt;div class="hiremention"&gt;
-                &lt;span class="$hire"&gt;$hire&lt;/span&gt;
+          #if("$!eval.getProperty('details').value" != "")
+            #if($doHire == 0 )
+                #set($class = "")
+                #set($hire = "-")
+            #elseif ( $doHire == 1 )
+                #set($hire = "yes")
+                #set($class = "yes")
+            #elseif ( $doHire == 2 )
+                #set($hire = "no")
+                #set($class = "no")
+            #end
+            &lt;div class="evaluation $class"&gt;
+            === Evaluation by $xwiki.getUserName($xWikiEvaluator, false) ===
+            #if("$!hire" != "-") 
+              &lt;div class="hiremention"&gt;
+                  &lt;span class="$hire"&gt;$hire&lt;/span&gt;
+              &lt;/div&gt;
+            #end
+            * **Mark:** 
+                #if ($context.action == "edit") 
+                     #if ( $xWikiEvaluator == "xwiki:$context.getUser()" || $hasAdmin )
+                          $doc.display('mark', 'edit', $eval) / 10
+                     #else 
+                          $doc.display('mark', 'view', $eval) / 10
+                     #end    
+                #else
+                     $doc.display('mark', 'view', $eval) / 10
+                #end
+            * **Hire:** 
+                #if ($context.action == "edit") 
+                     #if ( $xWikiEvaluator == "xwiki:$context.getUser()" || $hasAdmin )
+                          $doc.display('hire', 'edit', $eval)
+                     #else 
+                          $hire
+                     #end    
+                #else 
+                     $hire
+                #end
+            * **Details:** 
+                  #if  ($context.action == "edit") 
+                    #if ( $xWikiEvaluator == "xwiki:$context.getUser()" || $hasAdmin )
+                          $doc.display('details', 'edit', $eval)
+                     #else 
+                          $doc.display('details', 'view', $eval)
+                     #end    
+                  #else 
+                          $doc.display('details', 'view', $eval)
+                  #end
             &lt;/div&gt;
           #end
-          * **Mark:** $eval.mark / 10
-          * **Hire:** #if($context.action == "view") $hire #else $eval.hire #end\\
-          * **Details:** $eval.details
-          &lt;/div&gt;
        #end
     #end
 
-    #set($request = $context.getRequest())
-    #set($mark = $request.get("RecruitmentApp.EvaluationClass_${evals.size()}_mark"))
-    #set($hire = $request.get("RecruitmentApp.EvaluationClass_${evals.size()}_hire"))
-    #set($details = $request.get("RecruitmentApp.EvaluationClass_${evals.size()}_details"))
-    #set($newEvaluation = $doc.newObject('RecruitmentApp.EvaluationClass'))
-
-    #if("$!hire" != "" &amp;&amp; "$!details" != "" &amp;&amp; "$!mark" != "")
-        $newEvaluation.set("mark", $mark)
-        $newEvaluation.set("hire", $hire)
-        $newEvaluation.set("details", $details)
-        $newEvaluation.set("evaluator", $context.getUser())
+    #if($evals.size() == 0)
+       #set($lastEval = $doc.newObject('RecruitmentApp.EvaluationClass'))
+       #set($discard = $doc.save())
+    #else
+      #set($lastEval = $evals.get($mathtool.sub($evals.size(), 1)))
+      #set($details = $lastEval.getProperty("details").value)
+      #if("$!details" != "")
+        #set($lastEval = $doc.newObject('RecruitmentApp.EvaluationClass'))
         $doc.save()
-        $response.sendRedirect($doc.getURL("view"))
+      #end
     #end
+
+    #set($discard = $lastEval.set('evaluator', $context.getUser()))
 
     #if($isGuest) 
         #info("Please log in to add an evaluation.")
     #else
-        #if($context.action == "view")
+        #if($context.action == "edit")
             &lt;div class="new-evaluation"&gt;
-                 === Evaluation by $xwiki.getUserName($context.getUser(), false) ===
-                &lt;form method="post" action=""&gt;
-                    &lt;div class="row"&gt;**Mark:** $doc.display("mark", "edit", $newEvaluation) / 10 &lt;/div&gt;
-                    &lt;div class="row"&gt;**Hire:** $doc.display("hire", "edit", $newEvaluation)&lt;/div&gt;
-                    &lt;div class="row"&gt;**Details:** $doc.display("details", "edit", $newEvaluation)&lt;/div&gt;
-                    &lt;div class="row"&gt;&lt;input type="submit" class="button" value="Save evaluation" /&gt;&lt;/div&gt;
-                &lt;/form&gt;
+              === Evaluation by $xwiki.getUserName($context.getUser(), false) ===
+              &lt;div class="row" style="display:none"&gt;$doc.display('evaluator', 'edit', $lastEval)&lt;/div&gt;
+              &lt;div class="row"&gt;**Mark:** $doc.display("mark", "edit", $lastEval) / 10 &lt;/div&gt;
+              &lt;div class="row"&gt;**Hire:** $doc.display("hire", "edit", $lastEval)&lt;/div&gt;
+              &lt;div class="row"&gt;**Details:** $doc.display("details", "edit", $lastEval)&lt;/div&gt;
             &lt;/div&gt;
-            &lt;script type="text/javascript"&gt;
-             document.observe("dom:loaded", function(){
-                Wysiwyg.onModuleLoad(function() {
-                  new WysiwygEditor({hookId:"RecruitmentApp.EvaluationClass_${evals.size()}_details"});
-                });
-            });
-&lt;/script&gt;
         #end
     #end
     )))
