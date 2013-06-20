@@ -11,12 +11,11 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1369751360000</creationDate>
-  <date>1370850554000</date>
-  <contentUpdateDate>1370850552000</contentUpdateDate>
+  <creationDate>1371650991000</creationDate>
+  <date>1371732483000</date>
+  <contentUpdateDate>1371732469000</contentUpdateDate>
   <version>1.1</version>
   <title/>
-  <template/>
   <defaultTemplate/>
   <validationScript/>
   <comment/>
@@ -69,8 +68,25 @@
   $stepObject.set('step', $stepName)
   $newDoc.save()
 #end
+
+#set($userConfigDoc = $xwiki.getDocument('RecruitmentApp.UserConfiguration'))
+#set($userConfigObj = $userConfigDoc.getObject('RecruitmentApp.UserConfiguration'))
+
+#if( "$!request.userSpace" != "" )
+   $userConfigObj.set('wiki', $request.userSpace)
+   $userConfigDoc.save()
+#end
+
 {{/velocity}}
 {{velocity}}
+== Users ==
+   {{html}}
+     Specify the space from where to get assignee users: 
+     &lt;form method="post" action=""&gt;
+        &lt;input type="text" name="userSpace" value="$userConfigObj.wiki" /&gt;
+        &lt;input type="submit" value="Update" class="button" /&gt;
+     &lt;/form&gt;
+   {{/html}}
 == Offices ==
 #set($officeTableOptions = {
   'className' : 'RecruitmentApp.OfficeClass',
@@ -145,7 +161,7 @@
 #livetable('stepTable' $stepTableColumns $stepTableColumnsProperties $stepTableOptions)
 {{html clean="false"}}
 &lt;form method="post" action=""&gt;
-   Step: &lt;input type="text" name="stepName" /&gt;
+   Step: &lt;input type="text" name="stepName"/&gt;
    &lt;input type="submit" value="Add" class="button" /&gt;
 &lt;/form&gt;
 {{/html}}

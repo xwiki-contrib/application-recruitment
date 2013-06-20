@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>RecruitmentApp</web>
+  <name>MigrationScript</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1371646919000</creationDate>
+  <date>1371646939000</date>
+  <contentUpdateDate>1371646927000</contentUpdateDate>
+  <version>1.1</version>
+  <title>MigrationScript</title>
+  <template/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content>{{velocity}}
+
+#set($results = $services.query.xwql("from doc.object(RecruitmentCode.CandidateClass) as candidate where doc.fullName &lt;&gt; 'RecruitmentCode.CandidateClassTemplate'").execute())
+
+#foreach($candidate in $results)
+   #set($candidateDoc = $xwiki.getDocument($candidate))
+   #set($candidateObj = $candidateDoc.getObject('RecruitmentCode.CandidateClass'))
+   #set($docName = "$candidateObj.first_name $candidateObj.last_name")
+   #set($newCandidateDoc = $xwiki.getDocument("RecruitmentApp.$docName"))
+   #set($discard = $newCandidateDoc.createNewObject("RecruitmentApp.RecruitmentAppClass"))
+   #set($newCandidateObj = $newCandidateDoc.getObject("RecruitmentApp.RecruitmentAppClass"))
+
+   #set($officeName = $candidateObj.office + "Office")
+   #set($query = "from doc.object(RecruitmentApp.OfficeClass) as ofc where doc.fullName='RecruitmentApp.$officeName'")
+   #set($getOffice = $services.query.xwql($query).execute())
+   #if ( $getOffice.size() == 0 ) 
+       #set($newOfficeDoc = $xwiki.getDocument("RecruitmentApp.$officeName"))
+       #set($discard = $newOfficeDoc.createNewObject("RecruitmentApp.OfficeClass"))
+       #set($newOfficeObj = $newOfficeDoc.getObject("RecruitmentApp.OfficeClass"))
+       $newOfficeObj.set('office', $candidateObj.office)
+       $newOfficeDoc.save()
+   #else
+       #set($newOfficeObj = $getOffice.get(0))
+   #end
+
+   #set($statusName = $candidateObj.status + "Status")
+   #set($query = "from doc.object(RecruitmentApp.StatusClass) as status where doc.fullName='RecruitmentApp.$statusName'")
+   #set($getStatus = $services.query.xwql($query).execute())
+   #if ($getStatus.size() == 0)
+       #set($newStatusDoc = $xwiki.getDocument("RecruitmentApp.$statusName"))
+       #set($discard = $newStatusDoc.createNewObject('RecruitmentApp.StatusClass'))
+       #set($newStatusObj = $newStatusDoc.getObject("RecruitmentApp.StatusClass"))
+       $newStatusObj.set('status', $candidateObj.status)
+       $newStatusDoc.save()
+   #else
+       #set($newStatusDoc = $getStatus.get(0))
+   #end
+
+  #set($evaluations = $candidateDoc.getObjects('RecruitmentCode.EvaluationClass'))
+  #set($end = $mathtool.sub($evaluations.size(), 1))
+  #foreach($index in [0..$end])
+      #set($evaluationObj = $evaluations.get($index))
+      #set($discard = $newCandidateDoc.createNewObject('RecruitmentApp.EvaluationClass'))
+      #set($evalObj = $newCandidateDoc.getObject('RecruitmentApp.EvaluationClass'))
+      $evalObj.set('mark', $evaluationObj.mark)
+      $evalObj.set('evaluator', $evaluationObj.getProperty('evaluator').value)
+      $evalObj.set('details', $evaluationObj.details)
+      $evalObj.set('hire', $evaluationObj.getProperty('hire').value.toString())
+  #end
+
+   ##transfer info 
+   $newCandidateObj.set('first_name', $candidateObj.first_name)
+   $newCandidateObj.set('last_name', $candidateObj.last_name)
+   $newCandidateObj.set('email', $candidateObj.email)
+   $newCandidateObj.set('skype', $candidateObj.skype)
+   $newCandidateObj.set('details', $candidateObj.details)
+   $newCandidateObj.set('phone', $candidateObj.phone)
+   $newCandidateObj.set('assignee', $candidateObj.assignee)
+   $newCandidateObj.set('office', $newOfficeObj.getProperty('office').value)
+   $newCandidateObj.set('status', $newOfficeObj.getProperty('status').value)
+   ##save the doc
+   $newCandidateDoc.save()
+#end
+
+{{/velocity}}</content>
+</xwikidoc>
