@@ -11,81 +11,133 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1371646919000</creationDate>
-  <date>1371646939000</date>
-  <contentUpdateDate>1371646927000</contentUpdateDate>
+  <creationDate>1371734726000</creationDate>
+  <date>1373752487000</date>
+  <contentUpdateDate>1373752487000</contentUpdateDate>
   <version>1.1</version>
   <title>MigrationScript</title>
-  <template/>
   <defaultTemplate/>
   <validationScript/>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.1</syntaxId>
   <hidden>true</hidden>
-  <content>{{velocity}}
+  <content>{{groovy}}
+import com.xpn.xwiki.doc.XWikiDocument
+import com.xpn.xwiki.XWikiContext;
+import com.xpn.xwiki.XWikiException;
+import com.xpn.xwiki.doc.XWikiAttachment
 
-#set($results = $services.query.xwql("from doc.object(RecruitmentCode.CandidateClass) as candidate where doc.fullName &lt;&gt; 'RecruitmentCode.CandidateClassTemplate'").execute())
+class AttachmentCopy {
+	def copy(XWikiDocument destination, XWikiDocument source, XWikiContext context) {
+       def sourceAttachments = source.getAttachmentList()
+       if ( sourceAttachments.size() &gt; 0 ) {
+			copyAttachments(destination, source, sourceAttachments, context)
+       }
+    }
 
-#foreach($candidate in $results)
-   #set($candidateDoc = $xwiki.getDocument($candidate))
-   #set($candidateObj = $candidateDoc.getObject('RecruitmentCode.CandidateClass'))
-   #set($docName = "$candidateObj.first_name $candidateObj.last_name")
-   #set($newCandidateDoc = $xwiki.getDocument("RecruitmentApp.$docName"))
-   #set($discard = $newCandidateDoc.createNewObject("RecruitmentApp.RecruitmentAppClass"))
-   #set($newCandidateObj = $newCandidateDoc.getObject("RecruitmentApp.RecruitmentAppClass"))
+    def copyAttachments(XWikiDocument destination, XWikiDocument source, sourceAttachments, XWikiContext context) {
+       sourceAttachments.each() {
+           def attachmentByteContent = source.getAttachment(it.getFilename())		
+    	   destination.addAttachment(it.getFilename(), attachmentByteContent.getContentInputStream(context), context)
+       }
+    }
+}
 
-   #set($officeName = $candidateObj.office + "Office")
-   #set($query = "from doc.object(RecruitmentApp.OfficeClass) as ofc where doc.fullName='RecruitmentApp.$officeName'")
-   #set($getOffice = $services.query.xwql($query).execute())
-   #if ( $getOffice.size() == 0 ) 
-       #set($newOfficeDoc = $xwiki.getDocument("RecruitmentApp.$officeName"))
-       #set($discard = $newOfficeDoc.createNewObject("RecruitmentApp.OfficeClass"))
-       #set($newOfficeObj = $newOfficeDoc.getObject("RecruitmentApp.OfficeClass"))
-       $newOfficeObj.set('office', $candidateObj.office)
-       $newOfficeDoc.save()
-   #else
-       #set($newOfficeObj = $getOffice.get(0))
-   #end
-
-   #set($statusName = $candidateObj.status + "Status")
-   #set($query = "from doc.object(RecruitmentApp.StatusClass) as status where doc.fullName='RecruitmentApp.$statusName'")
-   #set($getStatus = $services.query.xwql($query).execute())
-   #if ($getStatus.size() == 0)
-       #set($newStatusDoc = $xwiki.getDocument("RecruitmentApp.$statusName"))
-       #set($discard = $newStatusDoc.createNewObject('RecruitmentApp.StatusClass'))
-       #set($newStatusObj = $newStatusDoc.getObject("RecruitmentApp.StatusClass"))
-       $newStatusObj.set('status', $candidateObj.status)
-       $newStatusDoc.save()
-   #else
-       #set($newStatusDoc = $getStatus.get(0))
-   #end
-
-  #set($evaluations = $candidateDoc.getObjects('RecruitmentCode.EvaluationClass'))
-  #set($end = $mathtool.sub($evaluations.size(), 1))
-  #foreach($index in [0..$end])
-      #set($evaluationObj = $evaluations.get($index))
-      #set($discard = $newCandidateDoc.createNewObject('RecruitmentApp.EvaluationClass'))
-      #set($evalObj = $newCandidateDoc.getObject('RecruitmentApp.EvaluationClass'))
-      $evalObj.set('mark', $evaluationObj.mark)
-      $evalObj.set('evaluator', $evaluationObj.getProperty('evaluator').value)
-      $evalObj.set('details', $evaluationObj.details)
-      $evalObj.set('hire', $evaluationObj.getProperty('hire').value.toString())
-  #end
-
-   ##transfer info 
-   $newCandidateObj.set('first_name', $candidateObj.first_name)
-   $newCandidateObj.set('last_name', $candidateObj.last_name)
-   $newCandidateObj.set('email', $candidateObj.email)
-   $newCandidateObj.set('skype', $candidateObj.skype)
-   $newCandidateObj.set('details', $candidateObj.details)
-   $newCandidateObj.set('phone', $candidateObj.phone)
-   $newCandidateObj.set('assignee', $candidateObj.assignee)
-   $newCandidateObj.set('office', $newOfficeObj.getProperty('office').value)
-   $newCandidateObj.set('status', $newOfficeObj.getProperty('status').value)
-   ##save the doc
-   $newCandidateDoc.save()
+fileCopy = new AttachmentCopy()
+{{/groovy}}
+{{velocity output="off"}}
+#set($importConfigDoc = $xwiki.getDocument('RecruitmentApp.ImportConfiguration'))
+#set($importConfigObj = $importConfigDoc.getObject('RecruitmentApp.ImportConfiguration'))
+#if( "$!request.importSpace" != "" )
+	  $importConfigObj.set('space', $request.importSpace)
+	  $importConfigDoc.save()   
 #end
 
+#set($space = $importConfigObj.space)
+
+#set($results = $services.query.xwql("from doc.object(RecruitmentCode.CandidateClass) as candidate where doc.fullName &lt;&gt; 'RecruitmentCode.CandidateClassTemplate'").setWiki($space).execute())
+
+#set($database = $xcontext.getDatabase())
+$xcontext.setDatabase($space)
+
+#foreach($candidate in $results)  
+    #set($oldCandidateDoc = $xwiki.getDocument($candidate))
+	#set($oldCandidateObj = $oldCandidateDoc.getObject('RecruitmentCode.CandidateClass'))
+    #set($candidateFullName = $oldCandidateObj.first_name + " " + $oldCandidateObj.last_name)
+	#set($newCandidateDocRef = $services.model.createDocumentReference($database, 'RecruitmentApp', $candidateFullName))
+	
+    #set($newCandidateDoc = $xwiki.getDocument($newCandidateDocRef))
+	##check if the user exists
+	#if("$!newCandidateDoc.getObject('RecruitmentApp.RecruitmentAppClass')" == '' )
+		#set($newCandidateObj = $newCandidateDoc.getObject('RecruitmentApp.RecruitmentAppClass', true))
+	
+		$newCandidateDoc.setTitle($candidateFullName)
+		$newCandidateObj.set('first_name', $oldCandidateObj.first_name)
+		$newCandidateObj.set('last_name', $oldCandidateObj.last_name)
+		$newCandidateObj.set('email', $oldCandidateObj.email)
+		$newCandidateObj.set('skype', $oldCandidateObj.skype)
+		$newCandidateObj.set('phone', $oldCandidateObj.phone)
+		$newCandidateObj.set('details', $oldCandidateObj.details)
+		$newCandidateObj.set('assignee', $oldCandidateObj.assignee)
+	
+	    ##check if the office is not empty 
+		#if( "$!oldCandidateObj.office" != '')
+		    ##check if the office exists
+			#set($officeResult = $services.query.xwql('FROM doc.object(RecruitmentApp.OfficeClass) as office WHERE office.office = :office').bindValue('office', $oldCandidateObj.office).setWiki($database).execute())
+			#if( $officeResult.size() == 0 )
+				#set($officeDocName = $oldCandidateObj.office + "Office")
+				#set($officeDocRef = $services.model.createDocumentReference($database, 'RecruitmentApp', $officeDocName))
+				#set($officeDoc = $xwiki.getDocument($officeDocRef))
+				#set($officeObj = $officeDoc.getObject('RecruitmentApp.OfficeClass', true))
+				$officeObj.set('office', $oldCandidateObj.office)
+				$officeDoc.save() 
+			#end
+			##set office for user
+			$newCandidateObj.set('office', $oldCandidateObj.office)
+		#end
+	
+		##check if the status is not empty
+		#if( "$!oldCandidateObj.status" != '' )
+			##check if the status exists
+			#set($statusResult = $services.query.xwql('FROM doc.object(RecruitmentApp.StatusClass) as status WHERE status.status = :status').bindValue('status', $oldCandidateObj.status).setWiki($database).execute())
+			#if( $statusResult.size() == 0 )
+				#set($statusDocName = $oldCandidateObj.status + 'Status')
+				#set($statusDocRef = $services.model.createDocumentReference($database, 'RecruitmentApp', $statusDocName))
+				#set($statusDoc = $xwiki.getDocument($statusDocRef))
+				#set($statusObj = $statusDoc.getObject('RecruitmentApp.StatusClass', true))
+				$statusObj.set('status', $oldCandidateObj.status)
+				$statusDoc.save()
+			#end
+			##set status for user
+			$newCandidateObj.set('status', $oldCandidateObj.status) 
+		#end
+	
+		##get all evaluations for the candidate
+		#set($evaluationObjects = $oldCandidateDoc.getObjects('RecruitmentCode.EvaluationClass'))
+		#if( $evaluationObjects.size() != 0 )
+			#foreach( $evaluation in $evaluationObjects )
+				#set($newEvaluationObject = $newCandidateDoc.newObject('RecruitmentApp.EvaluationClass'))
+				$newEvaluationObject.set('evaluator', $evaluation.getProperty('evaluator').value)
+				$newEvaluationObject.set('mark', $evaluation.mark)
+				$newEvaluationObject.set('details', $evaluation.details)
+				#set($hire = 0)
+				#if( "$!evaluation.hire" != '' )
+					#if( $evaluation.hire == "Yes" )
+						#set($hire = 1)
+					#elseif ( $evaluation.hire == "No")
+						#set($hire = 2)
+					#end
+				#end
+			    $newEvaluationObject.set('hire', $hire.toString())
+			#end
+		#end	
+	
+		$fileCopy.copy($newCandidateDoc.getDocument(), $oldCandidateDoc.getDocument(), $xcontext.getContext())
+		$newCandidateDoc.save()
+	#end
+#end
+$xcontext.setDatabase($database)
+$response.sendRedirect($xwiki.getURL($request.doc, 'view', $request.query))
 {{/velocity}}</content>
 </xwikidoc>
