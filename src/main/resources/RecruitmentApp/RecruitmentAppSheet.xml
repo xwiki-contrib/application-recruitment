@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1371734726000</creationDate>
-  <date>1371737650000</date>
-  <contentUpdateDate>1371737609000</contentUpdateDate>
+  <creationDate>1376306692000</creationDate>
+  <date>1376309527000</date>
+  <contentUpdateDate>1376308635000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -210,7 +210,7 @@
     <property>
       <code>(function(){
 	document.observe('dom:loaded', function() {
-		var jobPosting = $('RecruitmentApp.RecruitmentAppClass_0_jobPosting');
+		var jobPosting = $('jobPosition');
 		if(jobPosting) {
 			Event.observe(jobPosting, "focus", function(){
 				new XWiki.widgets.Suggest(this, {
@@ -219,7 +219,17 @@
 					seps: " ,|",
 					offsety: 13
 				});
-			});
+			}); 
+                        Event.observe(jobPosting, 'xwiki:suggest:selected', function(event) {
+                             var realJobPosition = $('realJobPosition');
+                             if(realJobPosition) {
+                                realJobPosition.setValue(event.memo.id);
+                             }
+                        });
+                        Event.observe(jobPosting, 'change', function(event) { 
+                             var value = this.getValue();
+                             if(value.trim().length == 0) { $('realJobPosition').setValue(''); }
+                        });
 		}
 	});
 })();</code>
@@ -573,7 +583,7 @@ $xwiki.jsfx.use("js/xwiki/wysiwyg/xwe/XWikiWysiwyg.js", true)
     (((
      |**$doc.displayPrettyName('first_name'):**|$doc.display('first_name')
      |**$doc.displayPrettyName('last_name'):** |$doc.display('last_name')
-     |**$doc.displayPrettyName('jobPosting'):**|#if($context.action == "edit") $doc.display('jobPosting') #else #set($jobPosting = $doc.display('jobPosting')) #if("$!jobPosting" != "") #set($joburl = "JobArea."+$doc.display('jobPosting')) [[$jobPosting&gt;&gt;$joburl]] #end #end\\
+     |**$doc.displayPrettyName('jobPosting'):**|$doc.display('jobPosting')
      |**$doc.displayPrettyName('applyDate'):** |$doc.display('applyDate')
      |**$doc.displayPrettyName('office'):**|$doc.display('office')    
      |**$doc.displayPrettyName('phone'):**|$doc.display('phone')

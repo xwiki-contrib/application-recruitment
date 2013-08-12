@@ -11,12 +11,11 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1367917341000</creationDate>
-  <date>1369054727000</date>
-  <contentUpdateDate>1369054727000</contentUpdateDate>
+  <creationDate>1376306691000</creationDate>
+  <date>1376310215000</date>
+  <contentUpdateDate>1376310214000</contentUpdateDate>
   <version>1.1</version>
   <title/>
-  <template/>
   <defaultTemplate/>
   <validationScript/>
   <comment/>
@@ -26,7 +25,7 @@
   <content>{{velocity}}
 
 #set($docTitle = $doc.getDisplayTitle())
-#if("$!docTitle" != "")
+#if("$!docTitle" != "" &amp;&amp; $doc.isNew())
    $doc.set('position', $docTitle)
 #end
 

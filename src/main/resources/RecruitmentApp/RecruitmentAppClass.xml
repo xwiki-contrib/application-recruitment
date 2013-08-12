@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1371650988000</creationDate>
-  <date>1371733573000</date>
-  <contentUpdateDate>1371733573000</contentUpdateDate>
+  <creationDate>1376306691000</creationDate>
+  <date>1376309483000</date>
+  <contentUpdateDate>1376309483000</contentUpdateDate>
   <version>1.1</version>
   <title>RecruitmentApp Class</title>
   <defaultTemplate/>
@@ -217,7 +217,23 @@
       <classType>com.xpn.xwiki.objects.classes.DateClass</classType>
     </hiringDate>
     <jobPosting>
-      <customDisplay/>
+      <customDisplay>{{velocity}}
+#set($jobDocRef = $services.model.resolveDocument($value))
+#set($jobDoc = $xwiki.getDocument($jobDocRef))
+#set($jobObj = $jobDoc.getObject('JobArea.JobAreaClass'))
+#set($jobName = $jobObj.getProperty('position').value)
+
+#if ($xcontext.action == 'edit')
+   {{html clean="true"}}
+      &lt;input type="text" id="jobPosition" size="30" value="$!jobName" /&gt;
+      &lt;input type="hidden" name="${prefix}${name}" id="realJobPosition" value="$!value" /&gt;
+   {{/html}}
+#elseif ($xcontext.action == 'view')
+   #if ("$!value" != '')
+      [[$jobName&gt;&gt;$value]]
+   #end
+#end
+{{/velocity}}</customDisplay>
       <disabled>0</disabled>
       <name>jobPosting</name>
       <number>20</number>
