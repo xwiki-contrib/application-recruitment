@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311699000</creationDate>
-  <date>1368523902000</date>
-  <contentUpdateDate>1368523902000</contentUpdateDate>
+  <date>1391605915000</date>
+  <contentUpdateDate>1391605914000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <template/>
@@ -59,35 +59,30 @@
     </property>
   </object>
   <content># Class fields
-RecruitmentApp.RecruitmentAppClass_first_name=First name
-RecruitmentApp.RecruitmentAppClass_last_name=Last name
+RecruitmentApp.RecruitmentAppClass_first_name=First Name
+RecruitmentApp.RecruitmentAppClass_last_name=Last Name
 RecruitmentApp.RecruitmentAppClass_email=Email
-RecruitmentApp.RecruitmentAppClass_skype=Skype
+RecruitmentApp.RecruitmentAppClass_skype=Skype ID
 RecruitmentApp.RecruitmentAppClass_phone=Phone
-RecruitmentApp.RecruitmentAppClass_office=Office
-RecruitmentApp.RecruitmentAppClass_office_2=Iasi
-RecruitmentApp.RecruitmentAppClass_office_1=Paris
-RecruitmentApp.RecruitmentAppClass_department=Department
-RecruitmentApp.RecruitmentAppClass_department_2=SysAdmin
-RecruitmentApp.RecruitmentAppClass_department_1=Technology
-RecruitmentApp.RecruitmentAppClass_status=Status
-RecruitmentApp.RecruitmentAppClass_status_2=Accepted
-RecruitmentApp.RecruitmentAppClass_status_1=None
 RecruitmentApp.RecruitmentAppClass_rating=Rating
-RecruitmentApp.RecruitmentAppClass_current_position=Current position
-RecruitmentApp.RecruitmentAppClass_current_company=Current company
+RecruitmentApp.RecruitmentAppClass_office=Office
+RecruitmentApp.RecruitmentAppClass_current_position=Current Position
+RecruitmentApp.RecruitmentAppClass_current_company=Current Company
 RecruitmentApp.RecruitmentAppClass_details=Details
-RecruitmentApp.RecruitmentAppClass_next_steps=Next steps
+RecruitmentApp.RecruitmentAppClass_status=Status
+RecruitmentApp.RecruitmentAppClass_next_steps=Next Step
+RecruitmentApp.RecruitmentAppClass_applyDate=Apply Date
+RecruitmentApp.RecruitmentAppClass_hiringDate=Hiring Date
 
 # Live table generic keys
-recruitmentapp.livetable.doc.title=Page title
-recruitmentapp.livetable.doc.name=Page name
+recruitmentapp.livetable.doc.title=Page Title
+recruitmentapp.livetable.doc.name=Page Name
 recruitmentapp.livetable.doc.space=Space
-recruitmentapp.livetable.doc.fullname=Page full name
+recruitmentapp.livetable.doc.fullname=Page Full Name
 recruitmentapp.livetable.doc.author=Last Author
 recruitmentapp.livetable.doc.creator=Creator
-recruitmentapp.livetable.doc.date=Update date
-recruitmentapp.livetable.doc.creationDate=Creation date
+recruitmentapp.livetable.doc.date=Update Date
+recruitmentapp.livetable.doc.creationDate=Creation Date
 recruitmentapp.livetable._avatar=Avatar
 recruitmentapp.livetable._images=Images
 recruitmentapp.livetable._attachments=Attachments
@@ -97,22 +92,21 @@ recruitmentapp.livetable._actions.delete=Delete
 recruitmentapp.livetable.emptyvalue=-
 
 # Live table specific keys
-recruitmentapp.livetable.first_name=First name
-recruitmentapp.livetable.last_name=Last name
+recruitmentapp.livetable.first_name=First Name
+recruitmentapp.livetable.last_name=Last Name
 recruitmentapp.livetable.email=Email
 recruitmentapp.livetable.skype=Skype
 recruitmentapp.livetable.phone=Phone
 recruitmentapp.livetable.office=Office
-recruitmentapp.livetable.department=Department
 recruitmentapp.livetable.status=Status
-recruitmentapp.livetable.sourceType=Source type
-recruitmentapp.livetable.applyDate=Apply date
-recruitmentapp.livetable.hiringDate=Hiring date
+recruitmentapp.livetable.sourceType=Source Type
+recruitmentapp.livetable.applyDate=Apply Date
+recruitmentapp.livetable.hiringDate=Hiring Date
 recruitmentapp.livetable.rating=Rating
-recruitmentapp.livetable.current_position=Current position
-recruitmentapp.livetable.current_company=Current company
+recruitmentapp.livetable.current_position=Current Position
+recruitmentapp.livetable.current_company=Current Company
 recruitmentapp.livetable.details=Details
-recruitmentapp.livetable.next_steps=Next steps
+recruitmentapp.livetable.next_steps=Next Step
 recruitmentapp.livetable.jobPosting=Job Posting
 
 recruitmentapp.livetable.sourceChannel=Source Channel</content>
