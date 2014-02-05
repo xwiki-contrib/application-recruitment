@@ -12,8 +12,8 @@
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311699000</creationDate>
-  <date>1391605915000</date>
-  <contentUpdateDate>1391605914000</contentUpdateDate>
+  <date>1391608242000</date>
+  <contentUpdateDate>1391608232000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <template/>
@@ -74,6 +74,8 @@ RecruitmentApp.RecruitmentAppClass_next_steps=Next Step
 RecruitmentApp.RecruitmentAppClass_applyDate=Apply Date
 RecruitmentApp.RecruitmentAppClass_hiringDate=Hiring Date
 RecruitmentApp.RecruitmentAppClass_linkedin=LinkedIn
+RecruitmentApp.RecruitmentAppClass_jobPosting=Position
+
 
 # Live table generic keys
 recruitmentapp.livetable.doc.title=Page Title
@@ -108,7 +110,7 @@ recruitmentapp.livetable.current_position=Current Position
 recruitmentapp.livetable.current_company=Current Company
 recruitmentapp.livetable.details=Details
 recruitmentapp.livetable.next_steps=Next Step
-recruitmentapp.livetable.jobPosting=Job Posting
+recruitmentapp.livetable.jobPosting=Position
 
 recruitmentapp.livetable.sourceChannel=Source Channel</content>
 </xwikidoc>
