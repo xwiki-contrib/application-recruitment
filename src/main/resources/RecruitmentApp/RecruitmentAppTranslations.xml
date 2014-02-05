@@ -73,6 +73,7 @@ RecruitmentApp.RecruitmentAppClass_status=Status
 RecruitmentApp.RecruitmentAppClass_next_steps=Next Step
 RecruitmentApp.RecruitmentAppClass_applyDate=Apply Date
 RecruitmentApp.RecruitmentAppClass_hiringDate=Hiring Date
+RecruitmentApp.RecruitmentAppClass_linkedin=LinkedIn
 
 # Live table generic keys
 recruitmentapp.livetable.doc.title=Page Title
