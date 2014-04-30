@@ -182,7 +182,8 @@ icon=icon:newspaper</parameters>
   'position': {"type":"text","size":10, "link":"view"},
   'validation': {"type":"list","size":10},
   'status': {"type":"list","size":10},
-  'doc.creationDate': {"type":"text","size":10}
+  'doc.creationDate': {"type":"text","size":10},
+  '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
 })
 #set ($options = {
   'className': 'JobArea.JobAreaClass',
@@ -194,7 +195,7 @@ icon=icon:newspaper</parameters>
   'selectedColumn': 'position',
   'defaultOrder': 'asc'
 })
-#set ($columns = ['position', 'validation', 'status', 'doc.creationDate'])
+#set ($columns = ['position', 'validation', 'status', 'doc.creationDate', '_actions'])
 #livetable('jobarea' $columns $columnsProperties $options)
 {{/velocity}}</content>
 </xwikidoc>
