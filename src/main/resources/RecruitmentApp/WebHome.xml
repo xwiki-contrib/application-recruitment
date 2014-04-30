@@ -186,7 +186,8 @@ icon=icon:bricks</parameters>
   'status': {"type":"list","size":10},
   'sourceType': {"type":"list","size":10},
   'sourceChannel': {"type":"text","size":10},
-  'applyDate': {"type":"text","size":10}
+  'applyDate': {"type":"text","size":10},
+  '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
 })
 #set ($options = {
   'className': 'RecruitmentApp.RecruitmentAppClass',
@@ -198,7 +199,7 @@ icon=icon:bricks</parameters>
   'selectedColumn': 'first_name',
   'defaultOrder': 'asc'
 })
-#set ($columns = ['first_name', 'last_name', 'office', 'jobPosting', 'status', 'sourceType', 'sourceChannel', 'applyDate'])
+#set ($columns = ['first_name', 'last_name', 'office', 'jobPosting', 'status', 'sourceType', 'sourceChannel', 'applyDate', '_actions'])
 #livetable('recruitmentapp' $columns $columnsProperties $options)
 {{/velocity}}</content>
 </xwikidoc>
