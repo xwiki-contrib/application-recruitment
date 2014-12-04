@@ -170,7 +170,7 @@
     <property>
       <parameters>label=Job Area
 target=JobArea.WebHome
-icon=icon:newspaper</parameters>
+icon=icon:briefcase</parameters>
     </property>
     <property>
       <scope>wiki</scope>
