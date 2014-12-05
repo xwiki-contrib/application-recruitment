@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc version="1.1">
   <web>RecruitmentApp</web>
   <name>WebHome</name>
   <language/>
   <defaultLanguage/>
   <translation>0</translation>
-  <parent>Main.WebHome</parent>
   <creator>xwiki:XWiki.Admin</creator>
+  <parent>Main.WebHome</parent>
   <author>xwiki:XWiki.Admin</author>
-  <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1367311777000</creationDate>
   <date>1370596575000</date>
   <contentUpdateDate>1370596575000</contentUpdateDate>
   <version>1.1</version>
   <title>$msg.get('platform.appwithinminutes.appHomePageTitle', $doc.space)</title>
-  <template/>
-  <defaultTemplate/>
-  <validationScript/>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.0</syntaxId>
   <hidden>true</hidden>
+  <content>{{velocity}}
+#set ($discard = $services.localization.use('document', 'RecruitmentApp.RecruitmentAppTranslations'))
+#set ($columnsProperties = {
+  'first_name': {"type":"text","size":10, "link" : "view"},
+  'last_name': {"type":"text","size":10, "link" : "view"},
+  'office': {"type":"list","size":10},
+  'jobPosting': {"type":"text","size":10},
+  'status': {"type":"list","size":10},
+  'sourceType': {"type":"list","size":10},
+  'sourceChannel': {"type":"text","size":10},
+  'applyDate': {"type":"text","size":10},
+  '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
+})
+#set ($options = {
+  'className': 'RecruitmentApp.RecruitmentAppClass',
+  'resultPage': 'RecruitmentApp.RecruitmentAppLiveTableResults',
+  'translationPrefix': 'recruitmentapp.livetable.',
+  'tagCloud': true,
+  'rowCount': 15,
+  'maxPages': 10,
+  'selectedColumn': 'first_name',
+  'defaultOrder': 'asc'
+})
+#set ($columns = ['first_name', 'last_name', 'office', 'jobPosting', 'status', 'sourceType', 'sourceChannel', 'applyDate', '_actions'])
+#livetable('recruitmentapp' $columns $columnsProperties $options)
+{{/velocity}}</content>
   <object>
+    <name>RecruitmentApp.WebHome</name>
+    <number>0</number>
+    <className>AppWithinMinutes.LiveTableClass</className>
+    <guid>5b952c0d-b3dd-4283-bfdf-4c50665bab73</guid>
     <class>
       <name>AppWithinMinutes.LiveTableClass</name>
       <customClass/>
@@ -75,10 +101,6 @@
         <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
       </description>
     </class>
-    <name>RecruitmentApp.WebHome</name>
-    <number>0</number>
-    <className>AppWithinMinutes.LiveTableClass</className>
-    <guid>5b952c0d-b3dd-4283-bfdf-4c50665bab73</guid>
     <property>
       <class>RecruitmentApp.RecruitmentAppClass</class>
     </property>
@@ -90,6 +112,10 @@
     </property>
   </object>
   <object>
+    <name>RecruitmentApp.WebHome</name>
+    <number>0</number>
+    <className>XWiki.UIExtensionClass</className>
+    <guid>49c69899-8246-49aa-ade5-760f79ef4311</guid>
     <class>
       <name>XWiki.UIExtensionClass</name>
       <customClass/>
@@ -154,10 +180,6 @@
         <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
       </scope>
     </class>
-    <name>RecruitmentApp.WebHome</name>
-    <number>0</number>
-    <className>XWiki.UIExtensionClass</className>
-    <guid>49c69899-8246-49aa-ade5-760f79ef4311</guid>
     <property>
       <content/>
     </property>
@@ -168,7 +190,8 @@
       <name>platform.panels.RecruitmentAppApplication</name>
     </property>
     <property>
-      <parameters>label=RecruitmentApp
+      <parameters>#set ($discard = $services.localization.use('document', 'RecruitmentApp.RecruitmentAppTranslations'))
+label=$services.localization.render('recruitmentapp.app.title')
 target=RecruitmentApp.WebHome
 icon=icon:bricks</parameters>
     </property>
@@ -176,30 +199,4 @@ icon=icon:bricks</parameters>
       <scope>wiki</scope>
     </property>
   </object>
-  <content>{{velocity}}
-#set ($discard = $services.localization.use('document', 'RecruitmentApp.RecruitmentAppTranslations'))
-#set ($columnsProperties = {
-  'first_name': {"type":"text","size":10, "link" : "view"},
-  'last_name': {"type":"text","size":10, "link" : "view"},
-  'office': {"type":"list","size":10},
-  'jobPosting': {"type":"text","size":10},
-  'status': {"type":"list","size":10},
-  'sourceType': {"type":"list","size":10},
-  'sourceChannel': {"type":"text","size":10},
-  'applyDate': {"type":"text","size":10},
-  '_actions': {"sortable":false,"filterable":false,"html":true,"actions":["edit","delete"]}
-})
-#set ($options = {
-  'className': 'RecruitmentApp.RecruitmentAppClass',
-  'resultPage': 'RecruitmentApp.RecruitmentAppLiveTableResults',
-  'translationPrefix': 'recruitmentapp.livetable.',
-  'tagCloud': true,
-  'rowCount': 15,
-  'maxPages': 10,
-  'selectedColumn': 'first_name',
-  'defaultOrder': 'asc'
-})
-#set ($columns = ['first_name', 'last_name', 'office', 'jobPosting', 'status', 'sourceType', 'sourceChannel', 'applyDate', '_actions'])
-#livetable('recruitmentapp' $columns $columnsProperties $options)
-{{/velocity}}</content>
 </xwikidoc>
