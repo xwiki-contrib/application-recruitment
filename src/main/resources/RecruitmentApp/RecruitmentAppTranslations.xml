@@ -73,7 +73,9 @@ recruitmentapp.livetable.details=Details
 recruitmentapp.livetable.next_steps=Next Step
 recruitmentapp.livetable.jobPosting=Position
 
-recruitmentapp.livetable.sourceChannel=Source Channel</content>
+recruitmentapp.livetable.sourceChannel=Source Channel
+
+recruitmentapp.app.title=Recruitment</content>
   <object>
     <name>RecruitmentApp.RecruitmentAppTranslations</name>
     <number>0</number>
@@ -106,7 +108,7 @@ recruitmentapp.livetable.sourceChannel=Source Channel</content>
       </scope>
     </class>
     <property>
-      <scope>ON_DEMAND</scope>
+      <scope>WIKI</scope>
     </property>
   </object>
 </xwikidoc>

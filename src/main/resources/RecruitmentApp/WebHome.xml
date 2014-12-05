@@ -190,7 +190,8 @@
       <name>platform.panels.RecruitmentAppApplication</name>
     </property>
     <property>
-      <parameters>label=RecruitmentApp
+      <parameters>#set ($discard = $services.localization.use('document', 'RecruitmentApp.RecruitmentAppTranslations'))
+label=$services.localization.render('recruitmentapp.app.title')
 target=RecruitmentApp.WebHome
 icon=icon:bricks</parameters>
     </property>
