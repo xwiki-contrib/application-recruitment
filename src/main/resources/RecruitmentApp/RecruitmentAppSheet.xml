@@ -546,6 +546,10 @@ ul {
 
 #xwikicontent table tr td:nth-child(even) {
   min-width: 100px;
+}
+
+#xwikicontent {
+  overflow: hidden;
 }</code>
     </property>
     <property>
