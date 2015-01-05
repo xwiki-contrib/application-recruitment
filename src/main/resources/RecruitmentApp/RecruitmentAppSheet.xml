@@ -40,57 +40,105 @@ $xwiki.jsfx.use("js/xwiki/wysiwyg/xwe/XWikiWysiwyg.js", true)
 {{/velocity}}
 {{velocity}}{{html wiki="true" clean="false"}}
     {{tabs idsToLabels='personalInfo=Personal Information, candidateApp=Candidate Application, evaluations=Evaluations' /}}
-    (%id='personalInfo'%)
+    (% class='xform' id='personalInfo'%)
     (((
-     |**$doc.displayPrettyName('first_name'):**|$doc.display('first_name')
-     |**$doc.displayPrettyName('last_name'):** |$doc.display('last_name')
-     |**$doc.displayPrettyName('jobPosting'):**|$doc.display('jobPosting')
-     |**$doc.displayPrettyName('applyDate'):** |$doc.display('applyDate')
-     |**$doc.displayPrettyName('office'):**|$doc.display('office')
-     |**$doc.displayPrettyName('phone'):**|$doc.display('phone')
-     |**$doc.displayPrettyName('email'):**|$doc.display('email')
-
-     |**$doc.displayPrettyName('skype'):**|$doc.display('skype')
-     |**$doc.displayPrettyName('current_company'):**|$doc.display('current_company')
-     |**$doc.displayPrettyName('current_position'):**|$doc.display('current_position')
-     |**$doc.displayPrettyName('experience'):**|$doc.display('experience')
-     |**$doc.displayPrettyName('linkedin'):**|$doc.display('linkedin')
-     |**$doc.displayPrettyName('facebook'):**|$doc.display('facebook')
+     (% class='row' %)
+     (((
+       (% class='col-xs-12 col-sm-12 col-md-12'%)
+       (((
+         ; $doc.displayPrettyName('jobPosting')
+         : $doc.display('jobPosting')
+       )))
+     )))
+     (% class='row' %)
+     (((
+       (% class='col-xs-12 col-sm-4 col-md-4' %)
+        (((
+          ; $doc.displayPrettyName('first_name')
+          : $doc.display('first_name')
+          ; $doc.displayPrettyName('last_name')
+          : $doc.display('last_name')
+          ; $doc.displayPrettyName('phone')
+          : $doc.display('phone')
+          ; $doc.displayPrettyName('email')
+          : $doc.display('email')
+        )))
+       (% class='col-xs-12 col-sm-4 col-md-4' %)
+       (((
+         ; $doc.displayPrettyName('office')
+         : $doc.display('office')
+         ; $doc.displayPrettyName('current_company')
+         : $doc.display('current_company')
+         ; $doc.displayPrettyName('current_position')
+         : $doc.display('current_position')
+         ; $doc.displayPrettyName('experience')
+         : $doc.display('experience')
+       )))
+       (% class='col-xs-12 col-sm-4 col-md-4' %)
+       (((
+         ; $doc.displayPrettyName('applyDate')
+         : $doc.display('applyDate')
+         ; $doc.displayPrettyName('skype')
+         : $doc.display('skype')
+         ; $doc.displayPrettyName('linkedin')
+         : $doc.display('linkedin')
+         ; $doc.displayPrettyName('facebook')
+         : $doc.display('facebook')
+       )))
+     )))
     )))
-    (%id='candidateApp'%)
+    (% class='xform' id='candidateApp'%)
     (((
-     |**$doc.displayPrettyName('status'):**|$doc.display('status')
-     |**$doc.displayPrettyName('sourceType'):**|$doc.display('sourceType')
-     |**$doc.displayPrettyName('sourceChannel'):**|$doc.display('sourceChannel')
-     |**$doc.displayPrettyName('assignee'):**|$doc.display('assignee')
-     |**$doc.displayPrettyName('next_step'):**|$doc.display('next_step')
-     |**$doc.displayPrettyName('hiringDate'):**|$doc.display('hiringDate')
-    * **$doc.displayPrettyName('coverLetter'):**
-    #if($context.action == "edit")
-        {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="coverLetter" filter="pdf"/}}
-    #else
-       #set($coverLetter = $doc.display('coverLetter'))
-       #if("$!coverLetter" != "")
+      (% class='row' %)
+      (((
+        (% class='col-xs-12 col-sm-6 col-md-6' %)
+        (((
+          ; $doc.displayPrettyName('status')
+          : $doc.display('status')
+          ; $doc.displayPrettyName('sourceType')
+          : $doc.display('sourceType')
+          ; $doc.displayPrettyName('sourceChannel')
+          : $doc.display('sourceChannel')
+        )))
+        (% class='col-xs-12 col-sm-6 col-md-6' %)
+        (((
+          ; $doc.displayPrettyName('assignee')
+          : $doc.display('assignee')
+          ; $doc.displayPrettyName('next_step')
+          : $doc.display('next_step')
+          ; $doc.displayPrettyName('hiringDate')
+          : $doc.display('hiringDate')
+        )))
+        (% class='col-xs-12 col-sm-12 col-ms-12' %)
+        (((
+          ; $doc.displayPrettyName('coverLetter')
+          #if($context.action == "edit")
+            {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="coverLetter" filter="pdf"/}}
+          #else
+            #set($coverLetter = $doc.display('coverLetter'))
+            #if("$!coverLetter" != "")
 
-          {{pdfviewer height="300" file="$coverLetter"/}}
-       #else
-          #info("No cover letter.")
-       #end
-    #end
-    * **$doc.displayPrettyName('cv'):**
-    #if($context.action == "edit")
-        {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="cv" filter="pdf"/}}
-    #else
-       #set($cv = $doc.display('cv'))
-       #if("$!cv" != "")
+              {{pdfviewer height="300" file="$coverLetter"/}}
+            #else
+              #info("No cover letter.")
+            #end
+          #end
+          ; $doc.displayPrettyName('cv')
+          #if($context.action == "edit")
+            {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="cv" filter="pdf"/}}
+          #else
+            #set($cv = $doc.display('cv'))
+            #if("$!cv" != "")
 
-           {{pdfviewer height="300" file="$cv"/}}
-       #else
-          #info("No cv.")
-       #end
-    #end
-    * **$doc.displayPrettyName('details'):**
-    $doc.display('details')
+             {{pdfviewer height="300" file="$cv"/}}
+            #else
+              #info("No cv.")
+            #end
+          #end
+          ; $doc.displayPrettyName('details')
+          : $doc.display('details')
+        )))
+      )))
     )))
 
 #if(!$doc.isNew())
