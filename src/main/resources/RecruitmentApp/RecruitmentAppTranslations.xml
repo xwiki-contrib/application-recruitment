@@ -75,7 +75,8 @@ recruitmentapp.livetable.jobPosting=Position
 
 recruitmentapp.livetable.sourceChannel=Source Channel
 
-recruitmentapp.app.title=Recruitment</content>
+recruitmentapp.app.title=Recruitment
+recruitmentapp.home.title=Recruitment</content>
   <object>
     <name>RecruitmentApp.RecruitmentAppTranslations</name>
     <number>0</number>
