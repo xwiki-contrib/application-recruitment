@@ -1,28 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xwikidoc>
+<xwikidoc version="1.1">
   <web>RecruitmentApp</web>
   <name>RecruitmentAppSheet</name>
   <language/>
   <defaultLanguage/>
   <translation>0</translation>
-  <parent>RecruitmentAppClass</parent>
   <creator>xwiki:XWiki.Admin</creator>
+  <parent>RecruitmentAppClass</parent>
   <author>xwiki:XWiki.Admin</author>
-  <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
   <creationDate>1376306692000</creationDate>
   <date>1376309527000</date>
   <contentUpdateDate>1376308635000</contentUpdateDate>
   <version>1.1</version>
   <title/>
-  <defaultTemplate/>
-  <validationScript/>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.1</syntaxId>
   <hidden>true</hidden>
+  <content>{{velocity output="false"}}
+$xwiki.jsx.use("RecruitmentApp.RecruitmentAppSheet")
+$xwiki.ssx.use("RecruitmentApp.RecruitmentAppSheet")
+$xwiki.jsfx.use("js/xwiki/wysiwyg/xwe/XWikiWysiwyg.js", true)
+
+#set($lazy = false)
+#wysiwyg_import($lazy)
+
+#set($fullName = $doc.getDisplayTitle())
+#if("$!fullName" != "")
+  #set($lastIndexOfSpace = $fullName.lastIndexOf(" "))
+  #if($lastIndexOfSpace != -1)
+      $doc.set('first_name', $fullName.substring(0, $lastIndexOfSpace))
+      $doc.set('last_name', $fullName.substring($mathtool.add($lastIndexOfSpace, 1)))
+  #end
+#end
+#set ($discard = $doc.use('RecruitmentApp.RecruitmentAppClass'))
+#set ($discard = $services.localization.use('document', 'RecruitmentApp.RecruitmentAppTranslations'))
+{{/velocity}}
+{{velocity}}{{html wiki="true" clean="false"}}
+    {{tabs idsToLabels='personalInfo=Personal Information, candidateApp=Candidate Application, evaluations=Evaluations' /}}
+    (% class='xform' id='personalInfo'%)
+    (((
+     (% class='row' %)
+     (((
+       (% class='col-xs-12 col-sm-12 col-md-12'%)
+       (((
+         ; $doc.displayPrettyName('jobPosting')
+         : $doc.display('jobPosting')
+       )))
+     )))
+     (% class='row' %)
+     (((
+       (% class='col-xs-12 col-sm-4 col-md-4' %)
+        (((
+          ; $doc.displayPrettyName('first_name')
+          : $doc.display('first_name')
+          ; $doc.displayPrettyName('last_name')
+          : $doc.display('last_name')
+          ; $doc.displayPrettyName('phone')
+          : $doc.display('phone')
+          ; $doc.displayPrettyName('email')
+          : $doc.display('email')
+        )))
+       (% class='col-xs-12 col-sm-4 col-md-4' %)
+       (((
+         ; $doc.displayPrettyName('office')
+         : $doc.display('office')
+         ; $doc.displayPrettyName('current_company')
+         : $doc.display('current_company')
+         ; $doc.displayPrettyName('current_position')
+         : $doc.display('current_position')
+         ; $doc.displayPrettyName('experience')
+         : $doc.display('experience')
+       )))
+       (% class='col-xs-12 col-sm-4 col-md-4' %)
+       (((
+         ; $doc.displayPrettyName('applyDate')
+         : $doc.display('applyDate')
+         ; $doc.displayPrettyName('skype')
+         : $doc.display('skype')
+         ; $doc.displayPrettyName('linkedin')
+         : $doc.display('linkedin')
+         ; $doc.displayPrettyName('facebook')
+         : $doc.display('facebook')
+       )))
+     )))
+    )))
+    (% class='xform' id='candidateApp'%)
+    (((
+      (% class='row' %)
+      (((
+        (% class='col-xs-12 col-sm-6 col-md-6' %)
+        (((
+          ; $doc.displayPrettyName('status')
+          : $doc.display('status')
+          ; $doc.displayPrettyName('sourceType')
+          : $doc.display('sourceType')
+          ; $doc.displayPrettyName('sourceChannel')
+          : $doc.display('sourceChannel')
+        )))
+        (% class='col-xs-12 col-sm-6 col-md-6' %)
+        (((
+          ; $doc.displayPrettyName('assignee')
+          : $doc.display('assignee')
+          ; $doc.displayPrettyName('next_step')
+          : $doc.display('next_step')
+          ; $doc.displayPrettyName('hiringDate')
+          : $doc.display('hiringDate')
+        )))
+        (% class='col-xs-12 col-sm-12 col-ms-12' %)
+        (((
+          ; $doc.displayPrettyName('coverLetter')
+          #if($context.action == "edit")
+            {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="coverLetter" filter="pdf"/}}
+          #else
+            #set($coverLetter = $doc.display('coverLetter'))
+            #if("$!coverLetter" != "")
+
+              {{pdfviewer height="300" file="$coverLetter"/}}
+            #else
+              #info("No cover letter.")
+            #end
+          #end
+          ; $doc.displayPrettyName('cv')
+          #if($context.action == "edit")
+            {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="cv" filter="pdf"/}}
+          #else
+            #set($cv = $doc.display('cv'))
+            #if("$!cv" != "")
+
+             {{pdfviewer height="300" file="$cv"/}}
+            #else
+              #info("No cv.")
+            #end
+          #end
+          ; $doc.displayPrettyName('details')
+          : $doc.display('details')
+        )))
+      )))
+    )))
+
+#if(!$doc.isNew())
+    (%id='evaluations'%)
+    (((
+    &lt;br/&gt;&lt;br/&gt;
+    #set($evals = $doc.getObjects("RecruitmentApp.EvaluationClass"))
+    #if($evals.size() == 0 || "$!evals.get(0).getProperty('evaluator').value" == '')
+       #info("This candidate has not been evaluated yet.")
+    #else
+       #foreach($eval in $evals)
+          #set($doHire = $eval.getProperty("hire").value)
+          #set($xWikiEvaluator = $eval.getProperty("evaluator").value)
+          #if("$!eval.getProperty('details').value" != "")
+            #if($doHire == 0 )
+                #set($class = "")
+                #set($hire = "-")
+            #elseif ( $doHire == 1 )
+                #set($hire = "yes")
+                #set($class = "yes")
+            #elseif ( $doHire == 2 )
+                #set($hire = "no")
+                #set($class = "no")
+            #end
+            &lt;div class="evaluation $class"&gt;
+            === Evaluation by $xwiki.getUserName($xWikiEvaluator, false) ===
+            #if("$!hire" != "-")
+              &lt;div class="hiremention"&gt;
+                  &lt;span class="$hire"&gt;$hire&lt;/span&gt;
+              &lt;/div&gt;
+            #end
+            * **Mark:**
+                #if ($context.action == "edit")
+                     #if ( $xWikiEvaluator == $context.getUserReference() || $hasAdmin )
+                          $doc.display('mark', 'edit', $eval) / 10
+                     #else
+                          $doc.display('mark', 'view', $eval) / 10
+                     #end
+                #else
+                     $doc.display('mark', 'view', $eval) / 10
+                #end
+            * **Hire:**
+                #if ($context.action == "edit")
+                     #if ( $xWikiEvaluator == $context.getUserReference() || $hasAdmin )
+                          $doc.display('hire', 'edit', $eval)
+                     #else
+                          $hire
+                     #end
+                #else
+                     $hire
+                #end
+            * **Details:**
+                  #if  ($context.action == "edit")
+                    #if ( $xWikiEvaluator == $context.getUserReference() || $hasAdmin )
+                          $doc.display('details', 'edit', $eval)
+                     #else
+                          $doc.display('details', 'view', $eval)
+                     #end
+                  #else
+                          $doc.display('details', 'view', $eval)
+                  #end
+            &lt;/div&gt;
+          #end
+       #end
+    #end
+
+    #if($evals.size() == 0)
+       #set($lastEval = $doc.newObject('RecruitmentApp.EvaluationClass'))
+       #set($discard = $doc.save())
+    #else
+      #set($lastEval = $evals.get($mathtool.sub($evals.size(), 1)))
+      #set($details = $lastEval.getProperty("details").value)
+      #if("$!details" != "")
+        #set($lastEval = $doc.newObject('RecruitmentApp.EvaluationClass'))
+        $doc.save()
+      #end
+    #end
+
+    #if($isGuest)
+        #info("Please log in to add an evaluation.")
+    #else
+        #set($userDoc = $xwiki.getDocument($context.getUserReference()))
+        #set($userObj = $userDoc.getObject('XWiki.XWikiUsers'))
+        #if($context.action == "edit" &amp;&amp; !$doc.getObject("RecruitmentApp.EvaluationClass", 'evaluator', $services.model.serialize($context.getUserReference())))
+            &lt;div class="new-evaluation"&gt;
+              === Evaluation by $doc.display('first_name', 'view', $userObj) $doc.display('last_name', 'view', $userObj) ===
+              &lt;div class="row" style="display:none"&gt;&lt;input type="text" value="$services.model.serialize($context.getUserReference())" name="RecruitmentApp.EvaluationClass_${lastEval.number}_evaluator" id="RecruitmentApp.EvaluationClass_${lastEval.number}_evaluator" autocomplete="off"/&gt;&lt;/div&gt;
+              &lt;div class="row"&gt;**Mark:** $doc.display("mark", "edit", $lastEval) / 10 &lt;/div&gt;
+              &lt;div class="row"&gt;**Hire:** $doc.display("hire", "edit", $lastEval)&lt;/div&gt;
+              &lt;div class="row"&gt;**Details:** $doc.display("details", "edit", $lastEval)&lt;/div&gt;
+            &lt;/div&gt;
+        #end
+    #end
+    )))
+#end
+{{/html}}{{/velocity}}</content>
   <object>
+    <name>RecruitmentApp.RecruitmentAppSheet</name>
+    <number>0</number>
+    <className>RecruitmentApp.EvaluationClass</className>
+    <guid>d266206e-2909-433a-bedd-f9f9a5302203</guid>
     <class>
       <name>RecruitmentApp.EvaluationClass</name>
       <customClass/>
@@ -111,10 +328,6 @@
         <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
       </mark>
     </class>
-    <name>RecruitmentApp.RecruitmentAppSheet</name>
-    <number>0</number>
-    <className>RecruitmentApp.EvaluationClass</className>
-    <guid>d266206e-2909-433a-bedd-f9f9a5302203</guid>
     <property>
       <details/>
     </property>
@@ -129,6 +342,10 @@
     </property>
   </object>
   <object>
+    <name>RecruitmentApp.RecruitmentAppSheet</name>
+    <number>1</number>
+    <className>XWiki.JavaScriptExtension</className>
+    <guid>db44c17a-84a9-4259-9eff-dc48d731534d</guid>
     <class>
       <name>XWiki.JavaScriptExtension</name>
       <customClass/>
@@ -196,14 +413,10 @@
         <separators> ,|</separators>
         <size>1</size>
         <unmodifiable>0</unmodifiable>
-        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <values>currentPage|onDemand|always</values>
         <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
       </use>
     </class>
-    <name>RecruitmentApp.RecruitmentAppSheet</name>
-    <number>1</number>
-    <className>XWiki.JavaScriptExtension</className>
-    <guid>db44c17a-84a9-4259-9eff-dc48d731534d</guid>
     <property>
       <cache>default</cache>
     </property>
@@ -245,6 +458,10 @@
     </property>
   </object>
   <object>
+    <name>RecruitmentApp.RecruitmentAppSheet</name>
+    <number>2</number>
+    <className>XWiki.JavaScriptExtension</className>
+    <guid>eaa4d33b-0538-4fdd-a66e-502bbe7a300f</guid>
     <class>
       <name>XWiki.JavaScriptExtension</name>
       <customClass/>
@@ -312,14 +529,10 @@
         <separators> ,|</separators>
         <size>1</size>
         <unmodifiable>0</unmodifiable>
-        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <values>currentPage|onDemand|always</values>
         <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
       </use>
     </class>
-    <name>RecruitmentApp.RecruitmentAppSheet</name>
-    <number>2</number>
-    <className>XWiki.JavaScriptExtension</className>
-    <guid>eaa4d33b-0538-4fdd-a66e-502bbe7a300f</guid>
     <property>
       <cache>default</cache>
     </property>
@@ -351,6 +564,10 @@
     </property>
   </object>
   <object>
+    <name>RecruitmentApp.RecruitmentAppSheet</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>4aec9fdf-7202-41b3-ba73-f0a969991e3c</guid>
     <class>
       <name>XWiki.StyleSheetExtension</name>
       <customClass/>
@@ -386,6 +603,22 @@
         <unmodifiable>0</unmodifiable>
         <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
       </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>6</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
       <name>
         <disabled>0</disabled>
         <name>name</name>
@@ -418,14 +651,10 @@
         <separators> ,|</separators>
         <size>1</size>
         <unmodifiable>0</unmodifiable>
-        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <values>currentPage|onDemand|always</values>
         <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
       </use>
     </class>
-    <name>RecruitmentApp.RecruitmentAppSheet</name>
-    <number>0</number>
-    <className>XWiki.StyleSheetExtension</className>
-    <guid>4aec9fdf-7202-41b3-ba73-f0a969991e3c</guid>
     <property>
       <cache>default</cache>
     </property>
@@ -562,172 +791,4 @@ ul {
       <use>onDemand</use>
     </property>
   </object>
-  <content>{{velocity output="false"}}
-$xwiki.jsx.use("RecruitmentApp.RecruitmentAppSheet")
-$xwiki.ssx.use("RecruitmentApp.RecruitmentAppSheet")
-$xwiki.jsfx.use("js/xwiki/wysiwyg/xwe/XWikiWysiwyg.js", true)
-
-#set($lazy = false)
-#wysiwyg_import($lazy)
-
-#set($fullName = $doc.getDisplayTitle())
-#if("$!fullName" != "")
-  #set($lastIndexOfSpace = $fullName.lastIndexOf(" "))
-  #if($lastIndexOfSpace != -1)
-      $doc.set('first_name', $fullName.substring(0, $lastIndexOfSpace))
-      $doc.set('last_name', $fullName.substring($mathtool.add($lastIndexOfSpace, 1)))
-  #end
-#end
-#set ($discard = $doc.use('RecruitmentApp.RecruitmentAppClass'))
-#set ($discard = $services.localization.use('document', 'RecruitmentApp.RecruitmentAppTranslations'))
-{{/velocity}}
-{{velocity}}{{html wiki="true" clean="false"}}
-    {{tabs idsToLabels='personalInfo=Personal Information, candidateApp=Candidate Application, evaluations=Evaluations' /}}
-    (%id='personalInfo'%)
-    (((
-     |**$doc.displayPrettyName('first_name'):**|$doc.display('first_name')
-     |**$doc.displayPrettyName('last_name'):** |$doc.display('last_name')
-     |**$doc.displayPrettyName('jobPosting'):**|$doc.display('jobPosting')
-     |**$doc.displayPrettyName('applyDate'):** |$doc.display('applyDate')
-     |**$doc.displayPrettyName('office'):**|$doc.display('office')    
-     |**$doc.displayPrettyName('phone'):**|$doc.display('phone')
-     |**$doc.displayPrettyName('email'):**|$doc.display('email')
-
-     |**$doc.displayPrettyName('skype'):**|$doc.display('skype')
-     |**$doc.displayPrettyName('current_company'):**|$doc.display('current_company')
-     |**$doc.displayPrettyName('current_position'):**|$doc.display('current_position')
-     |**$doc.displayPrettyName('experience'):**|$doc.display('experience')
-     |**$doc.displayPrettyName('linkedin'):**|$doc.display('linkedin')
-     |**$doc.displayPrettyName('facebook'):**|$doc.display('facebook')
-    )))
-    (%id='candidateApp'%)
-    (((
-     |**$doc.displayPrettyName('status'):**|$doc.display('status')
-     |**$doc.displayPrettyName('sourceType'):**|$doc.display('sourceType')
-     |**$doc.displayPrettyName('sourceChannel'):**|$doc.display('sourceChannel')
-     |**$doc.displayPrettyName('assignee'):**|$doc.display('assignee')
-     |**$doc.displayPrettyName('next_step'):**|$doc.display('next_step')
-     |**$doc.displayPrettyName('hiringDate'):**|$doc.display('hiringDate')
-    * **$doc.displayPrettyName('coverLetter'):** 
-    #if($context.action == "edit")
-        {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="coverLetter" filter="pdf"/}}
-    #else 
-       #set($coverLetter = $doc.display('coverLetter'))
-       #if("$!coverLetter" != "")
-
-          {{pdfviewer height="300" file="$coverLetter"/}}
-       #else 
-          #info("No cover letter.")
-       #end
-    #end
-    * **$doc.displayPrettyName('cv'):**
-    #if($context.action == "edit")
-        {{attachmentSelector classname="RecruitmentApp.RecruitmentAppClass" property="cv" filter="pdf"/}}
-    #else 
-       #set($cv = $doc.display('cv'))
-       #if("$!cv" != "")
-
-           {{pdfviewer height="300" file="$cv"/}}
-       #else 
-          #info("No cv.")
-       #end
-    #end
-    * **$doc.displayPrettyName('details'):**
-    $doc.display('details')
-    )))
-
-#if(!$doc.isNew())
-    (%id='evaluations'%)
-    (((
-    &lt;br/&gt;&lt;br/&gt;
-    #set($evals = $doc.getObjects("RecruitmentApp.EvaluationClass"))
-    #if($evals.size() == 0 || "$!evals.get(0).getProperty('evaluator').value" == '')
-       #info("This candidate has not been evaluated yet.")
-    #else 
-       #foreach($eval in $evals)
-          #set($doHire = $eval.getProperty("hire").value)
-          #set($xWikiEvaluator = $eval.getProperty("evaluator").value)
-          #if("$!eval.getProperty('details').value" != "")
-            #if($doHire == 0 )
-                #set($class = "")
-                #set($hire = "-")
-            #elseif ( $doHire == 1 )
-                #set($hire = "yes")
-                #set($class = "yes")
-            #elseif ( $doHire == 2 )
-                #set($hire = "no")
-                #set($class = "no")
-            #end
-            &lt;div class="evaluation $class"&gt;
-            === Evaluation by $xwiki.getUserName($xWikiEvaluator, false) ===
-            #if("$!hire" != "-") 
-              &lt;div class="hiremention"&gt;
-                  &lt;span class="$hire"&gt;$hire&lt;/span&gt;
-              &lt;/div&gt;
-            #end
-            * **Mark:** 
-                #if ($context.action == "edit") 
-                     #if ( $xWikiEvaluator == $context.getUserReference() || $hasAdmin )
-                          $doc.display('mark', 'edit', $eval) / 10
-                     #else 
-                          $doc.display('mark', 'view', $eval) / 10
-                     #end    
-                #else
-                     $doc.display('mark', 'view', $eval) / 10
-                #end
-            * **Hire:** 
-                #if ($context.action == "edit") 
-                     #if ( $xWikiEvaluator == $context.getUserReference() || $hasAdmin )
-                          $doc.display('hire', 'edit', $eval)
-                     #else 
-                          $hire
-                     #end    
-                #else 
-                     $hire
-                #end
-            * **Details:** 
-                  #if  ($context.action == "edit") 
-                    #if ( $xWikiEvaluator == $context.getUserReference() || $hasAdmin )
-                          $doc.display('details', 'edit', $eval)
-                     #else 
-                          $doc.display('details', 'view', $eval)
-                     #end    
-                  #else 
-                          $doc.display('details', 'view', $eval)
-                  #end
-            &lt;/div&gt;
-          #end
-       #end
-    #end
-
-    #if($evals.size() == 0)
-       #set($lastEval = $doc.newObject('RecruitmentApp.EvaluationClass'))
-       #set($discard = $doc.save())
-    #else
-      #set($lastEval = $evals.get($mathtool.sub($evals.size(), 1)))
-      #set($details = $lastEval.getProperty("details").value)
-      #if("$!details" != "")
-        #set($lastEval = $doc.newObject('RecruitmentApp.EvaluationClass'))
-        $doc.save()
-      #end
-    #end
-
-    #if($isGuest) 
-        #info("Please log in to add an evaluation.")
-    #else
-        #set($userDoc = $xwiki.getDocument($context.getUserReference()))
-        #set($userObj = $userDoc.getObject('XWiki.XWikiUsers'))
-        #if($context.action == "edit" &amp;&amp; !$doc.getObject("RecruitmentApp.EvaluationClass", 'evaluator', $services.model.serialize($context.getUserReference())))
-            &lt;div class="new-evaluation"&gt;
-              === Evaluation by $doc.display('first_name', 'view', $userObj) $doc.display('last_name', 'view', $userObj) ===
-              &lt;div class="row" style="display:none"&gt;&lt;input type="text" value="$services.model.serialize($context.getUserReference())" name="RecruitmentApp.EvaluationClass_${lastEval.number}_evaluator" id="RecruitmentApp.EvaluationClass_${lastEval.number}_evaluator" autocomplete="off"/&gt;&lt;/div&gt;
-              &lt;div class="row"&gt;**Mark:** $doc.display("mark", "edit", $lastEval) / 10 &lt;/div&gt;
-              &lt;div class="row"&gt;**Hire:** $doc.display("hire", "edit", $lastEval)&lt;/div&gt;
-              &lt;div class="row"&gt;**Details:** $doc.display("details", "edit", $lastEval)&lt;/div&gt;
-            &lt;/div&gt;
-        #end
-    #end
-    )))
-#end
-{{/html}}{{/velocity}}</content>
 </xwikidoc>
