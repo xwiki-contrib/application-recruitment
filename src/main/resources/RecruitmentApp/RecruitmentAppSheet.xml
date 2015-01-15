@@ -707,7 +707,7 @@ $xwiki.jsfx.use("js/xwiki/wysiwyg/xwe/XWikiWysiwyg.js", true)
 .new-evaluation {
     border: 1px solid #cccccc;
     margin-top: 20px;
-    padding: 10px;
+    padding: 0 20px 20px 20px;
     margin-left: 30px;
 }
 
