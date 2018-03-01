@@ -14,7 +14,7 @@
   <date>1368435160000</date>
   <contentUpdateDate>1368435154000</contentUpdateDate>
   <version>1.1</version>
-  <title>$msg.get('platform.appwithinminutes.appHomePageTitle', $doc.space)</title>
+  <title>$services.localization.render('platform.appwithinminutes.appHomePageTitle', $doc.space)</title>
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.0</syntaxId>
