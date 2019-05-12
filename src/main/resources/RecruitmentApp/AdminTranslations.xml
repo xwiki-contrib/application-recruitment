@@ -32,7 +32,7 @@ recruitmentapp.nextstep.livetable.step=Next Step
 recruitmentapp.nextstep.livetable._actions=Actions
 
 admin.recruitment=Recruitment
-admin.recruitment.description=Recruitment application</content>
+admin.recruitment.description=Allows tracking candidates and job offers</content>
   <object>
     <name>RecruitmentApp.AdminTranslations</name>
     <number>0</number>
