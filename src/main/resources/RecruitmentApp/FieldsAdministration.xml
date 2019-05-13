@@ -68,8 +68,8 @@
   $newDoc.save()
 #end
 {{/velocity}}
-{{velocity}}
 == Offices ==
+{{velocity}}
 #set($officeTableOptions = {
   'className' : 'RecruitmentApp.OfficeClass',
   'translationPrefix': 'recruitmentapp.office.livetable.',
@@ -80,13 +80,13 @@
    '_actions' : { "actions" : ["delete"] }
 })
 #set($officeTableColumns = ["office", "_actions"])
-#livetable("officeTable" $officeTableColumns $officeTableColumnsProperties $officeTableOptions)
 {{html clean="false"}}
 &lt;form method="post" action=""&gt;
    Office: &lt;input type="text" name="officeName" /&gt;
    &lt;input type="submit" value="Add" class="button" /&gt;
 &lt;/form&gt;
 {{/html}}
+#livetable("officeTable" $officeTableColumns $officeTableColumnsProperties $officeTableOptions)
 
 ###Display status
 == Candidate Status ==
@@ -100,13 +100,13 @@
   '_actions' : { 'actions': ['delete']}
 })
 #set($statusTableColumns = ['status', '_actions'])
-#livetable('statusTable' $statusTableColumns $statusTableColumnsProperties $statusTableOptions)
 {{html clean="false"}}
 &lt;form method="post" action=""&gt;
    Status: &lt;input type="text" name="statusName" /&gt;
    &lt;input type="submit" value="Add" class="button" /&gt;
 &lt;/form&gt;
 {{/html}}
+#livetable('statusTable' $statusTableColumns $statusTableColumnsProperties $statusTableOptions)
 
 ###Display source
 == Source ==
@@ -120,13 +120,13 @@
    '_actions': { 'actions' : ['delete'] }
 })
 #set($sourceTableColumns = ['source', '_actions'])
-#livetable('sourceTable' $sourceTableColumns $sourceTableColumnsProperties $sourceTableOptions)
 {{html clean="false"}}
 &lt;form method="post" action=""&gt;
    Source: &lt;input type="text" name="sourceName" /&gt;
    &lt;input type="submit" value="Add" class="button" /&gt;
 &lt;/form&gt;
 {{/html}}
+#livetable('sourceTable' $sourceTableColumns $sourceTableColumnsProperties $sourceTableOptions)
 
 ###Display next steps
 == Next Steps ==
@@ -140,13 +140,13 @@
     '_actions': { 'actions': ['delete'] }
 })
 #set($stepTableColumns = ['step', '_actions'])
-#livetable('stepTable' $stepTableColumns $stepTableColumnsProperties $stepTableOptions)
 {{html clean="false"}}
 &lt;form method="post" action=""&gt;
    Step: &lt;input type="text" name="stepName"/&gt;
    &lt;input type="submit" value="Add" class="button" /&gt;
 &lt;/form&gt;
 {{/html}}
+#livetable('stepTable' $stepTableColumns $stepTableColumnsProperties $stepTableOptions)
 {{/velocity}}</content>
   <object>
     <name>RecruitmentApp.FieldsAdministration</name>
@@ -364,7 +364,7 @@
       <displayInSection>Recruitment Fields</displayInSection>
     </property>
     <property>
-      <heading>Recruitment Fields Configuration</heading>
+      <heading></heading>
     </property>
     <property>
       <iconAttachment/>
