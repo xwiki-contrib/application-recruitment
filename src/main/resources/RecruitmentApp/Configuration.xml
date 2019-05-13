@@ -265,7 +265,7 @@ Specify the space where the old recruitment application is installed.
       <displayInSection>Recruitment</displayInSection>
     </property>
     <property>
-      <heading>Recruitment Application Configuration</heading>
+      <heading></heading>
     </property>
     <property>
       <iconAttachment/>
