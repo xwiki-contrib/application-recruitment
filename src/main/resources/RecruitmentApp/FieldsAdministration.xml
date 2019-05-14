@@ -361,7 +361,7 @@
       <displayInCategory>recruitment</displayInCategory>
     </property>
     <property>
-      <displayInSection>Recruitment Fields</displayInSection>
+      <displayInSection>Fields Configuration</displayInSection>
     </property>
     <property>
       <heading></heading>
@@ -376,7 +376,7 @@
       <propertiesToShow/>
     </property>
     <property>
-      <sectionOrder/>
+      <sectionOrder>200</sectionOrder>
     </property>
   </object>
 </xwikidoc>
