@@ -262,7 +262,7 @@ Specify the space where the old recruitment application is installed.
       <displayInCategory>recruitment</displayInCategory>
     </property>
     <property>
-      <displayInSection>Recruitment</displayInSection>
+      <displayInSection>General </displayInSection>
     </property>
     <property>
       <heading></heading>
@@ -277,7 +277,7 @@ Specify the space where the old recruitment application is installed.
       <propertiesToShow/>
     </property>
     <property>
-      <sectionOrder/>
+      <sectionOrder>100</sectionOrder>
     </property>
   </object>
 </xwikidoc>
