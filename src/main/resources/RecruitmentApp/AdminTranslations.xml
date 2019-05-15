@@ -65,7 +65,7 @@ admin.recruitment.description=Allows tracking candidates and job offers</content
       </scope>
     </class>
     <property>
-      <scope>GLOBAL</scope>
+      <scope>WIKI</scope>
     </property>
   </object>
 </xwikidoc>
